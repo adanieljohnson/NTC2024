@@ -1,0 +1,34 @@
+---
+title: "Template for GitHub Web Site"
+---
+
+```{r, child="_setup.Rmd"}
+```
+
+## This is the Landing Page
+
+This is your home page for your website. Customize it as much as you would like, but keep it brief.
+
+You can use this page to introduce what you are doing and your aims.
+
+
+## General Structure
+
+This template provides a starting form for your website. These pages already exist.
+
+- **course_notes.Rmd** - List of pages being outlined.
+
+- **pre_work.Rmd** - Use this as a scratchpad for testing.
+
+- **project.Rmd** - As you might have guessed, use this section to write up your project
+
+- **library.bib** - is text file that is available for you to put citations. You can then use these citations in the other Rmd documents. Also note that if you want to cite a package and want the bibtex you can do this by using the command `citation("packagename")`.
+
+- **footer.html** - Go ahead and put your name in there!
+The structure of the website can be changed by manipulating the `_site.yml` file. 
+
+Font Awesome icons are available to use. You can check those out [here](https://fontawesome.com/v4.7.0/icons/).
+
+
+When you are happy with what you have written for the day, go ahead and make a website out of it by using the following command in the console `rmarkdown::render_site()`
+
