@@ -1,5 +1,5 @@
 ---
-title: "Starter GitHub Website"
+title: "Companion Site for 2023 NTC"
 
 ---
 

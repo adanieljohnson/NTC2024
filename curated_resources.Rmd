@@ -1,0 +1,50 @@
+---
+title: "Curated Resources"
+bibliography: library.bib
+biblio-style: apalike
+---
+
+```{r, child="_setup.Rmd"}
+```
+#### \   
+
+The case resources are organized around a modified ADDIE model of curriculum design (U. Florida, 1975), with elements of backwards design (Wiggins & McTighe, 1999) that allow for more flexible, iterative design and revision.
+
+#### \   
+
+# Analysis
+
+1. General learning outcomes. What principles, theories, concepts, skills, or content knowledge should students achieve as a result of learning activities?
+
+2. Specific benchmarks or performance goals. What will students be able to do to indicate they have accomplished these endpoints?
+
+3. Sequencing. Which benchmarks do students need to reach first, before they can achieve others?
+
+
+#### \   
+
+# Design & Development
+
+1. What activities, scenarios, or problems will allow or best help students reach the benchmarks?  
+
+2. How will the learning activities from #1 be incorporated into a general case format?
+
+3. What additional information or resources will students or the instructor need for the case?
+
+#### \   
+
+# Implementation 
+
+How will: 
+
+1. The case and related materials be delivered?
+
+2. Students complete and submit case work and assessments?
+
+3. The instructor provide support for the case in progress? Adjust or modify the case? Guide students through the process?
+
+#### \   
+
+# References
+
+#### \   

@@ -11,9 +11,9 @@
 
 
 
-<title>Base Web Site</title>
+<title>Supplemental Resources for 2023 Neuroscience Teaching Conference</title>
 
-<script src="site_libs/header-attrs-2.8/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/journal.min.css" rel="stylesheet" />
@@ -318,7 +318,7 @@ div.tocify {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">Site Name - Home</a>
+      <a class="navbar-brand" href="index.html">2023 NTC Case Presentation</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
@@ -326,24 +326,38 @@ div.tocify {
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="course_notes.html">
-    <span class="fas fa-book"></span>
+  <a href="workshop_resources.html">
+    <span class="fa fa-exchange"></span>
      
-    Writing Guide
+    Workshop Resources
   </a>
 </li>
 <li>
-  <a href="pre_work.html">
-    <span class="fas fa-paper-plane"></span>
+  <a href="design_and_development.html">
+    <span class="fa fa-pencil"></span>
      
-    GTA Training
+    Design and Development
   </a>
 </li>
 <li>
-  <a href="project.html">
-    <span class="fas fa-folder"></span>
+  <a href="implementation.html">
+    <span class="fa fa-users"></span>
+     
+    Implementation
+  </a>
+</li>
+<li>
+  <a href="assessment.html">
+    <span class="fa fa-crosshairs"></span>
      
     Assessment
+  </a>
+</li>
+<li>
+  <a href="curated_resources.html">
+    <span class="fa fa-folder-open"></span>
+     
+    Curated Resources
   </a>
 </li>
       </ul>
@@ -355,30 +369,46 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Base Web Site</h1>
+<h1 class="title toc-ignore">Supplemental Resources for 2023 Neuroscience Teaching Conference</h1>
 
 </div>
 
 
-<div id="so-it-begins" class="section level2">
-<h2>So It Begins</h2>
-<p>This is your landing page for your website for your project. This is just a launching pad for our community. Feel free to customise as much as you would like.</p>
-<p>You can use this page to give introductions about what you are doing and your aims.</p>
-<p>The structure of the website can be changed by manipulating the <code>_site.yml</code>. Font Awesome icons are available to use. You can check those out <a href="https://fontawesome.com/v4.7.0/icons/">here</a>.</p>
+<div id="section" class="section level4">
+<h4> </h4>
 </div>
-<div id="general-structure" class="section level2">
-<h2>General Structure</h2>
-<p>We have provided a rough template for your website - <strong>course_notes.Rmd</strong> - List of pages being outlined.</p>
-<ul>
-<li><p><strong>pre_work.Rmd</strong> - Use this as a scratchpad for testing.</p></li>
-<li><p><strong>project.Rmd</strong> - As you might have guessed, use this section to write up your project</p></li>
-<li><p><strong>library.bib</strong> - is text file that is available for you to put citations. You can then use these citations in the other Rmd documents. Also note that if you want to cite a package and want the bibtex you can do this by using the command <code>citation("packagename")</code>.</p></li>
-<li><p><strong>footer.html</strong> - Go ahead and put your name in there!</p></li>
-</ul>
-<p>When you are happy with what you have written for the day, go ahead and make a website out of it by using the following command in the console <code>rmarkdown::render_site()</code></p>
+<div id="welcome" class="section level1">
+<h1>Welcome</h1>
+<p>You found the support site for Dr. A. Daniel Johnson’s presentation, “--”, at the 2023 Neuroscience Teaching Conference.</p>
+<div id="section-1" class="section level4">
+<h4> </h4>
+</div>
+</div>
+<div id="what-is-available" class="section level1">
+<h1>What Is Available?</h1>
+<p>Materials from the presentation, supporting resources, as well as additional curated tools for case writing and implementation are listed in the live menu at the top of each page. Headers within the current page are listed in the menu on the left side.</p>
+<p>Some curated resources may not be directly accessible via the web site, and require downloading.</p>
+<div id="section-2" class="section level4">
+<h4> </h4>
+</div>
+</div>
+<div id="why-use-cases" class="section level1">
+<h1>Why Use Cases?</h1>
+<p>Cases help students engage with topics more deeply and develop richer insights. They are not just for developing higher order thinking though; I use them in content-dense courses to strengthen students’ basic content knowledge too.</p>
+<p>Cases are not a panacea though; they have benefits and drawbacks. Case-oriented courses require considerable development work behind the scenes. The instructor gives up their role as expert source and becomes a thinking coach instead. They must think quickly and be ready to adapt new cases in real time.</p>
+<div id="section-3" class="section level4">
+<h4> </h4>
+</div>
+</div>
+<div id="who-am-i" class="section level1">
+<h1>Who Am I?</h1>
+<p>I wrote and published my first formal teaching case in 2005. I have since written or co-written &gt;35 cases for non-majors general biology courses; courses for majors (first years to seniors); federally mandated research ethics courses; and our graduate TA training program.</p>
+<div id="section-4" class="section level4">
+<h4> </h4>
+</div>
 </div>
 
-<p>Copyright &copy; 2021 STEM Writing Project. All rights reserved.</p>
+<p>Copyright &copy; 2023 STEM Writing Project at Wake Forest University. All rights reserved.</p>
 
 
 </div>
@@ -417,6 +447,9 @@ $(document).ready(function () {
 
 <script>
 $(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
 
     // move toc-ignore selectors from section div to header
     $('div.section.toc-ignore')

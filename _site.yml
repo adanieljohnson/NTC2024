@@ -1,17 +1,23 @@
-name: "Minimal Website"
+name: "2023 NTC Workshop"
 output_dir: "docs"
 navbar:
-  title: "Site Name - Home"
+  title: "2023 NTC Case Presentation"
   right:
-  - text: "Writing Guide"
-    icon: fa-book
-    href: course_notes.html
-  - text: "GTA Training"
-    icon: fa-paper-plane
-    href: pre_work.html
+  - text: "Workshop Resources"
+    icon: fa-exchange
+    href: workshop_resources.html
+  - text: "Design and Development"
+    icon: fa-pencil
+    href: design_and_development.html
+  - text: "Implementation"
+    icon: fa-users
+    href: implementation.html
   - text: "Assessment"
-    icon: fa-folder
-    href: project.html
+    icon: fa-crosshairs
+    href: assessment.html
+  - text: "Curated Resources"
+    icon: fa-folder-open
+    href: curated_resources.html
 output:
   html_document:
     theme: journal

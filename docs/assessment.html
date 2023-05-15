@@ -11,9 +11,9 @@
 
 
 
-<title>Site Framework</title>
+<title>Assessment</title>
 
-<script src="site_libs/header-attrs-2.8/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/journal.min.css" rel="stylesheet" />
@@ -318,7 +318,7 @@ div.tocify {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">Site Name - Home</a>
+      <a class="navbar-brand" href="index.html">2023 NTC Case Presentation</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
@@ -326,24 +326,38 @@ div.tocify {
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="course_notes.html">
-    <span class="fas fa-book"></span>
+  <a href="workshop_resources.html">
+    <span class="fa fa-exchange"></span>
      
-    Writing Guide
+    Workshop Resources
   </a>
 </li>
 <li>
-  <a href="pre_work.html">
-    <span class="fas fa-paper-plane"></span>
+  <a href="design_and_development.html">
+    <span class="fa fa-pencil"></span>
      
-    GTA Training
+    Design and Development
   </a>
 </li>
 <li>
-  <a href="project.html">
-    <span class="fas fa-folder"></span>
+  <a href="implementation.html">
+    <span class="fa fa-users"></span>
+     
+    Implementation
+  </a>
+</li>
+<li>
+  <a href="assessment.html">
+    <span class="fa fa-crosshairs"></span>
      
     Assessment
+  </a>
+</li>
+<li>
+  <a href="curated_resources.html">
+    <span class="fa fa-folder-open"></span>
+     
+    Curated Resources
   </a>
 </li>
       </ul>
@@ -355,41 +369,43 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Site Framework</h1>
+<h1 class="title toc-ignore">Assessment</h1>
 
 </div>
 
 
-<p>You can detail what you learned in the Page within these pages. You can also use the Rmd markdown language and insert code chunks with <code>CMD/CTRL + SHIFT + I</code>.</p>
-<div id="page-1" class="section level1">
-<h1>Page 1</h1>
+<div id="abstract" class="section level1">
+<h1>Abstract</h1>
 </div>
-<div id="page-2" class="section level1">
-<h1>Page 2</h1>
+<div id="introduction" class="section level1">
+<h1>Introduction</h1>
 </div>
-<div id="page-3" class="section level1">
-<h1>Page 3</h1>
+<div id="literature-review" class="section level1">
+<h1>Literature Review</h1>
 </div>
-<div id="page-4" class="section level1">
-<h1>Page 4</h1>
+<div id="methodology" class="section level1">
+<h1>Methodology</h1>
+<div id="data" class="section level2">
+<h2>Data</h2>
 </div>
-<div id="page-5" class="section level1">
-<h1>Page 5</h1>
+<div id="analysis" class="section level2">
+<h2>Analysis</h2>
 </div>
-<div id="page-6" class="section level1">
-<h1>Page 6</h1>
 </div>
-<div id="page-7" class="section level1">
-<h1>Page 7</h1>
+<div id="results" class="section level1">
+<h1>Results</h1>
 </div>
-<div id="page-8" class="section level1">
-<h1>Page 8</h1>
+<div id="discussion" class="section level1">
+<h1>Discussion</h1>
+</div>
+<div id="conclusion" class="section level1">
+<h1>Conclusion</h1>
 </div>
 <div id="references" class="section level1">
 <h1>References</h1>
 </div>
 
-<p>Copyright &copy; 2021 STEM Writing Project. All rights reserved.</p>
+<p>Copyright &copy; 2023 STEM Writing Project at Wake Forest University. All rights reserved.</p>
 
 
 </div>
@@ -428,6 +444,9 @@ $(document).ready(function () {
 
 <script>
 $(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
 
     // move toc-ignore selectors from section div to header
     $('div.section.toc-ignore')

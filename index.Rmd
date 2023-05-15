@@ -1,34 +1,36 @@
 ---
-title: "Template for GitHub Web Site"
+title: "Supplemental Resources for 2023 Neuroscience Teaching Conference"
 ---
 
 ```{r, child="_setup.Rmd"}
 ```
+#### \   
 
-## This is the Landing Page
+# Welcome
 
-This is your home page for your website. Customize it as much as you would like, but keep it brief.
+You found the support site for Dr. A. Daniel Johnson's presentation, "\--", at the 2023 Neuroscience Teaching Conference.
 
-You can use this page to introduce what you are doing and your aims.
+#### \   
 
+# What Is Available?
 
-## General Structure
+Materials from the presentation, supporting resources, as well as additional curated tools for case writing and implementation are listed in the live menu at the top of each page. Headers within the current page are listed in the menu on the left side. 
 
-This template provides a starting form for your website. These pages already exist.
+Some curated resources may not be directly accessible via the web site, and require downloading.
 
-- **course_notes.Rmd** - List of pages being outlined.
+#### \   
 
-- **pre_work.Rmd** - Use this as a scratchpad for testing.
+# Why Use Cases?
 
-- **project.Rmd** - As you might have guessed, use this section to write up your project
+Cases help students engage with topics more deeply and develop richer insights. They are not just for developing higher order thinking though; I use them in content-dense courses to strengthen students’ basic content knowledge too.
 
-- **library.bib** - is text file that is available for you to put citations. You can then use these citations in the other Rmd documents. Also note that if you want to cite a package and want the bibtex you can do this by using the command `citation("packagename")`.
+Cases are not a panacea though; they have benefits and drawbacks. Case-oriented courses require considerable development work behind the scenes. The instructor gives up their role as expert source and becomes a thinking coach instead. They must think quickly and be ready to adapt new cases in real time.
 
-- **footer.html** - Go ahead and put your name in there!
-The structure of the website can be changed by manipulating the `_site.yml` file. 
+#### \   
 
-Font Awesome icons are available to use. You can check those out [here](https://fontawesome.com/v4.7.0/icons/).
+# Who Am I?
 
+I wrote and published my first formal teaching case in 2005. I have since written or co-written >35 cases for non-majors general biology courses; courses for majors (first years to seniors); federally mandated research ethics courses; and our graduate TA training program.
 
-When you are happy with what you have written for the day, go ahead and make a website out of it by using the following command in the console `rmarkdown::render_site()`
+#### \   
 
