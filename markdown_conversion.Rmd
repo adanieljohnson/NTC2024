@@ -9,22 +9,92 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+## Why I Use Markdown to Write, Publish, and Share Resources
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+**Markdown** is a simple formatting language for authoring reusable documents. The philosophy behind Markdown is "write text once, output it many ways." It takes \~20 minutes to learn, and does not require any technical knowledge beyond basic word processing skills. With it authors can quickly convert one text file into more than 30 different formats for web pages, printed handouts, and slide presentations. Groups of Markdown files can be combined to create interactive online books. For more on using Markdown and the R Markdown variant see [http://rmarkdown.rstudio.com](http://rmarkdown.rstudio.com).
 
-```{r cars}
-summary(cars)
+## Downloading Files
+
+Workshop files are stored in a GitHub repository. Originally created for sharing and managing code projects, GitHub has become a popular low cost online file sharing service for the STEM community.
+
+To download a full repository of files:
+
+<center>![Downloading a gitHub archive](https://github.com/adanieljohnson/bio_case_writing/blob/main/siteimages/File_access.png?raw=true)</center>
+
+<br>
+
+1.  Go to the URL for the repository. The [URL for this presentation](https://github.com/adanieljohnson/bio_case_writing) is `https://github.com/adanieljohnson/bio_case_writing`.
+2.  Look in the upper right of the main file list for a Code button (orange arrow in screenshot above). Click to show options to download the full repository. A ZIP file archive (blue arrow) is the safest choice.
+3.  Download a copy of the full set of files to your local computer. Click on the ZIP archive to open it.
+
+To download a single file:
+
+<center>![Downloading a single GitHub file](https://github.com/adanieljohnson/bio_case_writing/blob/main/siteimages/Single_file.png?raw=true)</center>
+
+<br>
+
+1.  Click on the file desired in the list of files (orange arrow above). A window will open showing the file's contents.
+2.  In the upper right of the window is a Download icon (arrow pointing down; blue arrow in figure above). Click the icon to download the file.
+3.  All computers come with a plain text reader pre-installed, so when you double-click on the downloaded file, it should open.
+
+## Converting Files
+
+In 2022 we gave a training workshop on using Markdown and document conversion at the Association for Biology Lab Education (ABLE) annual meeting.
+
+1.  The full [ABLE Workshop repository](https://github.com/adanieljohnson/ABLE_2022_Workshop) describes additional tools and resources in more detail.
+2.  [Download a copy of the quick guide to file conversion]() here.
+
+### Converting Text.Rmd to Text.md
+
+The .Rmd file extension is used by R Studio to mark R-compatible Markdown files. To change between R-specific and generic Markdown, use your computer to rename the file with the .md extension instead. Ignore any warnings about file incompatibility.
+
+### Converting Text.md to Text.html
+
+Many plain text editors can convert Markdown to very compact plain HTML. Look for a menu item named Markup or Preview.
+
+If your text editor does not have this feature, this web-based Pandoc converter works well.
+
+1.  Go to the **MD to HTML Converter** at [https://ashkanph.github.io/md-to-html/.](https://ashkanph.github.io/md-to-html/)
+2.  In the upper right corner, use **Browse** to find your local GitHub folder, and choose one of your recently edited .md files.
+3.  The .md file will be converted to .html and displayed.
+4.  Use the **Save as HTML** button to write a copy of the file in .html back to your local GitHub folder. 5 If you open the version of the file with the .html extension in your plain text editor, you will see it has been rewritten using HTML markup. You can copy and paste the HTML code into most LMS pages. Alternatively, you can share the file itself with others; they can open it in any web browser.
+
+There are many free MD to HTML converters available. Two very good ones are [**Markdown It**](https://markdown-it.github.io/) and [**Markdown to HTML**](https://markdowntohtml.com/); both have very user-friendly interfaces, but require copy/pasting the text rather than choosing a file.
+
+### Converting Text.md to Text.docx
+
+R Studio is very good for converting both .Rmd and .md files to well-formatted Word documents.
+
+<center>![Converting Markdown to Word format](https://github.com/adanieljohnson/ABLE_2022_Workshop/blob/main/images/Preview-Word-ABLE.png?raw=true)</center>
+
+<br>
+
+1.  Open R Studio, and open a file you downloaded or created.
+2.  At the top of the screen, open the pulldown menu next to **Preview** and choose **Word document**.
+3.  R Studio will generate a pre-formatted MS Word .docx file, then save it to the same directory where the .md file is located.
+4.  Click on the .docx file to open it in MS Word.
+
+MS Word files are formatted using a standard template. To reformat documents a different way, create a template file with the header and text styles that you want. When newly generated documents are copy/pasted into the template file, the text will change to the styles you set.
+
+<br>
+
+### Advanced Tool: Pandoc
+
+[**Pandoc**](https://pandoc.org/index.html), a "universal document converter." It can read many different document file types, then convert one format to another. Some file types get fussy when converted, but Markdown and Pandoc play very nicely together.
+
+Pandoc is the engine underneath R Studio and most other file converters. It runs from your computer's command line, but is easy to install and use. If you would like to try it yourself:
+
+1.  Go to the [Pandoc installation page](https://pandoc.org/installing.html) for instructions to download and install it on your computer.
+2.  Open a terminal window.
+3.  Use the following Terminal commands to convert from .md to .html or .docx format. The commands are the same, except for the extension on the output file.
+
+```{=html}
+<!-- -->
 ```
+        pandoc -s /filepath/Input_Filename.md  -o /filepath/Output_Filename.html
 
-## Including Plots
+        pandoc -s /filepath/Input_Filename.md  -o /filepath/Output_Filename.docx
 
-You can also embed plots, for example:
+You are not limited to HTML and DOCX files. Pandoc can convert Markdown files into slides, bibliographic formats, Jupyter notebooks, CSV data files, and multiple wiki languages too. [This list](https://pandoc.org/) shows all of the possible conversions you can do.
 
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
