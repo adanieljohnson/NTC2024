@@ -9,6 +9,13 @@ navbar:
   - text: "Design and Development"
     icon: fa-pencil
     href: design_and_development.html
+    menu: 
+    - text: "Overview"
+      icon: fa-search
+      href: design_overview.html
+    - text: "Overview 1"
+      icon: fa-chalkboard
+      href: design_1.html
   - text: "Implementation"
     icon: fa-users
     href: implementation.html
@@ -20,7 +27,7 @@ navbar:
     href: curated_resources.html
 output:
   html_document:
-    theme: journal
+    theme: spacelab
     highlight: textmate
     css: css/style.css
     df_print: paged

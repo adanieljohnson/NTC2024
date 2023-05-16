@@ -8,15 +8,15 @@ title: "Supplemental Resources for 2023 Neuroscience Teaching Conference"
 
 # Welcome
 
-You found the support site for Dr. A. Daniel Johnson's presentation, "\--", at the 2023 Neuroscience Teaching Conference.
+You found the support site for Dr. A. Daniel Johnson's presentation, _“Using problem-oriented discussion cases to develop neuroscience students’ thinking skills,”_ at the 2023 Neuroscience Teaching Conference.
 
 #### \   
 
-# What Is Available?
+# What Is Here?
 
-Materials from the presentation, supporting resources, as well as additional curated tools for case writing and implementation are listed in the live menu at the top of each page. Headers within the current page are listed in the menu on the left side. 
+I've posted materials from the presentation, supporting resources, and additional curated tools for case writing and implementation. The main navigation menu is at the top of each page. Headers within the current page are listed in the menu on the left side. 
 
-Some curated resources may not be directly accessible via the web site, and require downloading.
+Some curated resources may not be available to view on the web site, and require downloading.
 
 #### \   
 
@@ -30,7 +30,7 @@ Cases are not a panacea though; they have benefits and drawbacks. Case-oriented 
 
 # Who Am I?
 
-I wrote and published my first formal teaching case in 2005. I have since written or co-written >35 cases for non-majors general biology courses; courses for majors (first years to seniors); federally mandated research ethics courses; and our graduate TA training program.
+I am a Teaching Professor of Biology at Wake Forest University. I wrote and published my first formal teaching case in 2005. I have since written or co-written >35 cases for: non-majors general biology;  majors (first years to seniors); federally mandated research ethics courses; and our graduate TA training program. I've also reviewed cases for the National Clearinghouse for Case Studies Teaching in Science (NCCSTS).
 
 #### \   
 
