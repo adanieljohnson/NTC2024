@@ -16,7 +16,7 @@ You found the support site for Dr. A. Daniel Johnson's presentation, _“Using p
 
 I've posted materials from the presentation, supporting resources, and additional curated tools for case writing and implementation. The main navigation menu is at the top of each page. Headers within the current page are listed in the menu on the left side. 
 
-Some curated resources may not be available to view on the web site, and require downloading.
+Some curated resources are not available to view on the web site, and require downloading. Reusable documents are written in Markdown format; [directions for converting Markdown to other formats are available here.](markdown_conversion)
 
 #### \   
 
@@ -30,7 +30,7 @@ Cases are not a panacea though; they have benefits and drawbacks. Case-oriented 
 
 # Who Am I?
 
-I am a Teaching Professor of Biology at Wake Forest University. I wrote and published my first formal teaching case in 2005. I have since written or co-written >35 cases for: non-majors general biology;  majors (first years to seniors); federally mandated research ethics courses; and our graduate TA training program. I've also reviewed cases for the National Clearinghouse for Case Studies Teaching in Science (NCCSTS).
+I am a Teaching Professor of Biology at Wake Forest University. I wrote and published my first formal teaching case in 2005, and since written or co-written >35 cases for: non-majors general biology; majors lecture and lab courses (first years to seniors); federally mandated research ethics courses; and our graduate TA training program. I've also reviewed cases for publication in the National Clearinghouse for Case Studies Teaching in Science (NCCSTS).
 
 #### \   
 
