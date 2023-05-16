@@ -1,8 +1,13 @@
 ---
-title: "Assessment"
+title: "Toolbox"
 bibliography: library.bib
 biblio-style: apalike
 ---
 
 ```{r, child="_setup.Rmd"}
 ```
+
+Links to tools pages.
+
+My 1-page guide to Markdown.
+

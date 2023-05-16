@@ -11,20 +11,68 @@ navbar:
     href: design_and_development.html
     menu: 
     - text: "Overview"
-      icon: fa-search
+      icon: fa-pencil
       href: design_overview.html
-    - text: "Overview 1"
-      icon: fa-chalkboard
+    - text: "Design 1"
+      icon: fa-pencil
       href: design_1.html
+    - text: "Design 2"
+      icon: fa-pencil
+      href: design_2.html
+    - text: "Design 3"
+      icon: fa-pencil
+      href: design_3.html
   - text: "Implementation"
     icon: fa-users
     href: implementation.html
+    menu: 
+    - text: "Overview"
+      icon: fa-users
+      href: implementation_overview.html
+    - text: "Implementation 1"
+      icon: fa-users
+      href: implementation_1.html
+    - text: "Implementation 2"
+      icon: fa-users
+      href: implementation_2.html
+    - text: "Implementation 3"
+      icon: fa-users
+      href: implementation_3.html
   - text: "Assessment"
     icon: fa-crosshairs
     href: assessment.html
+    menu: 
+    - text: "Overview"
+      icon: fa-crosshairs
+      href: assessment_overview.html
+    - text: "Assessment 1"
+      icon: fa-crosshairs
+      href: assessment_1.html
+    - text: "Assessment 2"
+      icon: fa-crosshairs
+      href: assessment_2.html
+    - text: "Assessment 3"
+      icon: fa-crosshairs
+      href: assessment_3.html
   - text: "Curated Resources"
     icon: fa-folder-open
     href: curated_resources.html
+    menu: 
+    - text: "Overview"
+      icon: fa-search
+      href: curated_overview.html
+    - text: "Curated Resources 1"
+      icon: fa-folder-open
+      href: curated_1.html
+    - text: "Curated Resources 2"
+      icon: fa-folder-open
+      href: curated_2
+    - text: "Curated Resources 3"
+      icon: fa-folder-open
+      href: curated_3.html
+  - text: "Toolbox"
+    icon: fa-wrench
+    href: toolbox.html
 output:
   html_document:
     theme: spacelab

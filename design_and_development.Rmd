@@ -7,46 +7,4 @@ biblio-style: apalike
 ```{r, child="_setup.Rmd"}
 ```
 
-You can detail what you learned in the Page within these pages. You can also use the Rmd markdown language and insert code chunks with `CMD/CTRL + SHIFT + I`.
 
-# Page 1
-
-
-#### \   
-
-# Page 2
-
-
-#### \   
-
-# Page 3
-
-
-#### \   
-
-# Page 4
-
-
-#### \   
-
-# Page 5
-
-
-#### \   
-
-# Page 6
-
-
-#### \   
-
-# Page 7
-
-
-#### \   
-
-# Page 8
-
-
-#### \   
-
-# References

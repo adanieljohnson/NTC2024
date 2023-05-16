@@ -63,28 +63,6 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-/* for pandoc --citeproc since 2.11 */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}
-</style>
 
 <link rel="stylesheet" href="css/style.css" type="text/css" />
 
@@ -365,39 +343,156 @@ div.tocify {
   <ul class="dropdown-menu" role="menu">
     <li>
       <a href="design_overview.html">
-        <span class="fa fa-search"></span>
+        <span class="fa fa-pencil"></span>
          
         Overview
       </a>
     </li>
     <li>
       <a href="design_1.html">
-        <span class="fa fa-chalkboard"></span>
+        <span class="fa fa-pencil"></span>
          
-        Overview 1
+        Design 1
+      </a>
+    </li>
+    <li>
+      <a href="design_2.html">
+        <span class="fa fa-pencil"></span>
+         
+        Design 2
+      </a>
+    </li>
+    <li>
+      <a href="design_3.html">
+        <span class="fa fa-pencil"></span>
+         
+        Design 3
+      </a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-users"></span>
+     
+    Implementation
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="implementation_overview.html">
+        <span class="fa fa-users"></span>
+         
+        Overview
+      </a>
+    </li>
+    <li>
+      <a href="implementation_1.html">
+        <span class="fa fa-users"></span>
+         
+        Implementation 1
+      </a>
+    </li>
+    <li>
+      <a href="implementation_2.html">
+        <span class="fa fa-users"></span>
+         
+        Implementation 2
+      </a>
+    </li>
+    <li>
+      <a href="implementation_3.html">
+        <span class="fa fa-users"></span>
+         
+        Implementation 3
+      </a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-crosshairs"></span>
+     
+    Assessment
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="assessment_overview.html">
+        <span class="fa fa-crosshairs"></span>
+         
+        Overview
+      </a>
+    </li>
+    <li>
+      <a href="assessment_1.html">
+        <span class="fa fa-crosshairs"></span>
+         
+        Assessment 1
+      </a>
+    </li>
+    <li>
+      <a href="assessment_2.html">
+        <span class="fa fa-crosshairs"></span>
+         
+        Assessment 2
+      </a>
+    </li>
+    <li>
+      <a href="assessment_3.html">
+        <span class="fa fa-crosshairs"></span>
+         
+        Assessment 3
+      </a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-folder-open"></span>
+     
+    Curated Resources
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="curated_overview.html">
+        <span class="fa fa-search"></span>
+         
+        Overview
+      </a>
+    </li>
+    <li>
+      <a href="curated_1.html">
+        <span class="fa fa-folder-open"></span>
+         
+        Curated Resources 1
+      </a>
+    </li>
+    <li>
+      <a href="curated_2">
+        <span class="fa fa-folder-open"></span>
+         
+        Curated Resources 2
+      </a>
+    </li>
+    <li>
+      <a href="curated_3.html">
+        <span class="fa fa-folder-open"></span>
+         
+        Curated Resources 3
       </a>
     </li>
   </ul>
 </li>
 <li>
-  <a href="implementation.html">
-    <span class="fa fa-users"></span>
+  <a href="toolbox.html">
+    <span class="fa fa-wrench"></span>
      
-    Implementation
-  </a>
-</li>
-<li>
-  <a href="assessment.html">
-    <span class="fa fa-crosshairs"></span>
-     
-    Assessment
-  </a>
-</li>
-<li>
-  <a href="curated_resources.html">
-    <span class="fa fa-folder-open"></span>
-     
-    Curated Resources
+    Toolbox
   </a>
 </li>
       </ul>
@@ -414,41 +509,7 @@ div.tocify {
 </div>
 
 
-<p>We can use this space to go ahead and write out any exercise or prework that you would like have done prior to coming.</p>
-<div id="session-1" class="section level2">
-<h2>Session 1</h2>
-<p>This plot is generated using ggplot2 <span class="citation">(Wickham 2016)</span>.</p>
-<pre class="r"><code>library(ggplot2)
-ggplot(iris, aes(Species, Sepal.Length))+
-  geom_col()</code></pre>
-<p><img src="implementation_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
-</div>
-<div id="session-2" class="section level2">
-<h2>Session 2</h2>
-</div>
-<div id="session-3" class="section level2">
-<h2>Session 3</h2>
-</div>
-<div id="session-4" class="section level2">
-<h2>Session 4</h2>
-</div>
-<div id="session-5" class="section level2">
-<h2>Session 5</h2>
-</div>
-<div id="session-6" class="section level2">
-<h2>Session 6</h2>
-</div>
-<div id="session-7" class="section level2">
-<h2>Session 7</h2>
-</div>
-<div id="session-8" class="section level2 unnumbered">
-<h2 class="unnumbered">Session 8</h2>
-<div id="refs" class="references csl-bib-body hanging-indent">
-<div id="ref-ggplot2" class="csl-entry">
-Wickham, Hadley. 2016. <em>Ggplot2: Elegant Graphics for Data Analysis</em>. Springer-Verlag New York. <a href="http://ggplot2.org">http://ggplot2.org</a>.
-</div>
-</div>
-</div>
+
 
 <p>Copyright &copy; 2023 STEM Writing Project at Wake Forest University. All rights reserved.</p>
 
