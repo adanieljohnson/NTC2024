@@ -1,0 +1,44 @@
+---
+title: "Example Cases Archive"
+bibliography: library.bib
+biblio-style: apalike
+---
+
+```{r, child="_setup.Rmd"}
+```
+#### \   
+
+These cases illustrate the range of formats and the variety of skills that students can build using cases. Examples are classified by:
+
+* Format: 
+    + single versus multiple sessions
+    + continuous versus interrupted
+* Time required
+* Focus or Key activities:
+    + Content and conceptual knowledge
+        - General knowledge
+        - Discipline-specific knowledge
+    + Thinking skills
+        - Critical thinking
+        - Applied thinking
+        - Synthetic thinking
+    + Practical skills
+        - Experimental design
+        - Interpreting data, summarizing observations
+        - Reporting in a notebook
+    + Affective and metacognitive skills
+        - Self-reflection
+        - Strategic thinking
+        - Process assessment
+* Level: 
+    + Introductory (100-level courses)
+    + Intermediate (200- and 300-level courses)
+    + Advanced (senior undergraduates, graduate students)
+* Availability and current state of instructor notes: 
+    + Yes. Case comes with a complete set of instructor’s notes
+    + Partial. Case notes are incomplete or still in progress
+    + None. Only the case scenario and student materials are available.
+
+While some of the cases have aged out as the relevant fields have moved on, they remain useful for illustrating case structures and organization strategies.
+
+#### \   

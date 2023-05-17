@@ -61,6 +61,9 @@ navbar:
     - text: "Overview"
       icon: fa-search
       href: curated_overview.html
+    - text: "Case Archive"
+      icon: fa-folder-open
+      href: archive_overview.html
     - text: "Curated Resources 1"
       icon: fa-folder-open
       href: curated_1.html

@@ -1,3 +1,16 @@
+
+@article{Tunaz2004InsectGR,
+  title={Insect Growth Regulators for Insect Pest Control},
+  author={Hasan Tunaz},
+  journal={Turkish Journal of Agriculture and Forestry},
+  year={2004},
+  volume={28},
+  pages={377-387}
+}
+
+
+
+
 @Manual{baseR,
     title = {R: A Language and Environment for Statistical Computing},
     author = {{R Core Team}},
@@ -15,3 +28,340 @@
     isbn = {978-3-319-24277-4},
     url = {http://ggplot2.org},
 }
+
+# Formats for References
+
+## Articles
+
+### Article
+
+An article from a journal, magazine, newspaper, or periodical.
+
+```
+@article{CitekeyArticle,
+  author   = "P. J. Cohen",
+  title    = "The independence of the continuum hypothesis",
+  journal  = "Proceedings of the National Academy of Sciences",
+  year     = 1963,
+  volume   = "50",
+  number   = "6",
+  pages    = "1143--1148",
+}
+```
+
+### Proceedings
+
+A conference proceeding.
+
+```
+@proceedings{CitekeyProceedings,
+  editor    = "Susan Stepney and Sergey Verlan",
+  title     = "Proceedings of the 17th International Conference on Computation and Natural Computation, Fontainebleau, France",
+  series    = "Lecture Notes in Computer Science",
+  volume    = "10867",
+  publisher = "Springer",
+  address   = "Cham, Switzerland",
+  year      = 2018
+}
+```
+
+### Inproceedings
+
+A paper that has been published in conference proceedings. The usage of conference and inproceedings is the same. The conference entry was included for Scribe compatibility.
+
+```
+@inproceedings{CitekeyInproceedings,
+  author    = "Holleis, Paul and Wagner, Matthias and Koolwaaij, Johan",
+  title     = "Studying mobile context-aware social services in the wild",
+  booktitle = "Proc. of the 6th Nordic Conf. on Human-Computer Interaction",
+  series    = "NordiCHI",
+  year      = 2010,
+  pages     = "207--216",
+  publisher = "ACM",
+  address   = "New York, NY"
+}
+```
+
+### Techreport
+
+An institutionally published report such as a report from a school, a government organization, an organization, or a company. This entry type is also frequently used for white papers and working papers.
+
+```
+@techreport{CitekeyTechreport,
+  title       = "{W}asatch {S}olar {P}roject Final Report",
+  author      = "Bennett, Vicki and Bowman, Kate and Wright, Sarah",
+  institution = "Salt Lake City Corporation",
+  address     = "Salt Lake City, UT",
+  number      = "DOE-SLC-6903-1",
+  year        = 2018,
+  month       = sep
+}
+```
+
+## Books
+
+### Book
+
+A full book where the publisher is clearly identifiable.
+
+```
+@book{CitekeyBook,
+  author    = "Leonard Susskind and George Hrabovsky",
+  title     = "Classical mechanics: the theoretical minimum",
+  publisher = "Penguin Random House",
+  address   = "New York, NY",
+  year      = 2014
+}
+```
+
+### Inbook (Book chapter)
+
+A section, such as a chapter, or a page range within a book.
+
+```
+@inbook{CitekeyInbook,
+  author    = "Lisa A. Urry and Michael L. Cain and Steven A. Wasserman and Peter V. Minorsky and Jane B. Reece",
+  title     = "Photosynthesis",
+  booktitle = "Campbell Biology",
+  year      = "2016",
+  publisher = "Pearson",
+  address   = "New York, NY",
+  pages     = "187--221"
+}
+```
+
+### Booklet
+
+A printed work that is bound, but does not have a clearly identifiable publisher or supporting institution.
+
+```
+@booklet{CitekeyBooklet,
+  title        = "Canoe tours in {S}weden",
+  author       = "Maria Swetla", 
+  howpublished = "Distributed at the Stockholm Tourist Office",
+  month        = jul,
+  year         = 2015
+}
+```
+
+### Incollection
+
+A titled section of a book. Such as a short story within the larger collection of short stories that make up the book.
+
+```
+@incollection{CitekeyIncollection,
+  author    = "Shapiro, Howard M.",
+  editor    = "Hawley, Teresa S. and Hawley, Robert G.",
+  title     = "Flow Cytometry: The Glass Is Half Full",
+  booktitle = "Flow Cytometry Protocols",
+  year      = 2018,
+  publisher = "Springer",
+  address   = "New York, NY",
+  pages     = "1--10"
+}
+```
+
+### Examples
+
+```
+@Book{bookdown2016,
+  title = {bookdown: Authoring Books and Technical Documents with {R} Markdown},
+  author = {Yihui Xie},
+  publisher = {Chapman and Hall/CRC},
+  address = {Boca Raton, Florida},
+  year = {2016},
+  note = {ISBN 978-1138700109},
+  url = {https://bookdown.org/yihui/bookdown},
+}
+@Book{knitr2015,
+  title = {Dynamic Documents with {R} and knitr},
+  author = {Yihui Xie},
+  publisher = {Chapman and Hall/CRC},
+  address = {Boca Raton, Florida},
+  year = {2015},
+  edition = {2nd},
+  note = {ISBN 978-1498716963},
+  url = {https://yihui.name/knitr/},
+}
+@InCollection{knitr2014,
+  booktitle = {Implementing Reproducible Computational Research},
+  editor = {Victoria Stodden and Friedrich Leisch and Roger D. Peng},
+  title = {knitr: A Comprehensive Tool for Reproducible Research in {R}},
+  author = {Yihui Xie},
+  publisher = {Chapman and Hall/CRC},
+  year = {2014},
+  note = {ISBN 978-1466561595},
+  url = {http://www.crcpress.com/product/isbn/9781466561595},
+}
+@Book{rmarkdown2018,
+  title = {R Markdown: The Definitive Guide},
+  author = {Yihui Xie and J.J. Allaire and Garrett Grolemund},
+  publisher = {Chapman and Hall/CRC},
+  address = {Boca Raton, Florida},
+  year = {2018},
+  note = {ISBN 9781138359338},
+  url = {https://bookdown.org/yihui/rmarkdown},
+}
+@Book{rmarkdown2020,
+  title = {R Markdown Cookbook},
+  author = {Yihui Xie and Christophe Dervieux and Emily Riederer},
+  publisher = {Chapman and Hall/CRC},
+  address = {Boca Raton, Florida},
+  year = {2020},
+  note = {ISBN 9780367563837},
+  url = {https://bookdown.org/yihui/rmarkdown-cookbook},
+}
+```
+
+
+## Manual
+
+A technical manual for a machine software such as would come with a purchase to explain operation to the new owner.
+
+```
+@manual{CitekeyManual,
+  title        = "{R}: A Language and Environment for Statistical Computing",
+  author       = "{R Core Team}",
+  organization = "R Foundation for Statistical Computing",
+  address      = "Vienna, Austria",
+  year         = 2018
+}
+```
+
+### Examples
+
+```
+@Manual{R-base,
+  title = {R: A Language and Environment for Statistical Computing},
+  author = {{R Core Team}},
+  organization = {R Foundation for Statistical Computing},
+  address = {Vienna, Austria},
+  year = {2019},
+  url = {https://www.R-project.org/},
+}
+@Manual{R-bookdown,
+  title = {bookdown: Authoring Books and Technical Documents with R Markdown},
+  author = {Yihui Xie},
+  year = {2021},
+  note = {R package version 0.22},
+  url = {https://CRAN.R-project.org/package=bookdown},
+}
+@Manual{R-knitr,
+  title = {knitr: A General-Purpose Package for Dynamic Report Generation in R},
+  author = {Yihui Xie},
+  year = {2019},
+  note = {R package version 1.26},
+  url = {https://CRAN.R-project.org/package=knitr},
+}
+@Manual{R-rmarkdown,
+  title = {rmarkdown: Dynamic Documents for R},
+  author = {JJ Allaire and Yihui Xie and Jonathan McPherson and Javier Luraschi and Kevin Ushey and Aron Atkins and Hadley Wickham and Joe Cheng and Winston Chang and Richard Iannone},
+  year = {2021},
+  note = {R package version 2.9},
+  url = {https://CRAN.R-project.org/package=rmarkdown},
+}
+```
+
+
+## Scholarly Works
+
+### Mastersthesis
+
+A thesis written for the Master’s level degree.
+
+```
+@mastersthesis{CitekeyMastersthesis,
+  author  = "Jian Tang",
+  title   = "Spin structure of the nucleon in the asymptotic limit",
+  school  = "Massachusetts Institute of Technology",
+  year    = 1996,
+  address = "Cambridge, MA",
+  month   = sep
+}
+```
+
+### Phdthesis
+
+A thesis written for the PhD level degree.
+
+```
+@phdthesis{CitekeyPhdthesis,
+  author  = "Rempel, Robert Charles",
+  title   = "Relaxation Effects for Coupled Nuclear Spins",
+  school  = "Stanford University",
+  address = "Stanford, CA",
+  year    = 1956,
+  month   = jun
+}
+```
+
+## Miscellaneous
+
+### Misc
+
+Used if none of the other entry types quite match the source. Frequently used to cite web pages, but can be anything from lecture slides to personal notes.
+
+```
+@misc{CitekeyMisc,
+  title        = "Pluto: The 'Other' Red Planet",
+  author       = "{NASA}",
+  howpublished = "\url{https://www.nasa.gov/nh/pluto-the-other-red-planet}",
+  year         = 2015,
+  note         = "Accessed: 2018-12-06"
+}
+```
+
+### Unpublished
+
+A document that has not been officially published such as a paper draft or manuscript in preparation.
+
+```
+@unpublished{CitekeyUnpublished,
+  author = "Mohinder Suresh",
+  title  = "Evolution: a revised theory",
+  year   = 2006
+}
+```
+
+## Annotation
+
+### Standard field types
+
+* address: address of the publisher or the institution
+* annote: an annotation
+* author: list of authors of the work
+* booktitle: title of the book
+* chapter: number of a chapter in a book
+* edition: edition number of a book
+* editor: list of editors of a book
+* howpublished: a publication notice for unusual publications
+* institution: name of the institution that published and/or sponsored the report
+* journal: name of the journal or magazine the article was published in
+* month: the month during the work was published
+* note: notes about the reference
+* number: number of the report or the issue number for a journal article
+* organization: name of the institution that organized or sponsored the conference or that published the manual
+* pages: page numbers or a page range
+* publisher: name of the publisher
+* school: name of the university or degree awarding institution
+* series: name of the series or set of books
+* title: title of the work
+* type: type of the technical report or thesis
+* volume: volume number
+* year: year the work was published
+
+
+### Non-standard field types
+
+These fields are frequently used, but are not supported by all BibTeX styles.
+
+* doi: DOI number (like 10.1038/d41586-018-07848-2)
+* issn: ISSN number (like 1476-4687)
+* isbn: ISBN number (like 9780201896831)
+* url: URL of a web page
+
+## To Learn More
+
+http://www.bibtex.org/Format/
+
+https://www.bibtex.com/

@@ -1,0 +1,9 @@
+---
+title: "Curated Resources 2"
+bibliography: library.bib
+biblio-style: apalike
+---
+
+```{r, child="_setup.Rmd"}
+```
+

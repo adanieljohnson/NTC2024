@@ -6,3 +6,18 @@ biblio-style: apalike
 
 ```{r, child="_setup.Rmd"}
 ```
+#### \   
+
+## Workshop Handouts
+
+* [Item](link)
+* [Item](link)
+* [Item](link)
+* [Item](link)
+
+## Workshop Handouts
+
+* [Item](link)
+* [Item](link)
+* [Item](link)
+* [Item](link)
