@@ -72,9 +72,9 @@ navbar:
     href: curated_resources.html
     menu: 
     - text: "Overview"
-      icon: fa-search
+      icon: fa-folder-open
       href: curated_overview.html
-    - text: "Case Archive"
+    - text: "Example Cases"
       icon: fa-folder-open
       href: archive_overview.html
     - text: "Toolbox"
