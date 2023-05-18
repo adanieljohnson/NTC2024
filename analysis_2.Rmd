@@ -1,5 +1,5 @@
 ---
-title: "Assessment 2"
+title: "Analysis 2"
 bibliography: library.bib
 biblio-style: apalike
 ---

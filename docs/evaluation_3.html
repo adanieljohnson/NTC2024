@@ -9,10 +9,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
-<meta name="author" content="Dan Johnson" />
 
 
-<title>Converting Markdown Files</title>
+<title>Evaluation 3</title>
 
 <script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
@@ -544,105 +543,12 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Converting Markdown Files</h1>
-<h4 class="author">Dan Johnson</h4>
-<h4 class="date">5/16/2023</h4>
+<h1 class="title toc-ignore">Evaluation 3</h1>
 
 </div>
 
 
-<div id="why-i-use-markdown-to-write-publish-and-share-resources" class="section level2">
-<h2>Why I Use Markdown to Write, Publish, and Share Resources</h2>
-<p><strong>Markdown</strong> is a simple formatting language for authoring reusable documents. The philosophy behind Markdown is “write text once, output it many ways.” It takes ~20 minutes to learn, and does not require any technical knowledge beyond basic word processing skills. With it authors can quickly convert one text file into more than 30 different formats for web pages, printed handouts, and slide presentations. Groups of Markdown files can be combined to create interactive online books. For more on using Markdown and the R Markdown variant see <a href="http://rmarkdown.rstudio.com">http://rmarkdown.rstudio.com</a>.</p>
-</div>
-<div id="downloading-files" class="section level2">
-<h2>Downloading Files</h2>
-<p>Workshop files are stored in a GitHub repository. Originally created for sharing and managing code projects, GitHub has become a popular low cost online file sharing service for the STEM community.</p>
-<p>To download a full repository of files:</p>
-<center>
-<div class="figure">
-<img src="https://github.com/adanieljohnson/bio_case_writing/blob/main/siteimages/File_access.png?raw=true" alt="" />
-<p class="caption">Downloading a gitHub archive</p>
-</div>
-</center>
-<p><br></p>
-<ol style="list-style-type: decimal">
-<li>Go to the URL for the repository. The <a href="https://github.com/adanieljohnson/bio_case_writing">URL for this presentation</a> is <code>https://github.com/adanieljohnson/bio_case_writing</code>.</li>
-<li>Look in the upper right of the main file list for a Code button (orange arrow in screenshot above). Click to show options to download the full repository. A ZIP file archive (blue arrow) is the safest choice.</li>
-<li>Download a copy of the full set of files to your local computer. Click on the ZIP archive to open it.</li>
-</ol>
-<p>To download a single file:</p>
-<center>
-<div class="figure">
-<img src="https://github.com/adanieljohnson/bio_case_writing/blob/main/siteimages/Single_file.png?raw=true" alt="" />
-<p class="caption">Downloading a single GitHub file</p>
-</div>
-</center>
-<p><br></p>
-<ol style="list-style-type: decimal">
-<li>Click on the file desired in the list of files (orange arrow above). A window will open showing the file’s contents.</li>
-<li>In the upper right of the window is a Download icon (arrow pointing down; blue arrow in figure above). Click the icon to download the file.</li>
-<li>All computers come with a plain text reader pre-installed, so when you double-click on the downloaded file, it should open.</li>
-</ol>
-</div>
-<div id="converting-files" class="section level2">
-<h2>Converting Files</h2>
-<p>In 2022 we gave a training workshop on using Markdown and document conversion at the Association for Biology Lab Education (ABLE) annual meeting.</p>
-<ol style="list-style-type: decimal">
-<li>The full <a href="https://github.com/adanieljohnson/ABLE_2022_Workshop">ABLE Workshop repository</a> describes additional tools and resources in more detail.</li>
-<li><a href="">Download a copy of the quick guide to file conversion</a> here.</li>
-</ol>
-<div id="converting-text.rmd-to-text.md" class="section level3">
-<h3>Converting Text.Rmd to Text.md</h3>
-<p>The .Rmd file extension is used by R Studio to mark R-compatible Markdown files. To change between R-specific and generic Markdown, use your computer to rename the file with the .md extension instead. Ignore any warnings about file incompatibility.</p>
-</div>
-<div id="converting-text.md-to-text.html" class="section level3">
-<h3>Converting Text.md to Text.html</h3>
-<p>Many plain text editors can convert Markdown to very compact plain HTML. Look for a menu item named Markup or Preview.</p>
-<p>If your text editor does not have this feature, this web-based Pandoc converter works well.</p>
-<ol style="list-style-type: decimal">
-<li>Go to the <strong>MD to HTML Converter</strong> at <a href="https://ashkanph.github.io/md-to-html/">https://ashkanph.github.io/md-to-html/.</a></li>
-<li>In the upper right corner, use <strong>Browse</strong> to find your local GitHub folder, and choose one of your recently edited .md files.</li>
-<li>The .md file will be converted to .html and displayed.</li>
-<li>Use the <strong>Save as HTML</strong> button to write a copy of the file in .html back to your local GitHub folder. 5 If you open the version of the file with the .html extension in your plain text editor, you will see it has been rewritten using HTML markup. You can copy and paste the HTML code into most LMS pages. Alternatively, you can share the file itself with others; they can open it in any web browser.</li>
-</ol>
-<p>There are many free MD to HTML converters available. Two very good ones are <a href="https://markdown-it.github.io/"><strong>Markdown It</strong></a> and <a href="https://markdowntohtml.com/"><strong>Markdown to HTML</strong></a>; both have very user-friendly interfaces, but require copy/pasting the text rather than choosing a file.</p>
-</div>
-<div id="converting-text.md-to-text.docx" class="section level3">
-<h3>Converting Text.md to Text.docx</h3>
-<p>R Studio is very good for converting both .Rmd and .md files to well-formatted Word documents.</p>
-<center>
-<div class="figure">
-<img src="https://github.com/adanieljohnson/ABLE_2022_Workshop/blob/main/images/Preview-Word-ABLE.png?raw=true" alt="" />
-<p class="caption">Converting Markdown to Word format</p>
-</div>
-</center>
-<p><br></p>
-<ol style="list-style-type: decimal">
-<li>Open R Studio, and open a file you downloaded or created.</li>
-<li>At the top of the screen, open the pulldown menu next to <strong>Preview</strong> and choose <strong>Word document</strong>.</li>
-<li>R Studio will generate a pre-formatted MS Word .docx file, then save it to the same directory where the .md file is located.</li>
-<li>Click on the .docx file to open it in MS Word.</li>
-</ol>
-<p>MS Word files are formatted using a standard template. To reformat documents a different way, create a template file with the header and text styles that you want. When newly generated documents are copy/pasted into the template file, the text will change to the styles you set.</p>
-<p><br></p>
-</div>
-<div id="advanced-tool-pandoc" class="section level3">
-<h3>Advanced Tool: Pandoc</h3>
-<p><a href="https://pandoc.org/index.html"><strong>Pandoc</strong></a>, a “universal document converter.” It can read many different document file types, then convert one format to another. Some file types get fussy when converted, but Markdown and Pandoc play very nicely together.</p>
-<p>Pandoc is the engine underneath R Studio and most other file converters. It runs from your computer’s command line, but is easy to install and use. If you would like to try it yourself:</p>
-<ol style="list-style-type: decimal">
-<li>Go to the <a href="https://pandoc.org/installing.html">Pandoc installation page</a> for instructions to download and install it on your computer.</li>
-<li>Open a terminal window.</li>
-<li>Use the following Terminal commands to convert from .md to .html or .docx format. The commands are the same, except for the extension on the output file.</li>
-</ol>
-<!-- -->
-<pre><code>    pandoc -s /filepath/Input_Filename.md  -o /filepath/Output_Filename.html
 
-    pandoc -s /filepath/Input_Filename.md  -o /filepath/Output_Filename.docx</code></pre>
-<p>You are not limited to HTML and DOCX files. Pandoc can convert Markdown files into slides, bibliographic formats, Jupyter notebooks, CSV data files, and multiple wiki languages too. <a href="https://pandoc.org/">This list</a> shows all of the possible conversions you can do.</p>
-</div>
-</div>
 
 <p>Copyright &copy; 2023 STEM Writing Project at Wake Forest University. All rights reserved.</p>
 

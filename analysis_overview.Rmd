@@ -1,0 +1,24 @@
+---
+title: "Analysis Overview"
+author: "Dan Johnson"
+date: "5/16/2023"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+The case resources are organized around a modified ADDIE model of curriculum design (U. Florida, 1975), with elements of backwards design (Wiggins & McTighe, 1999) that allow for more flexible, iterative design and revision.
+
+# Goals of Analysis
+
+The first step in the ADDIE process is to determine what specific goals you hope to accomplish in a course. More specifically:
+
+1. __General learning outcomes.__ What principles, theories, concepts, skills, or content knowledge should students achieve as a result of learning activities?
+2. __Specific benchmarks or performance goals.__ What will students be able to do to indicate they have accomplished these endpoints?
+3. __Sequencing.__ Which benchmarks do students need to reach first, before they can achieve others?
+
+# Analysis Resources
+
+Text

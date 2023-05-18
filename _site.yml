@@ -6,6 +6,19 @@ navbar:
   - text: "Workshop Resources"
     icon: fa-exchange
     href: workshop_resources.html
+  - text: "Analysis"
+    icon: fa-eye
+    href: analysis_overview.html
+    menu: 
+    - text: "Overview"
+      icon: fa-eye
+      href: analysis_overview.html
+    - text: "Analysis 1"
+      icon: fa-eye
+      href: analysis_1.html
+    - text: "Analysis Resources"
+      icon: fa-eye
+      href: analysis_2.html
   - text: "Design and Development"
     icon: fa-pencil
     href: design_and_development.html
@@ -19,7 +32,7 @@ navbar:
     - text: "Design 2"
       icon: fa-pencil
       href: design_2.html
-    - text: "Design 3"
+    - text: "Design Resources"
       icon: fa-pencil
       href: design_3.html
   - text: "Implementation"
@@ -35,26 +48,26 @@ navbar:
     - text: "Implementation 2"
       icon: fa-users
       href: implementation_2.html
-    - text: "Implementation 3"
+    - text: "Implementation Resources"
       icon: fa-users
       href: implementation_3.html
-  - text: "Assessment"
+  - text: "Evaluation"
     icon: fa-crosshairs
-    href: assessment.html
+    href: evaluation.html
     menu: 
     - text: "Overview"
       icon: fa-crosshairs
-      href: assessment_overview.html
-    - text: "Assessment 1"
+      href: evaluation_overview.html
+    - text: "Evaluation 1"
       icon: fa-crosshairs
-      href: assessment_1.html
-    - text: "Assessment 2"
+      href: evaluation_1.html
+    - text: "Evaluation 2"
       icon: fa-crosshairs
-      href: assessment_2.html
-    - text: "Assessment 3"
+      href: evaluation_2.html
+    - text: "Evaluation Resources"
       icon: fa-crosshairs
-      href: assessment_3.html
-  - text: "Curated Resources"
+      href: evaluation_3.html
+  - text: "Shared Resources"
     icon: fa-folder-open
     href: curated_resources.html
     menu: 
@@ -64,18 +77,18 @@ navbar:
     - text: "Case Archive"
       icon: fa-folder-open
       href: archive_overview.html
-    - text: "Curated Resources 1"
+    - text: "Toolbox"
+      icon: fa-wrench
+      href: toolbox.html
+    - text: "Shared Resources 1"
       icon: fa-folder-open
       href: curated_1.html
-    - text: "Curated Resources 2"
+    - text: "Shared Resources 2"
       icon: fa-folder-open
-      href: curated_2
-    - text: "Curated Resources 3"
+      href: curated_2.html
+    - text: "Shared Resources 3"
       icon: fa-folder-open
       href: curated_3.html
-  - text: "Toolbox"
-    icon: fa-wrench
-    href: toolbox.html
 output:
   html_document:
     theme: spacelab

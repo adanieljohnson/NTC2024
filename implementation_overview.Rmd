@@ -6,31 +6,18 @@ biblio-style: apalike
 
 ```{r, child="_setup.Rmd"}
 ```
+The case resources are organized around a modified ADDIE model of curriculum design (U. Florida, 1975), with elements of backwards design (Wiggins & McTighe, 1999) that allow for more flexible, iterative design and revision.
 
-We can use this space to go ahead and write out any exercise or prework that you would like have done prior to coming.
+# Goals for Implementation
 
-## Session 1
+This stage of the ADDIE process is similar to Design and Development in that there will always be some ongoing redesign as the studen population changes, course goals change, or other course elements become more or less important. 
 
-This plot is generated using ggplot2 [@ggplot2].
+One strategy for making implementation less of a burden is to design your cases with the assumption that you will need to modify them in the future. Think about cases as modules within the course, and design them so they can be edited or removed without unduly impacting other cases. 
 
-```{r}
-library(ggplot2)
-ggplot(iris, aes(Species, Sepal.Length))+
-  geom_col()
+Specific questions to ask related to implementation include:
 
-```
+1. How will the case and related materials be delivered?
+2. How will students complete and submit case work and assessments?
+3. How will the instructor provide support for the case in progress? Adjust or modify the case? Guide students through the process?
 
-
-## Session 2
-
-## Session 3
-
-## Session 4
-
-## Session 5
-
-## Session 6
-
-## Session 7
-
-## Session 8
+# Resources for Supporting Implementation

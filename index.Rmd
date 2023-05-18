@@ -20,7 +20,11 @@ Some curated resources are not available to view on the web site, and require do
 
 #### \   
 
-# Why Use Cases?
+# Why Use Cases in Your Teaching Practice?
+
+STEM courses serve increasing numbers of students who lack prior experiences with self-regulated learning, who need additional time to process information, or are neurodiverse in other ways. Instructors must keep high-performing students engaged while also giving developing learners appropriate challenges that allow and encourage them to take charge of their own learning. 
+
+Discussion cases are a reliable way of engaging and training students who have a wide range of skills in a single course. Discussion cases can simultaneously reinforce prior concepts, introduce new concepts, and provide opportunities for students to practice both problem-solving and self-regulated learning. A well-designed case can be repurposed to meet differing student needs and course formats. 
 
 Cases help students engage with topics more deeply and develop richer insights. They are not just for developing higher order thinking though; I use them in content-dense courses to strengthen students’ basic content knowledge too.
 

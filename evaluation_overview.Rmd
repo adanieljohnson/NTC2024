@@ -1,0 +1,25 @@
+---
+title: "Evaluation"
+bibliography: library.bib
+biblio-style: apalike
+---
+
+```{r, child="_setup.Rmd"}
+```
+
+The case resources are organized around a modified ADDIE model of curriculum design (U. Florida, 1975), with elements of backwards design (Wiggins & McTighe, 1999) that allow for more flexible, iterative design and revision.
+
+# Goals for Evaluation
+
+The final step in the ADDIE process is to determine whether your students have achieved the specific goals established in the __Analysis__ stage. In practice, evaluation is not separate, but rather a continuous, ongoing process. At some point though, you as the instructor need to compile the data collected and decide which learning outcomes students are meeting adequately vs. which outcomes they are not meeting. The answer to the latter question will inform the process of revision, which goes back to the design and develop phase of the process.
+
+Specific questions to ask include:
+
+1. Item
+2. Item
+3. Item
+
+# Resources for Supporting Evaluation
+
+
+

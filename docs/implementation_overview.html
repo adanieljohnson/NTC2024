@@ -63,28 +63,6 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-/* for pandoc --citeproc since 2.11 */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}
-</style>
 
 <link rel="stylesheet" href="css/style.css" type="text/css" />
 
@@ -356,6 +334,38 @@ div.tocify {
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-eye"></span>
+     
+    Analysis
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="analysis_overview.html">
+        <span class="fa fa-eye"></span>
+         
+        Overview
+      </a>
+    </li>
+    <li>
+      <a href="analysis_1.html">
+        <span class="fa fa-eye"></span>
+         
+        Analysis 1
+      </a>
+    </li>
+    <li>
+      <a href="analysis_2.html">
+        <span class="fa fa-eye"></span>
+         
+        Analysis Resources
+      </a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
     <span class="fa fa-pencil"></span>
      
     Design and Development
@@ -388,7 +398,7 @@ div.tocify {
       <a href="design_3.html">
         <span class="fa fa-pencil"></span>
          
-        Design 3
+        Design Resources
       </a>
     </li>
   </ul>
@@ -427,7 +437,7 @@ div.tocify {
       <a href="implementation_3.html">
         <span class="fa fa-users"></span>
          
-        Implementation 3
+        Implementation Resources
       </a>
     </li>
   </ul>
@@ -436,37 +446,37 @@ div.tocify {
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
     <span class="fa fa-crosshairs"></span>
      
-    Assessment
+    Evaluation
      
     <span class="caret"></span>
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="assessment_overview.html">
+      <a href="evaluation_overview.html">
         <span class="fa fa-crosshairs"></span>
          
         Overview
       </a>
     </li>
     <li>
-      <a href="assessment_1.html">
+      <a href="evaluation_1.html">
         <span class="fa fa-crosshairs"></span>
          
-        Assessment 1
+        Evaluation 1
       </a>
     </li>
     <li>
-      <a href="assessment_2.html">
+      <a href="evaluation_2.html">
         <span class="fa fa-crosshairs"></span>
          
-        Assessment 2
+        Evaluation 2
       </a>
     </li>
     <li>
-      <a href="assessment_3.html">
+      <a href="evaluation_3.html">
         <span class="fa fa-crosshairs"></span>
          
-        Assessment 3
+        Evaluation Resources
       </a>
     </li>
   </ul>
@@ -475,7 +485,7 @@ div.tocify {
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
     <span class="fa fa-folder-open"></span>
      
-    Curated Resources
+    Shared Resources
      
     <span class="caret"></span>
   </a>
@@ -495,34 +505,34 @@ div.tocify {
       </a>
     </li>
     <li>
-      <a href="curated_1.html">
-        <span class="fa fa-folder-open"></span>
+      <a href="toolbox.html">
+        <span class="fa fa-wrench"></span>
          
-        Curated Resources 1
+        Toolbox
       </a>
     </li>
     <li>
-      <a href="curated_2">
+      <a href="curated_1.html">
         <span class="fa fa-folder-open"></span>
          
-        Curated Resources 2
+        Shared Resources 1
+      </a>
+    </li>
+    <li>
+      <a href="curated_2.html">
+        <span class="fa fa-folder-open"></span>
+         
+        Shared Resources 2
       </a>
     </li>
     <li>
       <a href="curated_3.html">
         <span class="fa fa-folder-open"></span>
          
-        Curated Resources 3
+        Shared Resources 3
       </a>
     </li>
   </ul>
-</li>
-<li>
-  <a href="toolbox.html">
-    <span class="fa fa-wrench"></span>
-     
-    Toolbox
-  </a>
 </li>
       </ul>
     </div><!--/.nav-collapse -->
@@ -538,40 +548,20 @@ div.tocify {
 </div>
 
 
-<p>We can use this space to go ahead and write out any exercise or prework that you would like have done prior to coming.</p>
-<div id="session-1" class="section level2">
-<h2>Session 1</h2>
-<p>This plot is generated using ggplot2 <span class="citation">(Wickham 2016)</span>.</p>
-<pre class="r"><code>library(ggplot2)
-ggplot(iris, aes(Species, Sepal.Length))+
-  geom_col()</code></pre>
-<p><img src="implementation_overview_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<p>The case resources are organized around a modified ADDIE model of curriculum design (U. Florida, 1975), with elements of backwards design (Wiggins &amp; McTighe, 1999) that allow for more flexible, iterative design and revision.</p>
+<div id="goals-for-implementation" class="section level1">
+<h1>Goals for Implementation</h1>
+<p>This stage of the ADDIE process is similar to Design and Development in that there will always be some ongoing redesign as the studen population changes, course goals change, or other course elements become more or less important.</p>
+<p>One strategy for making implementation less of a burden is to design your cases with the assumption that you will need to modify them in the future. Think about cases as modules within the course, and design them so they can be edited or removed without unduly impacting other cases.</p>
+<p>Specific questions to ask related to implementation include:</p>
+<ol style="list-style-type: decimal">
+<li>How will the case and related materials be delivered?</li>
+<li>How will students complete and submit case work and assessments?</li>
+<li>How will the instructor provide support for the case in progress? Adjust or modify the case? Guide students through the process?</li>
+</ol>
 </div>
-<div id="session-2" class="section level2">
-<h2>Session 2</h2>
-</div>
-<div id="session-3" class="section level2">
-<h2>Session 3</h2>
-</div>
-<div id="session-4" class="section level2">
-<h2>Session 4</h2>
-</div>
-<div id="session-5" class="section level2">
-<h2>Session 5</h2>
-</div>
-<div id="session-6" class="section level2">
-<h2>Session 6</h2>
-</div>
-<div id="session-7" class="section level2">
-<h2>Session 7</h2>
-</div>
-<div id="session-8" class="section level2 unnumbered">
-<h2 class="unnumbered">Session 8</h2>
-<div id="refs" class="references csl-bib-body hanging-indent">
-<div id="ref-ggplot2" class="csl-entry">
-Wickham, Hadley. 2016. <em>Ggplot2: Elegant Graphics for Data Analysis</em>. Springer-Verlag New York. <a href="http://ggplot2.org">http://ggplot2.org</a>.
-</div>
-</div>
+<div id="resources-for-supporting-implementation" class="section level1">
+<h1>Resources for Supporting Implementation</h1>
 </div>
 
 <p>Copyright &copy; 2023 STEM Writing Project at Wake Forest University. All rights reserved.</p>

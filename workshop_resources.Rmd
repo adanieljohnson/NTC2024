@@ -10,7 +10,7 @@ biblio-style: apalike
 
 ## Workshop Handouts
 
-* [Item](link)
+* [Main handout](link)
 * [Item](link)
 * [Item](link)
 * [Item](link)
