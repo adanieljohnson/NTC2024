@@ -1,0 +1,35 @@
+---
+title: "Brainstorming"
+bibliography: library.bib
+biblio-style: apalike
+---
+
+```{r, child="_setup.Rmd"}
+```
+#### \   
+
+# Ideas For New Neuroscience Teaching Cases
+
+What would be good topics for new cases in neuroscience? 
+
+* 
+* 
+* 
+* 
+* 
+
+#### \   
+
+# Ideas For New Case Formats
+
+## One-Three-Nine Branched Cases
+
+Cases do not follow one format or formula. A format that several case authors have talked about is __branching cases__, where students can follow different paths through the case. Aside from writing so much content, there is the practical challenge of managing the students' workflow.
+
+__Twine__ is an open-source application for writing interactive, non-linear stories. Twine creates single-page HTML documents that contain multiple sub-windows. Windows are connected together so viewers can read one window, then pick where they want to go next. Twine would be an ideal platform for writing branched cases. 
+
+[Learn more about Twine here.](https://twinery.org/)
+
+#### \   
+
+<hr>

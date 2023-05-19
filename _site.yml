@@ -6,7 +6,10 @@ navbar:
   - text: "Workshop Resources"
     icon: fa-download
     href: workshop_resources.html
-  - text: "Case Resources"
+  - text: "Brainstorming"
+    icon: fa-folder-open
+    href: brainstorming.html
+  - text: "Case Writing"
     icon: fa-folder-open
     href: curated_overview.html
     menu: 
@@ -41,18 +44,15 @@ navbar:
     icon: fa-share-alt
     href: archive_overview.html
     menu: 
-    - text: "Example Cases"
+    - text: "Example Cases Summary"
       icon: fa-share-alt
       href: archive_overview.html
-    - text: "Example Cases 2"
+    - text: "Example Cases 1"
       icon: fa-share-alt
       href: archive_1.html
     - text: "Example Cases 2"
       icon: fa-share-alt
       href: archive_2.html
-    - text: "Miscellaneous Resources"
-      icon: fa-wrench
-      href: curated_1.html
   - text: "Other Tools"
     icon: fa-wrench
     href: toolbox.html

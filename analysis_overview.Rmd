@@ -1,5 +1,5 @@
 ---
-title: "Analysis Overview"
+title: "Analysis"
 author: "Dan Johnson"
 date: "5/16/2023"
 output: html_document
@@ -20,9 +20,33 @@ The first step in the ADDIE process is to determine what specific goals you hope
 
 #### \   
 
+## Consider Affect and Motivation
+
+Personally I think the ADDIE model does not consider how much student affect and motivation influence learning. To compensate I use John Keller’s __ARCS Model of Motivation__ as part of analysis. (Elements that cases are particularly good for are marked with <sup>C</sup>.)
+
+* __Attention.__ Are learners interested in taking in concepts/ideas being taught? Courses increase attention by including: 
+    + Perceptual arousal: using surprise or uncertainty<sup>C</sup>
+    + Inquiry arousal: offering challenging questions, problems to answer/solve
+    + Variability: using varied resources, teaching methods
+* __Relevance.__ Do course activities use language, examples learners are familiar with? Relevance can come from:
+    + Matching goal-orientation and motives of learners and the course
+    + Providing examples and raising questions that are familiar to the learners.<sup>C</sup>
+* __Confidence.__ Do students have a reasonable expectation of predicting and achieving success? This comes from: 
+    + Giving them tools to monitor progress towards course goals. These can be:
+        - Static tools like the syllabus, grading policy, rubrics or
+        - Situational tools like an estimated time to complete tasks. 
+    + Positive reinforcement for personal achievements.
+    + Timely, relevant feedback.<sup>C</sup>
+* __Satisfaction.__ Do students get a sense of achievement, or gain praise from peers or a higher-up when they complete course activities? 
+    + Feedback and reinforcement are important elements.<sup>C</sup>
+    + Learners who are positively reinforced are more motivated to continue learning. 
+
+#### \   
+
 # Resources for Supporting Analysis
 
 
 
 #### \   
+
 <hr>

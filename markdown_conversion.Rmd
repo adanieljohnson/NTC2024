@@ -9,7 +9,6 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-
 ## Why I Use Markdown to Write, Publish, and Share Resources
 
 **Markdown** is a simple formatting language for authoring reusable documents. The philosophy behind Markdown is "write text once, output it many ways." It takes \~20 minutes to learn, and does not require any technical knowledge beyond basic word processing skills. With it authors can quickly convert one text file into more than 30 different formats for web pages, printed handouts, and slide presentations. Groups of Markdown files can be combined to create interactive online books. For more on using Markdown and the R Markdown variant see [http://rmarkdown.rstudio.com](http://rmarkdown.rstudio.com).

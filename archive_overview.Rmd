@@ -8,20 +8,19 @@ biblio-style: apalike
 ```
 #### \   
 
-Cases in the collection illustrate the range of formats and the variety of skills that students can build using cases. While some cases have aged out as the relevant fields have progressed, the cases still are useful for illustrating case structures and organization strategies.
+This collection illustrates the range of case formats and variety of skills that students can build using cases. Some cases have aged out as the main topics have progressed, but they still are good for illustrating case structures and organization strategies.
 
+#### \   
 
-Insert table here.
-
-|Name|Format|Time Reqd|Focus or <br>Key Activities|Level|Instructor<br>Notes|Comments|
+|Name|Format|Time Req'd|Focus or <br>Key Activities|Level|Instructor<br>Notes|Comments|
 |:---|:---:|:---:|:----------------|:---:|:---:|:-----------------|
 ||||| Nonmajors|||
 ||||| Nonmajors|||
-| [Effects of feeding flossflower on Manduca development](link)| Continuous;<br>1 session| 30-60 min.| * Designing experiments<br>* Interpreting results<br>* Summarizing observations<br>* Reporting in a notebook| Introductory| Yes| A good case for teaching TAs how to manage group discussions, introduce lab notebooks.|
+| [Effects of feeding flossflower on Manduca development](downloads/Case-Effects_of_feeding_flossflower_on_Manduca_development.docx)| Continuous;<br>1 session| 30-60 min.| * Designing experiments<br>* Interpreting results<br>* Summarizing observations<br>* Reporting in a notebook| Introductory| Yes| A good case for teaching TAs how to manage group discussions, introduce lab notebooks.|
 ||||| Introductory|||
-| [Mapping a<br>Promoter](LINK)| Interrupted;<br>2 sessions| 2-3 hrs| * Understanding how transcription factors bind to promoters<br>* Interpreting data from multiple sources <br>* Supporting a conclusion with experimental evidence| Intermediate| Yes| I have extensively annotated this case to show how it was constructed, and how each piece contributes to the  learning goals.|
-| [FDA Clinical<br>Trial Approvals](LINK)| Interrupted;<br>2 sessions| 3 hrs| * Learning how clinical trials are conducted<br>* Evaluating proposals  based on set criteria| Intermediate<br>to advanced| Yes| This case is a model for demonstrating the clinical trial or research proposal review process in any field.|
-| [Team Work](LINK)| Interrupted;<br>2 sessions| 3 hrs| * Responsible conduct of research<br>* Professional ethical decision-making<br>* External data collection<br>* Self-reflection<br>* Debriefing a group| Advanced| Yes| Example of how a classic problem-based learning case is formatted.|
+| [Mapping a Promoter](downloads/Case-Mapping_a_Promoter.docx)| Interrupted;<br>2 sessions| 2-3 hrs| * Understanding how transcription factors bind to promoters<br>* Interpreting data from multiple sources <br>* Supporting a conclusion with experimental evidence| Intermediate| Yes| I have extensively annotated this case to show how it was constructed, and how each piece contributes to the  learning goals.|
+| [FDA Clinical Trial Approvals](downloads/Case-FDA_Clinical_Trial_Approvals.docx)| Interrupted;<br>2 sessions| 3 hrs| * Learning how clinical trials are conducted<br>* Evaluating proposals  based on set criteria| Intermediate<br>to advanced| Yes| This case is a model for demonstrating the clinical trial or research proposal review process in any field.|
+| [Team Work](downloads/Case-Team_Work.docx)| Interrupted;<br>2 sessions| 3 hrs| * Responsible conduct of research<br>* Professional ethical decision-making<br>* External data collection<br>* Self-reflection<br>* Debriefing a group| Advanced| Yes| Example of how a classic problem-based learning case is formatted.|
 
 
 ### Legend 
