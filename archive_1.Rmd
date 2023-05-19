@@ -1,5 +1,5 @@
 ---
-title: "Design and Development 1"
+title: "Case Archive 1"
 author: "Dan Johnson"
 date: "5/16/2023"
 output: html_document
@@ -8,8 +8,6 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-
-## R Markdown
 #### \   
 
 # Goals of 

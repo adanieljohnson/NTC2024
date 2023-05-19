@@ -6,5 +6,28 @@ biblio-style: apalike
 
 ```{r, child="_setup.Rmd"}
 ```
+#### \   
+
+# Goals for Design and Development
+
+Data from the __Analysis__ step tells you what students already know and can do (or not.) The next steps are to:
+
+1. Design a strategy that moves students move beyond their current state of understanding or skills level, and
+2. Develop the resources that you and the students will need to enact the strategy you have designed.
+
+The design and development phase is when instructors have the most opportunities to be creative. Yet in practice, many fall back on well-worn instructional methods like exams, research papers, and in-class presentations. Do not be afraid to try out alternative strategies for:
+
+* Engaging students' thinking about novel problems;
+* Giving students opportunities to practice desired skills;
+* Gauging student mastery or ability to use the skills required by the course design.
+
+#### \   
+
+# Resources for Supporting Case-Based Course Design and Development
+
+
+
+#### \   
+<hr>
 
 

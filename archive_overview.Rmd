@@ -8,37 +8,42 @@ biblio-style: apalike
 ```
 #### \   
 
-These cases illustrate the range of formats and the variety of skills that students can build using cases. Examples are classified by:
+Cases in the collection illustrate the range of formats and the variety of skills that students can build using cases. While some cases have aged out as the relevant fields have progressed, the cases still are useful for illustrating case structures and organization strategies.
 
-* Format: 
-    + single versus multiple sessions
-    + continuous versus interrupted
-* Time required
-* Focus or Key activities:
-    + Content and conceptual knowledge
-        - General knowledge
-        - Discipline-specific knowledge
-    + Thinking skills
-        - Critical thinking
-        - Applied thinking
-        - Synthetic thinking
-    + Practical skills
-        - Experimental design
-        - Interpreting data, summarizing observations
-        - Reporting in a notebook
-    + Affective and metacognitive skills
-        - Self-reflection
-        - Strategic thinking
-        - Process assessment
-* Level: 
+
+Insert table here.
+
+|Name|Format|Time Reqd|Focus or <br>Key Activities|Level|Instructor<br>Notes|Comments|
+|:---|:---:|:---:|:----------------|:---:|:---:|:-----------------|
+||||| Nonmajors|||
+||||| Nonmajors|||
+| [Effects of feeding flossflower on Manduca development](link)| Continuous;<br>1 session| 30-60 min.| * Designing experiments<br>* Interpreting results<br>* Summarizing observations<br>* Reporting in a notebook| Introductory| Yes| A good case for teaching TAs how to manage group discussions, introduce lab notebooks.|
+||||| Introductory|||
+| [Mapping a<br>Promoter](LINK)| Interrupted;<br>2 sessions| 2-3 hrs| * Understanding how transcription factors bind to promoters<br>* Interpreting data from multiple sources <br>* Supporting a conclusion with experimental evidence| Intermediate| Yes| I have extensively annotated this case to show how it was constructed, and how each piece contributes to the  learning goals.|
+| [FDA Clinical<br>Trial Approvals](LINK)| Interrupted;<br>2 sessions| 3 hrs| * Learning how clinical trials are conducted<br>* Evaluating proposals  based on set criteria| Intermediate<br>to advanced| Yes| This case is a model for demonstrating the clinical trial or research proposal review process in any field.|
+| [Team Work](LINK)| Interrupted;<br>2 sessions| 3 hrs| * Responsible conduct of research<br>* Professional ethical decision-making<br>* External data collection<br>* Self-reflection<br>* Debriefing a group| Advanced| Yes| Example of how a classic problem-based learning case is formatted.|
+
+
+### Legend 
+
+Cases are classified by:
+
+* __Format__: single- or multiple sessions case; continuous or interrupted? 
+* __Time required__ (excluding outside reading, research)
+* __Focus or key activities__ build:
+    + Content and conceptual knowledge, general knowledge, and/or discipline-specific knowledge
+    + Critical, applied, or synthetic thinking skills
+    + Practical skills: experimental design, interpreting data, summarizing observations, reporting preliminary work
+    + Affective and metacognitive skills: self- reflection, strategic thinking, team or process assessment
+* __Level of difficulty__: 
+    + Nonmajors
     + Introductory (100-level courses)
-    + Intermediate (200- and 300-level courses)
+    + Intermediate (200-/300-level courses)
     + Advanced (senior undergraduates, graduate students)
-* Availability and current state of instructor notes: 
-    + Yes. Case comes with a complete set of instructor’s notes
-    + Partial. Case notes are incomplete or still in progress
-    + None. Only the case scenario and student materials are available.
+* __Instructor notes__: 
+    + Yes. Case includes full instructor’s notes
+    + Partial. Case notes are incomplete
+    + None. Only the case scenario and student materials are available currently
 
-While some cases have aged out as their relevant fields have moved on, they remain useful for illustrating case structures and organization strategies.
 
 #### \   

@@ -1,0 +1,299 @@
+---
+title: "BibTex Formats"
+author: "Dan Johnson"
+date: "5/18/2023"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+#### \   
+
+# Using BibTex for Citations
+
+Cited references for this web site are managed using BibTex. Sources are added to the __library.bib__ file in the formats shown below. To learn more about using BibTex go to either:
+
+* [https://www.bibtex.com/](https://www.bibtex.com/)
+* [http://www.bibtex.org/Format/](http://www.bibtex.org/Format/)
+
+#### \   
+
+## Embedding References
+
+Each entry in the __library.bib__ file follows a specific format. Each entry also has a unique name that usually is on the first line (which begins with the \@ symbol), immediately after the opening curly brace.
+
+The example below is the entry for an article referenced by one of the example cases.
+
+```
+@article{Tunaz2004InsectGR,
+  title={Insect Growth Regulators for Insect Pest Control},
+  author={Hasan Tunaz},
+  journal={Turkish Journal of Agriculture and Forestry},
+  year={2004},
+  volume={28},
+  pages={377-387}
+}
+```
+
+The unique name for this source is ```Tunaz2004InsectGR```. It can be called to any page in the web site by embedding the name in correct format.
+
+The in-text command used to cite references stored in .bib file is ```\cite{citation_key}```. Replace “citation_key” with the unique identifier associated with the entry in the .bib file. Put the command where the in-text citation should appear. This one command adds the in-text citation, AND appends the reference list to the bottom of the web page.
+
+For example, to cite the Tunaz, 2004 article shown above, put in the command:
+
+```
+\cite{Tunaz2004InsectGR}
+```
+
+#### \   
+
+# Standard Formats for BibTex References
+
+## Articles
+
+### Article
+
+An article from a journal, magazine, newspaper, or periodical.
+
+```
+@article{CitekeyArticle,
+  author   = "P. J. Cohen",
+  title    = "The independence of the continuum hypothesis",
+  journal  = "Proceedings of the National Academy of Sciences",
+  year     = 1963,
+  volume   = "50",
+  number   = "6",
+  pages    = "1143--1148",
+}
+```
+
+### Proceedings
+
+A conference proceeding.
+
+```
+@proceedings{CitekeyProceedings,
+  editor    = "Susan Stepney and Sergey Verlan",
+  title     = "Proceedings of the 17th International Conference on Computation and Natural Computation, Fontainebleau, France",
+  series    = "Lecture Notes in Computer Science",
+  volume    = "10867",
+  publisher = "Springer",
+  address   = "Cham, Switzerland",
+  year      = 2018
+}
+```
+
+### Inproceedings
+
+A paper that has been published in conference proceedings. The usage of conference and inproceedings is the same. The conference entry was included for Scribe compatibility.
+
+```
+@inproceedings{CitekeyInproceedings,
+  author    = "Holleis, Paul and Wagner, Matthias and Koolwaaij, Johan",
+  title     = "Studying mobile context-aware social services in the wild",
+  booktitle = "Proc. of the 6th Nordic Conf. on Human-Computer Interaction",
+  series    = "NordiCHI",
+  year      = 2010,
+  pages     = "207--216",
+  publisher = "ACM",
+  address   = "New York, NY"
+}
+```
+
+### Techreport
+
+An institutionally published report such as a report from a school, a government organization, an organization, or a company. This entry type is also frequently used for white papers and working papers.
+
+```
+@techreport{CitekeyTechreport,
+  title       = "{W}asatch {S}olar {P}roject Final Report",
+  author      = "Bennett, Vicki and Bowman, Kate and Wright, Sarah",
+  institution = "Salt Lake City Corporation",
+  address     = "Salt Lake City, UT",
+  number      = "DOE-SLC-6903-1",
+  year        = 2018,
+  month       = sep
+}
+```
+
+## Books
+
+### Book
+
+A full book where the publisher is clearly identifiable.
+
+```
+@book{CitekeyBook,
+  author    = "Leonard Susskind and George Hrabovsky",
+  title     = "Classical mechanics: the theoretical minimum",
+  publisher = "Penguin Random House",
+  address   = "New York, NY",
+  year      = 2014
+}
+```
+
+### Inbook (Book chapter)
+
+A section, such as a chapter, or a page range within a book.
+
+```
+@inbook{CitekeyInbook,
+  author    = "Lisa A. Urry and Michael L. Cain and Steven A. Wasserman and Peter V. Minorsky and Jane B. Reece",
+  title     = "Photosynthesis",
+  booktitle = "Campbell Biology",
+  year      = "2016",
+  publisher = "Pearson",
+  address   = "New York, NY",
+  pages     = "187--221"
+}
+```
+
+### Booklet
+
+A printed work that is bound, but does not have a clearly identifiable publisher or supporting institution.
+
+```
+@booklet{CitekeyBooklet,
+  title        = "Canoe tours in {S}weden",
+  author       = "Maria Swetla", 
+  howpublished = "Distributed at the Stockholm Tourist Office",
+  month        = jul,
+  year         = 2015
+}
+```
+
+### Incollection
+
+A titled section of a book. Such as a short story within the larger collection of short stories that make up the book.
+
+```
+@incollection{CitekeyIncollection,
+  author    = "Shapiro, Howard M.",
+  editor    = "Hawley, Teresa S. and Hawley, Robert G.",
+  title     = "Flow Cytometry: The Glass Is Half Full",
+  booktitle = "Flow Cytometry Protocols",
+  year      = 2018,
+  publisher = "Springer",
+  address   = "New York, NY",
+  pages     = "1--10"
+}
+```
+
+## Manual
+
+A technical manual for a machine software such as would come with a purchase to explain operation to the new owner.
+
+```
+@manual{CitekeyManual,
+  title        = "{R}: A Language and Environment for Statistical Computing",
+  author       = "{R Core Team}",
+  organization = "R Foundation for Statistical Computing",
+  address      = "Vienna, Austria",
+  year         = 2018
+}
+```
+
+## Scholarly Works
+
+### Mastersthesis
+
+A thesis written for the Master’s level degree.
+
+```
+@mastersthesis{CitekeyMastersthesis,
+  author  = "Jian Tang",
+  title   = "Spin structure of the nucleon in the asymptotic limit",
+  school  = "Massachusetts Institute of Technology",
+  year    = 1996,
+  address = "Cambridge, MA",
+  month   = sep
+}
+```
+
+### Phdthesis
+
+A thesis written for the PhD level degree.
+
+```
+@phdthesis{CitekeyPhdthesis,
+  author  = "Rempel, Robert Charles",
+  title   = "Relaxation Effects for Coupled Nuclear Spins",
+  school  = "Stanford University",
+  address = "Stanford, CA",
+  year    = 1956,
+  month   = jun
+}
+```
+
+## Miscellaneous
+
+Used if none of the other entry types quite match the source. Frequently used to cite web pages, but can be anything from lecture slides to personal notes.
+
+```
+@misc{CitekeyMisc,
+  title        = "Pluto: The 'Other' Red Planet",
+  author       = "{NASA}",
+  howpublished = "\url{https://www.nasa.gov/nh/pluto-the-other-red-planet}",
+  year         = 2015,
+  note         = "Accessed: 2018-12-06"
+}
+```
+
+### Unpublished
+
+A document that has not been officially published such as a paper draft or manuscript in preparation.
+
+```
+@unpublished{CitekeyUnpublished,
+  author = "Mohinder Suresh",
+  title  = "Evolution: a revised theory",
+  year   = 2006
+}
+```
+#### \   
+
+## BibTex Field Types
+
+### Standard Field Types
+
+These are the fields that are used most often to create a citation.
+
+* address: address of the publisher or the institution
+* annote: an annotation
+* author: list of authors of the work
+* booktitle: title of the book
+* chapter: number of a chapter in a book
+* edition: edition number of a book
+* editor: list of editors of a book
+* howpublished: a publication notice for unusual publications
+* institution: name of the institution that published and/or sponsored the report
+* journal: name of the journal or magazine the article was published in
+* month: the month during the work was published
+* note: notes about the reference
+* number: number of the report or the issue number for a journal article
+* organization: name of the institution that organized or sponsored the conference or that published the manual
+* pages: page numbers or a page range
+* publisher: name of the publisher
+* school: name of the university or degree awarding institution
+* series: name of the series or set of books
+* title: title of the work
+* type: type of the technical report or thesis
+* volume: volume number
+* year: year the work was published
+
+#### \   
+
+### Non-standard field types
+
+These fields are frequently used, but are not supported by all BibTeX styles.
+
+* doi: DOI number (like 10.1038/d41586-018-07848-2)
+* issn: ISSN number (like 1476-4687)
+* isbn: ISBN number (like 9780201896831)
+* url: URL of a web page
+
+#### \   
+
+<hr>
+

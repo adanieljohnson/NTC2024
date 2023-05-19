@@ -4,91 +4,68 @@ navbar:
   title: "2023 NTC Case Presentation"
   right:
   - text: "Workshop Resources"
-    icon: fa-exchange
+    icon: fa-download
     href: workshop_resources.html
-  - text: "Analysis"
-    icon: fa-eye
-    href: analysis_overview.html
+  - text: "Case Resources"
+    icon: fa-folder-open
+    href: curated_overview.html
     menu: 
-    - text: "Overview"
+    - text: "Overview of ADDIE Model"
+      icon: fa-folder-open
+      href: curated_overview.html
+    - text: "Analysis"
       icon: fa-eye
       href: analysis_overview.html
-    - text: "Analysis 1"
-      icon: fa-eye
-      href: analysis_1.html
     - text: "Analysis Resources"
       icon: fa-eye
       href: analysis_2.html
-  - text: "Design and Development"
-    icon: fa-pencil
-    href: design_and_development.html
-    menu: 
-    - text: "Overview"
+    - text: "Design and Development"
       icon: fa-pencil
       href: design_overview.html
-    - text: "Design 1"
-      icon: fa-pencil
-      href: design_1.html
-    - text: "Design 2"
-      icon: fa-pencil
-      href: design_2.html
     - text: "Design Resources"
       icon: fa-pencil
       href: design_3.html
-  - text: "Implementation"
-    icon: fa-users
-    href: implementation.html
-    menu: 
-    - text: "Overview"
+    - text: "Implementation"
       icon: fa-users
       href: implementation_overview.html
-    - text: "Implementation 1"
-      icon: fa-users
-      href: implementation_1.html
-    - text: "Implementation 2"
-      icon: fa-users
-      href: implementation_2.html
     - text: "Implementation Resources"
       icon: fa-users
       href: implementation_3.html
-  - text: "Evaluation"
-    icon: fa-crosshairs
-    href: evaluation.html
-    menu: 
-    - text: "Overview"
+    - text: "Evaluation"
       icon: fa-crosshairs
       href: evaluation_overview.html
-    - text: "Evaluation 1"
-      icon: fa-crosshairs
-      href: evaluation_1.html
-    - text: "Evaluation 2"
-      icon: fa-crosshairs
-      href: evaluation_2.html
     - text: "Evaluation Resources"
       icon: fa-crosshairs
       href: evaluation_3.html
-  - text: "Shared Resources"
-    icon: fa-folder-open
-    href: curated_resources.html
+  - text: "Example Cases"
+    icon: fa-share-alt
+    href: archive_overview.html
     menu: 
-    - text: "Overview"
-      icon: fa-folder-open
-      href: curated_overview.html
     - text: "Example Cases"
-      icon: fa-folder-open
+      icon: fa-share-alt
       href: archive_overview.html
+    - text: "Example Cases 2"
+      icon: fa-share-alt
+      href: archive_1.html
+    - text: "Example Cases 2"
+      icon: fa-share-alt
+      href: archive_2.html
+    - text: "Miscellaneous Resources"
+      icon: fa-wrench
+      href: curated_1.html
+  - text: "Other Tools"
+    icon: fa-wrench
+    href: toolbox.html
+    menu: 
     - text: "Toolbox"
       icon: fa-wrench
       href: toolbox.html
-    - text: "Shared Resources 1"
-      icon: fa-folder-open
+    - text: "BibTex Reference Formats"
+      icon: fa-wrench
+      href: bibtex_formats.html
+    - text: "Miscellaneous Resources"
+      icon: fa-wrench
       href: curated_1.html
-    - text: "Shared Resources 2"
-      icon: fa-folder-open
-      href: curated_2.html
-    - text: "Shared Resources 3"
-      icon: fa-folder-open
-      href: curated_3.html
 output:
   html_document:
     theme: spacelab

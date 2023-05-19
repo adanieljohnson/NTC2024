@@ -6,8 +6,40 @@ biblio-style: apalike
 
 ```{r, child="_setup.Rmd"}
 ```
+#### \   
 
-Links to tools pages.
+There are many tools available at low or no cost that make case writing and use easier. Those that do not fit under one of the ADDIE categories or have especially broad uses are cataloged here.
 
-My 1-page guide to Markdown.
+#### \   
 
+### Markdown
+
+#### \   
+
+### Item
+
+#### \   
+
+### Item
+
+#### \   
+
+### Item
+
+#### \   
+
+### Item
+
+#### \   
+
+### Item
+
+#### \  
+
+### Item
+
+#### \   
+
+### Markdown
+
+#### \   

@@ -9,9 +9,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
+<meta name="author" content="Dan Johnson" />
 
 
-<title>Design and Development</title>
+<title>BibTex Formats</title>
 
 <script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
@@ -486,7 +487,9 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Design and Development</h1>
+<h1 class="title toc-ignore">BibTex Formats</h1>
+<h4 class="author">Dan Johnson</h4>
+<h4 class="date">5/18/2023</h4>
 
 </div>
 
@@ -494,28 +497,255 @@ div.tocify {
 <div id="section" class="section level4">
 <h4> </h4>
 </div>
-<div id="goals-for-design-and-development" class="section level1">
-<h1>Goals for Design and Development</h1>
-<p>Data from the <strong>Analysis</strong> step tells you what students already know and can do (or not.) The next steps are to:</p>
-<ol style="list-style-type: decimal">
-<li>Design a strategy that moves students move beyond their current state of understanding or skills level, and</li>
-<li>Develop the resources that you and the students will need to enact the strategy you have designed.</li>
-</ol>
-<p>The design and development phase is when instructors have the most opportunities to be creative. Yet in practice, many fall back on well-worn instructional methods like exams, research papers, and in-class presentations. Do not be afraid to try out alternative strategies for:</p>
+<div id="using-bibtex-for-citations" class="section level1">
+<h1>Using BibTex for Citations</h1>
+<p>Cited references for this web site are managed using BibTex. Sources are added to the <strong>library.bib</strong> file in the formats shown below. To learn more about using BibTex go to either:</p>
 <ul>
-<li>Engaging students’ thinking about novel problems;</li>
-<li>Giving students opportunities to practice desired skills;</li>
-<li>Gauging student mastery or ability to use the skills required by the course design.</li>
+<li><a href="https://www.bibtex.com/">https://www.bibtex.com/</a></li>
+<li><a href="http://www.bibtex.org/Format/">http://www.bibtex.org/Format/</a></li>
 </ul>
 <div id="section-1" class="section level4">
 <h4> </h4>
 </div>
-</div>
-<div id="resources-for-supporting-case-based-course-design-and-development" class="section level1">
-<h1>Resources for Supporting Case-Based Course Design and Development</h1>
+<div id="embedding-references" class="section level2">
+<h2>Embedding References</h2>
+<p>Each entry in the <strong>library.bib</strong> file follows a specific format. Each entry also has a unique name that usually is on the first line (which begins with the @ symbol), immediately after the opening curly brace.</p>
+<p>The example below is the entry for an article referenced by one of the example cases.</p>
+<pre><code>@article{Tunaz2004InsectGR,
+  title={Insect Growth Regulators for Insect Pest Control},
+  author={Hasan Tunaz},
+  journal={Turkish Journal of Agriculture and Forestry},
+  year={2004},
+  volume={28},
+  pages={377-387}
+}</code></pre>
+<p>The unique name for this source is <code>Tunaz2004InsectGR</code>. It can be called to any page in the web site by embedding the name in correct format.</p>
+<p>The in-text command used to cite references stored in .bib file is <code>\cite{citation_key}</code>. Replace “citation_key” with the unique identifier associated with the entry in the .bib file. Put the command where the in-text citation should appear. This one command adds the in-text citation, AND appends the reference list to the bottom of the web page.</p>
+<p>For example, to cite the Tunaz, 2004 article shown above, put in the command:</p>
+<pre><code>\cite{Tunaz2004InsectGR}</code></pre>
 <div id="section-2" class="section level4">
 <h4> </h4>
+</div>
+</div>
+</div>
+<div id="standard-formats-for-bibtex-references" class="section level1">
+<h1>Standard Formats for BibTex References</h1>
+<div id="articles" class="section level2">
+<h2>Articles</h2>
+<div id="article" class="section level3">
+<h3>Article</h3>
+<p>An article from a journal, magazine, newspaper, or periodical.</p>
+<pre><code>@article{CitekeyArticle,
+  author   = &quot;P. J. Cohen&quot;,
+  title    = &quot;The independence of the continuum hypothesis&quot;,
+  journal  = &quot;Proceedings of the National Academy of Sciences&quot;,
+  year     = 1963,
+  volume   = &quot;50&quot;,
+  number   = &quot;6&quot;,
+  pages    = &quot;1143--1148&quot;,
+}</code></pre>
+</div>
+<div id="proceedings" class="section level3">
+<h3>Proceedings</h3>
+<p>A conference proceeding.</p>
+<pre><code>@proceedings{CitekeyProceedings,
+  editor    = &quot;Susan Stepney and Sergey Verlan&quot;,
+  title     = &quot;Proceedings of the 17th International Conference on Computation and Natural Computation, Fontainebleau, France&quot;,
+  series    = &quot;Lecture Notes in Computer Science&quot;,
+  volume    = &quot;10867&quot;,
+  publisher = &quot;Springer&quot;,
+  address   = &quot;Cham, Switzerland&quot;,
+  year      = 2018
+}</code></pre>
+</div>
+<div id="inproceedings" class="section level3">
+<h3>Inproceedings</h3>
+<p>A paper that has been published in conference proceedings. The usage of conference and inproceedings is the same. The conference entry was included for Scribe compatibility.</p>
+<pre><code>@inproceedings{CitekeyInproceedings,
+  author    = &quot;Holleis, Paul and Wagner, Matthias and Koolwaaij, Johan&quot;,
+  title     = &quot;Studying mobile context-aware social services in the wild&quot;,
+  booktitle = &quot;Proc. of the 6th Nordic Conf. on Human-Computer Interaction&quot;,
+  series    = &quot;NordiCHI&quot;,
+  year      = 2010,
+  pages     = &quot;207--216&quot;,
+  publisher = &quot;ACM&quot;,
+  address   = &quot;New York, NY&quot;
+}</code></pre>
+</div>
+<div id="techreport" class="section level3">
+<h3>Techreport</h3>
+<p>An institutionally published report such as a report from a school, a government organization, an organization, or a company. This entry type is also frequently used for white papers and working papers.</p>
+<pre><code>@techreport{CitekeyTechreport,
+  title       = &quot;{W}asatch {S}olar {P}roject Final Report&quot;,
+  author      = &quot;Bennett, Vicki and Bowman, Kate and Wright, Sarah&quot;,
+  institution = &quot;Salt Lake City Corporation&quot;,
+  address     = &quot;Salt Lake City, UT&quot;,
+  number      = &quot;DOE-SLC-6903-1&quot;,
+  year        = 2018,
+  month       = sep
+}</code></pre>
+</div>
+</div>
+<div id="books" class="section level2">
+<h2>Books</h2>
+<div id="book" class="section level3">
+<h3>Book</h3>
+<p>A full book where the publisher is clearly identifiable.</p>
+<pre><code>@book{CitekeyBook,
+  author    = &quot;Leonard Susskind and George Hrabovsky&quot;,
+  title     = &quot;Classical mechanics: the theoretical minimum&quot;,
+  publisher = &quot;Penguin Random House&quot;,
+  address   = &quot;New York, NY&quot;,
+  year      = 2014
+}</code></pre>
+</div>
+<div id="inbook-book-chapter" class="section level3">
+<h3>Inbook (Book chapter)</h3>
+<p>A section, such as a chapter, or a page range within a book.</p>
+<pre><code>@inbook{CitekeyInbook,
+  author    = &quot;Lisa A. Urry and Michael L. Cain and Steven A. Wasserman and Peter V. Minorsky and Jane B. Reece&quot;,
+  title     = &quot;Photosynthesis&quot;,
+  booktitle = &quot;Campbell Biology&quot;,
+  year      = &quot;2016&quot;,
+  publisher = &quot;Pearson&quot;,
+  address   = &quot;New York, NY&quot;,
+  pages     = &quot;187--221&quot;
+}</code></pre>
+</div>
+<div id="booklet" class="section level3">
+<h3>Booklet</h3>
+<p>A printed work that is bound, but does not have a clearly identifiable publisher or supporting institution.</p>
+<pre><code>@booklet{CitekeyBooklet,
+  title        = &quot;Canoe tours in {S}weden&quot;,
+  author       = &quot;Maria Swetla&quot;, 
+  howpublished = &quot;Distributed at the Stockholm Tourist Office&quot;,
+  month        = jul,
+  year         = 2015
+}</code></pre>
+</div>
+<div id="incollection" class="section level3">
+<h3>Incollection</h3>
+<p>A titled section of a book. Such as a short story within the larger collection of short stories that make up the book.</p>
+<pre><code>@incollection{CitekeyIncollection,
+  author    = &quot;Shapiro, Howard M.&quot;,
+  editor    = &quot;Hawley, Teresa S. and Hawley, Robert G.&quot;,
+  title     = &quot;Flow Cytometry: The Glass Is Half Full&quot;,
+  booktitle = &quot;Flow Cytometry Protocols&quot;,
+  year      = 2018,
+  publisher = &quot;Springer&quot;,
+  address   = &quot;New York, NY&quot;,
+  pages     = &quot;1--10&quot;
+}</code></pre>
+</div>
+</div>
+<div id="manual" class="section level2">
+<h2>Manual</h2>
+<p>A technical manual for a machine software such as would come with a purchase to explain operation to the new owner.</p>
+<pre><code>@manual{CitekeyManual,
+  title        = &quot;{R}: A Language and Environment for Statistical Computing&quot;,
+  author       = &quot;{R Core Team}&quot;,
+  organization = &quot;R Foundation for Statistical Computing&quot;,
+  address      = &quot;Vienna, Austria&quot;,
+  year         = 2018
+}</code></pre>
+</div>
+<div id="scholarly-works" class="section level2">
+<h2>Scholarly Works</h2>
+<div id="mastersthesis" class="section level3">
+<h3>Mastersthesis</h3>
+<p>A thesis written for the Master’s level degree.</p>
+<pre><code>@mastersthesis{CitekeyMastersthesis,
+  author  = &quot;Jian Tang&quot;,
+  title   = &quot;Spin structure of the nucleon in the asymptotic limit&quot;,
+  school  = &quot;Massachusetts Institute of Technology&quot;,
+  year    = 1996,
+  address = &quot;Cambridge, MA&quot;,
+  month   = sep
+}</code></pre>
+</div>
+<div id="phdthesis" class="section level3">
+<h3>Phdthesis</h3>
+<p>A thesis written for the PhD level degree.</p>
+<pre><code>@phdthesis{CitekeyPhdthesis,
+  author  = &quot;Rempel, Robert Charles&quot;,
+  title   = &quot;Relaxation Effects for Coupled Nuclear Spins&quot;,
+  school  = &quot;Stanford University&quot;,
+  address = &quot;Stanford, CA&quot;,
+  year    = 1956,
+  month   = jun
+}</code></pre>
+</div>
+</div>
+<div id="miscellaneous" class="section level2">
+<h2>Miscellaneous</h2>
+<p>Used if none of the other entry types quite match the source. Frequently used to cite web pages, but can be anything from lecture slides to personal notes.</p>
+<pre><code>@misc{CitekeyMisc,
+  title        = &quot;Pluto: The &#39;Other&#39; Red Planet&quot;,
+  author       = &quot;{NASA}&quot;,
+  howpublished = &quot;\url{https://www.nasa.gov/nh/pluto-the-other-red-planet}&quot;,
+  year         = 2015,
+  note         = &quot;Accessed: 2018-12-06&quot;
+}</code></pre>
+<div id="unpublished" class="section level3">
+<h3>Unpublished</h3>
+<p>A document that has not been officially published such as a paper draft or manuscript in preparation.</p>
+<pre><code>@unpublished{CitekeyUnpublished,
+  author = &quot;Mohinder Suresh&quot;,
+  title  = &quot;Evolution: a revised theory&quot;,
+  year   = 2006
+}</code></pre>
+<div id="section-3" class="section level4">
+<h4> </h4>
+</div>
+</div>
+</div>
+<div id="bibtex-field-types" class="section level2">
+<h2>BibTex Field Types</h2>
+<div id="standard-field-types" class="section level3">
+<h3>Standard Field Types</h3>
+<p>These are the fields that are used most often to create a citation.</p>
+<ul>
+<li>address: address of the publisher or the institution</li>
+<li>annote: an annotation</li>
+<li>author: list of authors of the work</li>
+<li>booktitle: title of the book</li>
+<li>chapter: number of a chapter in a book</li>
+<li>edition: edition number of a book</li>
+<li>editor: list of editors of a book</li>
+<li>howpublished: a publication notice for unusual publications</li>
+<li>institution: name of the institution that published and/or sponsored the report</li>
+<li>journal: name of the journal or magazine the article was published in</li>
+<li>month: the month during the work was published</li>
+<li>note: notes about the reference</li>
+<li>number: number of the report or the issue number for a journal article</li>
+<li>organization: name of the institution that organized or sponsored the conference or that published the manual</li>
+<li>pages: page numbers or a page range</li>
+<li>publisher: name of the publisher</li>
+<li>school: name of the university or degree awarding institution</li>
+<li>series: name of the series or set of books</li>
+<li>title: title of the work</li>
+<li>type: type of the technical report or thesis</li>
+<li>volume: volume number</li>
+<li>year: year the work was published</li>
+</ul>
+<div id="section-4" class="section level4">
+<h4> </h4>
+</div>
+</div>
+<div id="non-standard-field-types" class="section level3">
+<h3>Non-standard field types</h3>
+<p>These fields are frequently used, but are not supported by all BibTeX styles.</p>
+<ul>
+<li>doi: DOI number (like 10.1038/d41586-018-07848-2)</li>
+<li>issn: ISSN number (like 1476-4687)</li>
+<li>isbn: ISBN number (like 9780201896831)</li>
+<li>url: URL of a web page</li>
+</ul>
+<div id="section-5" class="section level4">
+<h4> </h4>
 <hr>
+</div>
+</div>
 </div>
 </div>
 

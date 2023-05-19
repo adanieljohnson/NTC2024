@@ -10,14 +10,19 @@ biblio-style: apalike
 
 ## Workshop Handouts
 
-* [Main handout](link)
+* [Main workshop handout](link)
 * [Item](link)
 * [Item](link)
 * [Item](link)
 
-## Workshop Handouts
+#### \   
+
+## Supplemental Materials
 
 * [Item](link)
 * [Item](link)
 * [Item](link)
 * [Item](link)
+
+#### \   
+<hr>

@@ -6,7 +6,18 @@ biblio-style: apalike
 
 ```{r, child="_setup.Rmd"}
 ```
+#### \   
 
-# Example Cases Archive
+# Goals of 
 
-## Data Analysis
+
+1. __What are the general learning outcomes?__ What principles, others?
+
+#### \   
+
+# Resources for Supporting Analysis
+
+
+
+#### \   
+<hr>

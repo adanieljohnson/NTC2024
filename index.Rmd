@@ -8,15 +8,7 @@ title: "Supplemental Resources for 2023 Neuroscience Teaching Conference"
 
 # Welcome
 
-You found the support site for Dr. A. Daniel Johnson's presentation, _“Using problem-oriented discussion cases to develop neuroscience students’ thinking skills,”_ at the 2023 Neuroscience Teaching Conference.
-
-#### \   
-
-# What Is Here?
-
-I've posted materials from the presentation, supporting resources, and additional curated tools for case writing and implementation. The main navigation menu is at the top of each page. Headers within the current page are listed in the menu on the left side. 
-
-Some curated resources are not available to view on the web site, and require downloading. Reusable documents are written in Markdown format; [directions for converting Markdown to other formats are available here.](markdown_conversion)
+You found the support site for Dr. A. Daniel Johnson's presentation, _“Using problem-oriented discussion cases to develop neuroscience students’ thinking skills,”_ at the __2023 Neuroscience Teaching Conference__.
 
 #### \   
 
@@ -24,11 +16,17 @@ Some curated resources are not available to view on the web site, and require do
 
 STEM courses serve increasing numbers of students who lack prior experiences with self-regulated learning, who need additional time to process information, or are neurodiverse in other ways. Instructors must keep high-performing students engaged while also giving developing learners appropriate challenges that allow and encourage them to take charge of their own learning. 
 
-Discussion cases are a reliable way of engaging and training students who have a wide range of skills in a single course. Discussion cases can simultaneously reinforce prior concepts, introduce new concepts, and provide opportunities for students to practice both problem-solving and self-regulated learning. A well-designed case can be repurposed to meet differing student needs and course formats. 
+Discussion cases are a reliable way of engaging and training students who have a wide range of skills in a single course. Cases help students engage with topics more deeply and develop richer insights. They provide opportunities for students to practice both problem-solving and self-regulated learning. They are not just for developing higher order thinking though; I use them in content-dense courses to strengthen students’ basic content knowledge, introduce new concepts, reinforce prior concepts through application.
 
-Cases help students engage with topics more deeply and develop richer insights. They are not just for developing higher order thinking though; I use them in content-dense courses to strengthen students’ basic content knowledge too.
+Cases are not a panacea though; they have benefits and drawbacks. A well-designed case can be repurposed to meet differing student needs and course formats, but require considerable development work behind the scenes. In case-oriented courses the instructor gives up their role as expert source and becomes a thinking coach instead. They must think quickly and be ready to adapt new cases in real time.
 
-Cases are not a panacea though; they have benefits and drawbacks. Case-oriented courses require considerable development work behind the scenes. The instructor gives up their role as expert source and becomes a thinking coach instead. They must think quickly and be ready to adapt new cases in real time.
+#### \  
+
+# What You Will Find Here
+
+Use the menu at the top to navigate the site. Headers within the current page are listed in the menu on the left side. There are copies of the materials from the presentation, a collection of sample cases, and guidelines and supporting resources for those wanting to write their own cases.
+
+Some resources are not directly viewable on the web site, and require downloading. Many of the shared documents are in the reusable Markdown format; [directions for converting Markdown to other formats are available here.](markdown_conversion)
 
 #### \   
 
@@ -38,3 +36,16 @@ I am a Teaching Professor of Biology at Wake Forest University. I wrote and publ
 
 #### \   
 
+# Using Site Resources
+
+I encourage others to use the resources available here for their own teaching practices. Except where noted otherwise, all materials may be reused and adapted under terms of a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+
+You are free to share and adapt any of these materials under the following conditions:
+
+* __Attribution (BY)__ — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+* __NonCommercial (NC)__ — You may not use the material for commercial purposes.
+* __ShareAlike (SA)__ — If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
+* No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
+
+#### \   
+<hr>

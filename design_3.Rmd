@@ -10,4 +10,18 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ## R Markdown
+#### \   
 
+# Goals of 
+
+
+1. __What are the general learning outcomes?__ What principles, others?
+
+#### \   
+
+# Resources for Supporting Analysis
+
+
+
+#### \   
+<hr>
