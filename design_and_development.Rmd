@@ -10,16 +10,26 @@ biblio-style: apalike
 
 # Goals for Design and Development
 
-Data from the __Analysis__ step tells you what students already know and can or cannot do. 
+Data from __Analysis__ tells you what students already know and can or cannot do. The next step is to decide how you want to use to move students beyond their current state of understanding and skills, then create the required supporting materials. 
 
-If you are designing an entire case-based course, the next step is to decide what OVERALL strategy you want to use to move students beyond their current state of understanding or skills level. For example, the ["Genes of Autism"](Case-Genes_of_Autism.docx) sample case in the archive was created for a course where students spend ~2/3 of class time working on cases in teams. I designed that case to be part of a repeating weekly activity cycle:
+Assuming cases are part of the strategy, the first choice is whether to use individual standalone cases, or use cases in a recurring format.
 
-* Mondays: turn in individual reading assignments; I talk about main confusion points.
+If you do not need to connect cases together, or want to use cases intermittently, you have more freedom as to format, workflow, and time students spend on each case. For example, the two archive cases [What is Life?](Case-What_is_Life_annotated.pptx) and [Eating Flossflower Changes Manduca Development](downloads/Case-Effects_of_feeding_flossflower_on_Manduca_development.docx) are standalone cases with very different formats. 
+
+Conversely, two other archive cases, [Mapping a Promoter](downloads/Case-Mapping_a_Promoter.docx) and [Genes of Autism](downloads/Case-Genes_of_Autism.docx) come from a course where students spend ~2/3 of class time working on cases in teams. I designed both cases to fit into this weekly class cycle:
+
+* Mondays: students turn in individual reading assignments; I talk about main confusion points.
 * Wednesdays: student teams complete Part 1 of the week's case. 
 * Fridays: teams complete Part 2 of the week's case. 
-* Saturdays: teams turn in final assignment from case.
+* Saturdays: teams turn in final assignments from the case.
 
-I use this same workflow every week that students work on cases. It defines how the individual cases must be written. 
+Students follow this same workflow every week so the format of the individual cases is more limited. The benefit is that once students work through their first few cases, case teams can get to work faster and do more each week. Using one format also shortens case writing time. 
+
+#### \   
+
+## Standalone Cases or Recurring Format?
+
+
 
 The design and development phase is when instructors have the most opportunities to be creative. Yet in practice, many fall back on well-worn instructional methods like exams, research papers, and in-class presentations. Do not be afraid to try out alternative strategies for:
 
