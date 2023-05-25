@@ -10,10 +10,16 @@ biblio-style: apalike
 
 # Goals for Design and Development
 
-Data from the __Analysis__ step tells you what students already know and can do (or not.) The next steps are to:
+Data from the __Analysis__ step tells you what students already know and can or cannot do. 
 
-1. Design a strategy that moves students move beyond their current state of understanding or skills level, and
-2. Develop the resources that you and the students will need to enact the strategy you have designed.
+If you are designing an entire case-based course, the next step is to decide what OVERALL strategy you want to use to move students beyond their current state of understanding or skills level. For example, the ["Genes of Autism"](Case-Genes_of_Autism.docx) sample case in the archive was created for a course where students spend ~2/3 of class time working on cases in teams. I designed that case to be part of a repeating weekly activity cycle:
+
+* Mondays: turn in individual reading assignments; I talk about main confusion points.
+* Wednesdays: student teams complete Part 1 of the week's case. 
+* Fridays: teams complete Part 2 of the week's case. 
+* Saturdays: teams turn in final assignment from case.
+
+I use this same workflow every week that students work on cases. It defines how the individual cases must be written. 
 
 The design and development phase is when instructors have the most opportunities to be creative. Yet in practice, many fall back on well-worn instructional methods like exams, research papers, and in-class presentations. Do not be afraid to try out alternative strategies for:
 
@@ -22,6 +28,11 @@ The design and development phase is when instructors have the most opportunities
 * Gauging student mastery or ability to use the skills required by the course design.
 
 #### \   
+
+
+, 
+2. and
+2. Develop the resources that you and the students will need to enact the strategy you have designed.
 
 # Resources for Supporting Case-Based Course Design and Development
 

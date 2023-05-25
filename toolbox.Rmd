@@ -8,7 +8,7 @@ biblio-style: apalike
 ```
 #### \   
 
-Tools not described under one of the ADDIE categories or with broader uses are cataloged here. I also have listed some low/no cost tools that make case writing and use easier. 
+Tools not described under one of the ADDIE categories or with broader uses are cataloged here. I also have listed some low/no cost tools and strategies that make case writing and use easier. 
 
 #### \   
 
@@ -31,7 +31,15 @@ This entire web site was written in R Studio's variant, R Markdown. Several down
 
 #### \   
 
-# Item
+# One-Three-Nine Branched Case Format
+
+Several case authors have suggested __branching cases__ that do not follow one storyline, but instead let students follow different paths. Aside from the challenge of writing the content, there is the practical problem of managing students' access. __Twine__ could be the ideal platform for writing branched cases. 
+
+Twine is an open-source application for writing interactive, non-linear stories. Twine creates one-page HTML documents divided into multiple sub-windows. Windows are connected together so viewers can read one window, then pick where they want to go next. 
+
+* [Learn more about Twine here.](https://twinery.org/)
+* [Download a working sample Twine web page here.](downloads/Twine_demo_template.html)
+* [Download a template for a 1-3-9 Twine web page here.](downloads/Template_for_1-3-9_Case.html)
 
 #### \   
 

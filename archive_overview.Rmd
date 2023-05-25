@@ -8,26 +8,35 @@ biblio-style: apalike
 ```
 #### \   
 
-This collection illustrates the range of case formats and variety of skills that students can build using cases. Some cases have aged out as the main topics have progressed, but they still are good for illustrating case structures and organization strategies.
+Cases in this collection were selected to: 1) illustrate the range of case formats and variety of skills that students can build using cases; and 2) provide templates that have been tested already with students.
+
+Some of the cases have aged out as their fields have progressed, so cannot be used as they are currently. Still they are good examples of specific case structures and organization strategies. The basic frameworks can be updated by overlaying new content or a different topic. 
+
+Using feedback from 2023 NTC attendees as a starting point I hope to add more templates and examples illustrating other specific case strategies.
 
 #### \   
 
+## Available Cases
+
+Click on the name of a case to download the student and instructor materials. 
+
 |Name|Format|Time Req'd|Focus or <br>Key Activities|Level|Instructor<br>Notes|Comments|
 |:---|:---:|:---:|:----------------|:---:|:---:|:-----------------|
-||||| Nonmajors|||
-||||| Nonmajors|||
-| [Effects of feeding flossflower on Manduca development](downloads/Case-Effects_of_feeding_flossflower_on_Manduca_development.docx)| Continuous;<br>1 session| 30-60 min.| * Designing experiments<br>* Interpreting results<br>* Summarizing observations<br>* Reporting in a notebook| Introductory| Yes| A good case for teaching TAs how to manage group discussions, introduce lab notebooks.|
-||||| Introductory|||
-| [Mapping a Promoter](downloads/Case-Mapping_a_Promoter.docx)| Interrupted;<br>2 sessions| 2-3 hrs| * Understanding how transcription factors bind to promoters<br>* Interpreting data from multiple sources <br>* Supporting a conclusion with experimental evidence| Intermediate| Yes| I have extensively annotated this case to show how it was constructed, and how each piece contributes to the  learning goals.|
-| [FDA Clinical Trial Approvals](downloads/Case-FDA_Clinical_Trial_Approvals.docx)| Interrupted;<br>2 sessions| 3 hrs| * Learning how clinical trials are conducted<br>* Evaluating proposals  based on set criteria| Intermediate<br>to advanced| Yes| This case is a model for demonstrating the clinical trial or research proposal review process in any field.|
-| [Team Work](downloads/Case-Team_Work.docx)| Interrupted;<br>2 sessions| 3 hrs| * Responsible conduct of research<br>* Professional ethical decision-making<br>* External data collection<br>* Self-reflection<br>* Debriefing a group| Advanced| Yes| Example of how a classic problem-based learning case is formatted.|
+| [What is Life?](Case-What_is_Life_annotated.pptx)|Continuous|30 min.|* Applying prior knowledge<br>* Assessing evidence|Nonmajors|Yes|Model for slides-based cases that work in large lecture courses|
+| [Banning Cancer-Causing Foods](downloads/Case-Cancer_Foods.docx)| Interrupted;<br>2 sessions|2 hrs| * Finding, assessing evidence for lay press claims<br>* Prioritizing points for oral arguments| Nonmajors| Yes| Model for building decision-making cases|
+| [Eating Flossflower Changes Manduca Development](downloads/Case-Effects_of_feeding_flossflower_on_Manduca_development.docx)| Continuous;<br>1 session| 30-60 min.| * Designing experiments<br>* Interpreting results<br>* Summarizing observations<br>* Reporting in a notebook| Introductory| Yes| Good case for: teaching experimental design; training TAs how to manage group discussions; introducing lab notebooks or scientific writing.|
+| [Mapping a Promoter](downloads/Case-Mapping_a_Promoter.docx)| Interrupted;<br>2 sessions| 2-3 hrs| * Understanding how transcription factors bind to promoters<br>* Interpreting data from multiple sources <br>* Supporting a conclusion with experimental evidence| Intermediate| Yes| Is extensively annotated to show how case was constructed, and how each piece contributes to learning goals.|
+| [Genes of Autism](downloads/Case-Genes_of_Autism.docx)| Interrupted;<br>2 sessions| 2-3 hrs| * Understanding how epigenetic regulation controls multiple genes<br>* Linking clinical features to genes <br>* Supporting a conclusion with experimental evidence| Intermediate or Advanced| Yes| Model case for exploring genetics of any multi-factorial disease. Focuses more on logic than a single right answer.|
+| [FDA Clinical Trial Approvals](downloads/Case-FDA_Clinical_Trial_Approvals.docx)| Interrupted;<br>2 sessions| 3 hrs| * Learning how clinical trials are conducted<br>* Evaluating proposals  based on set criteria| Intermediate<br>to advanced| Yes| Model for introducing clinical trial or research proposal review process in any field.|
+| [Is DU Ammo Causing Cancer?](downloads/Case-Is_DU_Causing_Cancer.docx)| Interrupted;<br>2 sessions| 2 hrs| * Using course concepts and content knowledge to understand a social issue<br>* Comparing claims, evidence from lay press and scientific sources<br>* Synthesizing, summarizing evidence<br>* Explaining evidence to a non-technical audience| Advanced| Yes| Model for applying evidence to controversial anecdotal claims.|
+| [Team Work](downloads/Case-Team_Work.docx)| Interrupted;<br>2 sessions| 3 hrs| * Responsible conduct of research<br>* Professional ethical decision-making<br>* External data collection<br>* Self-reflection<br>* Debriefing a group| Advanced| Yes| Model for a classic problem-based learning case.|
 
 
 ### Legend 
 
 Cases are classified by:
 
-* __Format__: single- or multiple sessions case; continuous or interrupted? 
+* __Format__: single- or multiple sessions case; continuous or interrupted 
 * __Time required__ (excluding outside reading, research)
 * __Focus or key activities__ build:
     + Content and conceptual knowledge, general knowledge, and/or discipline-specific knowledge

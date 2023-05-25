@@ -8,27 +8,58 @@ biblio-style: apalike
 ```
 #### \   
 
-# Ideas For New Neuroscience Teaching Cases
+# Topics For New Neuroscience Teaching Cases
 
-What would be good topics for new cases in neuroscience? 
+The first question we are exploring is:
 
+_What would be good topics for new_ __teaching cases__ _in neuroscience?_ 
+
+* Psychotropics (MDMA, LSD, psylocibin, mescaline) as treatments for mental health disorders. Can explore or build:
+    + 
+    + ??
+    + 
 * 
 * 
-* 
+* ??
 * 
 * 
 
 #### \   
 
-# Ideas For New Case Formats
+# Goals For New Neuroscience Teaching Cases
 
-## One-Three-Nine Branched Cases
+The second question we are exploring is:
 
-Cases do not follow one format or formula. A format that several case authors have talked about is __branching cases__, where students can follow different paths through the case. Aside from writing so much content, there is the practical challenge of managing the students' workflow.
+_What would you like to accomplish or support with neuroscience teaching cases?_ 
 
-__Twine__ is an open-source application for writing interactive, non-linear stories. Twine creates single-page HTML documents that contain multiple sub-windows. Windows are connected together so viewers can read one window, then pick where they want to go next. Twine would be an ideal platform for writing branched cases. 
+* Learning topic content & concepts
+* Skills training
+    + Finding and presenting evidence 
+    + Evidence-based decision-making 
+    + Interpreting data
+    + Other skills?
+* Applied thinking
+    + Debate
+    + Panel review
+* Professional development; teacher & TA training
+* 
+* 
+* ??
+* 
+* 
 
-[Learn more about Twine here.](https://twinery.org/)
+
+#### \   
+
+# Formats For New Neuroscience Teaching Cases
+
+As time allows, we'll talk about what case formats might work best in specific situations. Options include:
+
+* Text vs. video based
+* Scenario vs. not
+* 
+* ??
+*
 
 #### \   
 

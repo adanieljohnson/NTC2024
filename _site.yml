@@ -7,7 +7,7 @@ navbar:
     icon: fa-download
     href: workshop_resources.html
   - text: "Brainstorming"
-    icon: fa-folder-open
+    icon: fa-comments
     href: brainstorming.html
   - text: "Case Writing"
     icon: fa-folder-open

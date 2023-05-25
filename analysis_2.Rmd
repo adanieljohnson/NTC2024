@@ -7,17 +7,51 @@ biblio-style: apalike
 ```{r, child="_setup.Rmd"}
 ```
 #### \   
+# Establishing New General Learning Outcomes 
 
-# Goals of 
+If your program does not have its own list of goals, [Chen and Phillips (2023)](https://www.lifescied.org/doi/full/10.1187/cbe.22-02-0018)\cite{Chen2023} recently published results of a nationwide survey distributed to neuroscience educators through professional societies, word-of-mouth and social media. Their aim was to establish community-driven standards for course topics overall.
 
+Briefly, they define neuroscience core concepts as overarching principles that organize knowledge and can be applied to all subdisciplines in neuroscience. Their survey identified these as core concepts:
 
-1. __What are the general learning outcomes?__ What principles, others?
+__Communication modalities:__ Nervous systems encode and transmit information in various modalities that include activity patterns, electrical signaling, and chemical signaling. Information is transmitted and encoded in timing, frequency and patterns of activity. 
 
-#### \   
+__Emergence:__ Nervous system functions are constructed from the combined interactions of smaller constituent components. Complex functions such as cognition, behavior, perception, and emotion are the outcome of interactions between many smaller units at the tissue, cell, and sub-cellular levels. 
 
-# Resources for Supporting Analysis
+__Evolution:__ Similarities and differences in nervous systems between organisms are constrained and defined by their evolutionary backgrounds. Evolutionary processes produce shared functions and homologous nervous system structures, as well as adaptations that generate differences between organisms. Nervous systems are subject to evolutionary forces and therefore must be understood within the phylogenetic history and ecological context of an organism.
 
+__Gene–environment interactions:__ Unique patterns of gene expression underlie the organization and function of a nervous system and are altered by environmental factors.
 
+__Information processing:__ Outputs from a unit in the nervous system depend on the inputs it receives as well as information filtering and modulation performed by the unit. Information processing can be studied at multiple levels of granularity, including synapses, subcellular arbors, circuits, and systems. At each level, the output of a unit in the nervous system is dependent upon the inputs it receives and processes.
 
-#### \   
+__Nervous system functions:__ Nervous systems function to coordinate survival responses to the environment, permit behavior in a timely manner, and
+maintain homeostatic regulation. Nervous systems detect and monitor external and internal environmental conditions, in conjunction with using stored information, to direct an appropriate response. 
+
+__Plasticity:__ Nervous systems reorganize their structure, function, and connections in response to experience. The nervous system is malleable. From early developmental stages and throughout life, the nervous system strengthens and weakens components and connections in response to experience. This modulation, or plasticity, occurs in response to intrinsic and extrinsic experiences, such as sensory input, behavior, and pathological processes. 
+
+__Structure–function relationship:__ Structure permits and constrains nervous system function, and function shapes structure. Nervous system structures and functions bidirectionally inform each other at all levels of organization. 
+
+#### \ 
+
+# Other Resources for Supporting Analysis
+## Setting General Learning Outcomes
+
+[This article by Brownell, et al.](https://www.lifescied.org/doi/10.1187/cbe.13-12-0233)\cite{Brownell2014} and this 2023 article by [Clark and Hsu](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10074271/)\cite{Clark2023} are good overviews of the process.
+
+Below are two examples of program-level general learning outcome sets. Individual courses within the programs would use a subset of these outcomes.
+
+* [Indiana University](https://biology.indiana.edu/undergraduate/biology/learning-goals.html)
+* [Bates College](https://www.bates.edu/biology/biology-at-bates/learning-goals/)
+
+#### \  
+
+## Sources for Survey Questions Related to Motivation and Interest
+
+* [Rowland et al.'s 2019 literature review of methods for defining and measuring student interest in biology](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6755315/)\cite{Rowland2019}
+* [Biology Self-Efficacy Scale](https://doi.org/10.1002/(SICI)1098-237X(199907)83:4%3C397::AID-SCE1%3E3.0.CO;2-%23)
+* [Intrinsic Motivation Inventory, or IMI](https://selfdeterminationtheory.org/intrinsic-motivation-inventory/) 
+* [Motivated Strategies for Learning Questionnaire, or MSLQ](https://psycnet.apa.org/doi/10.1037/0022-0663.82.1.33) 
+* [The standard survey I use to gather data on student motivation and goals](downloads/Semester_startup_survey.md).
+
+#### \  
+
 <hr>

@@ -8,16 +8,120 @@ biblio-style: apalike
 ```
 #### \   
 
-# Goals of 
+# Getting Started With Analysis
+## Set Learning Outcomes
+
+Most programs already have a consensus set of general learning outcomes, often created as part of routine accreditation. If you are unsure if your department or program has a set already, ask your local Undergraduate Studies Committee, curriculum coordinator, or program chair. 
+
+Many programs also have a detailed curriculum map describing when students are expected to develop particular knowledge or skills. Again, use what is already available; there is no need to reinvent these resources. 
+
+#### \   
+
+## Set Performance Goals and Benchmarks
+
+To understand how performance goals and benchmarks work, look at this general learning outcome:
+
+> Develop an ability to draw reasonable inferences from observations of the natural world.
+
+How will instructors actually measure students’ progress towards achieving it? 
+
+__Performance goals__ are action statements describing what students will be able to do at the end of a lab unit, single course, or curricular sequence. They are anchored by action verbs, and describe high but attainable challenges, and tangible abilities that can be measured in a clearly defined way. They provide the endpoint goals.
+
+__Benchmarks__ are descriptions of how students are progressing towards the actions-oriented benchmarks. In practice, robust performance goals/benchmarks are worded in ways that student progress can be described as one of three levels. 
+
+1. __Baseline.__ Sometimes called the naive stage. If students are asked to perform a task related to a general learning outcome, their level of performance indicates they do not have sufficient knowledge yet to:
+    + perform the desired activity, 
+    + implement the expected thinking skill, or 
+    + transfer prior learning to the new task. 
+    
+2. __Developmental.__ If students are asked to perform a task related to a general learning outcome, their performance indicates they have some exposure and ability, but are not yet able to consistently and accurately perform the desired activity, implement the expected thinking skill, or transfer prior learning to the new task. Students in the developmental stage often demonstrate mastery level performance when working on one case activity, only to perform poorly when asked to complete a similar task again in a different context.
+
+3. __Mastery.__ When students are asked to perform a task related to a general learning outcome, they consistently choose the appropriate strategy and use relevant prior knowledge accurately. They can solve new problems and identify the relevant components in novel problems that tell them what skills need to be applied. They consistently and accurately perform the desired activity, implement the expected thinking skill, or transfer prior learning even when the connections are not obvious.  
+
+Developing functional performance goal statements usually is the hardest step in the development process. To jump-start the process, try the following thought exercise. 
+
+> Imagine that a student has come to you saying, “I am sure that I learned more in your course than my grade reflects. What do I have to physically do to convince you that I reached your stated goals for this course?” 
+> Given that challenge, how would you respond to the student? (paraphrased from Diamond, 1998)
+
+Performance goals can help instructors choose the most effective instructional methods, and communicate course expectations to students. For students, performance goals serve as a mechanism for self–assessment of progress.
+
+Typically performance goals and their associated benchmarks are described using action verbs. This list of action verbs comes from the Eberly Center for Teaching Excellence at Carnegie Mellon University. The verbs are grouped around the six levels in Bloom’s taxonomy. Focus more on how the verbs impact wording of performance goals, not on the taxonomic levels.
+
+|Remember|Understand|Apply|Analyze|Evaluate|Create|
+|:-:|:-:|:-:|:-:|:-:|:-:|
+|Arrange|Classify|Calculate|Combine|Appraise|Arrange|
+|Define|Describe|Construct|Figure|Argue|Assemble|
+|Locate|Identify|Classify|Find|Assess|Compose|
+|Recall|Indicate|Estimate|Sketch|Defend|Create|
+|Recite|Organize|Illustrate|Solve|Estimate|Design|
+|Describe|Interpret|Interpret|Predict|Judge|Devise|
+|Repeat|Illustrate|Appraise|Change|Predict|Formulate|
+|Identify|Reorganize|Contrast|Survey|Qualify|Invent|
+|Select|Translate|Criticize|Compare|Rate|Manage|
+|Quote|Paraphrase|Diagnose|Diagram|Support|Modify|
+|Label|Summarize|Identify|Examine|Critique|Organize|
+|Copy|Transform| |Test|Recommend|Plan|
+|List|Discuss| |Modify| |Prepare|
+|Name|Explain| | | |Produce|
+|State|Defend| | | |Propose|
+| |Compare| | | |Set up|
+| |Report| | | |Verify|
+| |Restate| | | |Construct|
+| |Review| | | |Develop|
+| |Rewrite| | | | |
 
 
-1. __What are the general learning outcomes?__ What principles, others?
+Here are some examples of performance goals for our general learning outcome:
+
+__Learning Outcome #1:__ develop an ability to draw reasonable inferences from observations of the natural world. Specific performance goals in support of this outcome:
+
+* If a student is given an unknown organism that they have not encountered previously, they can:
+    + Classify the unknown organism to domain, phylum, and probable class, and provide reasons for their choices. 
+    + Compare and contrast the methods by which the unknown organism and a human transport nutrients, exchange gases, and regulate water balance. This includes describing any anatomic evidence to support their statements. 
+    + Predict how the unknown organism might adapt to a 10<sup>o</sup>C change in normal temperature of its habitat, and give reasons why their predictions would protect the unknown organism.
 
 #### \   
 
-# Resources for Supporting Analysis
+## Gather Data on Student Interests and Motivation 
 
+Do not rely on the student evaluations of teaching. They do not provide useful data in time to adjust the course for the current students, and the questions may not focus on what you as the instructor thinks is important.
 
+Short pre-, mid-, and post-class surveys can provide ample actionable data. For example, at the start of each semester, I ask students in all courses that use cases to complete this [start-up survey.](downloads/Semester_startup_survey.md)). Questions include:
+
+* What prerequisite topics or courses they particularly liked, and which they found more difficult. If most students struggled with a particular topic in the past, any case that depends on that topic should have more supporting information. 
+* How they prefer to work together, and what kind of discussion participant they tend to be. 
+    + This is useful when assigning students to work groups or project teams. 
+    + This can help diagnose classroom management problems. For example:
+        - A class section simply refuses to engage in discussion.  
+        - The summary data from the first-week survey show that most of the students prefer to listen and process ideas internally rather than explore them aloud.
+        - Rather than blame lack of engagement, I can adjust the case assignments to use more reflective writing and less face-to-face discussion.
+
+For new courses I extend this basic survey. I give students examples of topics and see what they rate as more or less engaging. Then I try to arrange the course so at least one of their more engaging topics comes up early in the course. This boosts students' willingness to stay with me when the topics are more difficult.
+
+At mid-semester and again at the end of the course, I ask students:
+
+* What is working well?
+* What would they like to do more of, or add?
+* What is not working well, or they would like to do less of?
+
+If students are dissatisfied with an essential course component, I take time to reiterate why I think it is important. If it is not essential, I consider minimizing or dropping unpopular components. 
+
+When using class surveys be careful to avoid two common pitfalls.
+
+1. Don't try to make everyone happy. There will always be students who want something impractical or specific to their interests alone. Look for trends and recurring themes that reflect the majority of students. My rule of thumb is to at least consider all comments that at least 1/3 of respondents make. Issues that more than half of students raise definitely should be priorities.
+2. Ask your ego to sit on the bench. You might believe that you are providing students with a particular experience already, but their __perception__ is what is important. If students say they are not getting "X," think about where the disconnect might be. If they want to talk more about “Y”, look for ways to do so.
 
 #### \   
+
+## Sequencing Performance Goals
+
+Once you know what students should be able to __DO__, think about which skills need to come first. 
+
+* What general concepts or content knowledge do students need to master before others will make sense?
+* Which benchmarks do students need to reach first, before they can achieve others? 
+
+Knowing which performance goals need to come first makes it easier to put the course topics in a logical sequence. 
+
+#### \   
+
 <hr>
