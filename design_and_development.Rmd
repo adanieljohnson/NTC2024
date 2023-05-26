@@ -10,26 +10,34 @@ biblio-style: apalike
 
 # Goals for Design and Development
 
-Data from __Analysis__ tells you what students already know and can or cannot do. The next step is to decide how you want to use to move students beyond their current state of understanding and skills, then create the required supporting materials. 
+Data from __Analysis__ tells you what students already know and can/not do, and guides your decisions on where you want them to go next. The next step in the ADDIE process is to determine how best to help students achieve those specific goals.
 
-Assuming cases are part of the strategy, the first choice is whether to use individual standalone cases, or use cases in a recurring format.
+Questions to ask in the Design and Development phase are:
 
-If you do not need to connect cases together, or want to use cases intermittently, you have more freedom as to format, workflow, and time students spend on each case. For example, the two archive cases [What is Life?](Case-What_is_Life_annotated.pptx) and [Eating Flossflower Changes Manduca Development](downloads/Case-Effects_of_feeding_flossflower_on_Manduca_development.docx) are standalone cases with very different formats. 
+1. What activities, scenarios, or problems will allow or best help students reach the benchmarks?  
+2. How will the learning activities from #1 be incorporated into a general case format?
+3. What additional information or resources will students or the instructor need for the cases?
 
-Conversely, two other archive cases, [Mapping a Promoter](downloads/Case-Mapping_a_Promoter.docx) and [Genes of Autism](downloads/Case-Genes_of_Autism.docx) come from a course where students spend ~2/3 of class time working on cases in teams. I designed both cases to fit into this weekly class cycle:
+#### \   
+
+# Getting Started
+
+Your next decision is whether to use individual standalone cases, or cases that follow a recurring format.
+
+If you do not need to connect cases together, or want to use cases intermittently, you have more freedom as to format, workflow, and time students spend on each case. For example, the two archive cases [What is Life?](Case-What_is_Life_annotated.pptx) and [Eating Flossflower Changes Manduca Development](downloads/Case-Effects_of_feeding_flossflower_on_Manduca_development.docx) are both standalone cases that could be adjusted to fit in either a nonmajors or introductory majors course, but they have very different formats.  
+
+Conversely, two other archive cases, [Mapping a Promoter](downloads/Case-Mapping_a_Promoter.docx) and [Genes of Autism](downloads/Case-Genes_of_Autism.docx) come from the same course, where students spend ~2/3 of class time working on cases in teams. I designed both cases so they fit into the same weekly class cycle:
 
 * Mondays: students turn in individual reading assignments; I talk about main confusion points.
 * Wednesdays: student teams complete Part 1 of the week's case. 
 * Fridays: teams complete Part 2 of the week's case. 
 * Saturdays: teams turn in final assignments from the case.
 
-Students follow this same workflow every week so the format of the individual cases is more limited. The benefit is that once students work through their first few cases, case teams can get to work faster and do more each week. Using one format also shortens case writing time. 
+The format of the individual cases is more limited when students follow the same workflow every week. The benefit is that once students work through their first few cases, case teams can get to work faster and do more each week. Using one format also shortens case writing time.
 
 #### \   
 
-## Standalone Cases or Recurring Format?
-
-
+## Tip: Think Creatively
 
 The design and development phase is when instructors have the most opportunities to be creative. Yet in practice, many fall back on well-worn instructional methods like exams, research papers, and in-class presentations. Do not be afraid to try out alternative strategies for:
 
@@ -39,16 +47,128 @@ The design and development phase is when instructors have the most opportunities
 
 #### \   
 
+# Writing Your Cases
+## Getting Inspiration
 
-, 
-2. and
-2. Develop the resources that you and the students will need to enact the strategy you have designed.
+Kip Herreid, the founder of the National Clearinghouse for Case Studies Teaching in Science (NCCSTS), always says, “to write a case, start with a story.” You may have a specific story in mind that you want to build a case around. If not, these three exercises can get your mental juices flowing.
 
-# Resources for Supporting Case-Based Course Design and Development
+### Applied Thinking - Daily News:
+
+As professionals we read and process news differently than our students. Pick a story published in the last 24 hours that is relevant to an open question in your field or to a topic that you think students should understand better but do not currently. That story is the starting point for writing your case.
+
+### Making Connections - Trigger Points:
+
+Pick a major event or change in your discipline. Now pick one seemingly minor event, development, or other factor that CONTRIBUTED to the bigger event. How that earlier event contributed to the latter one is the starting point for writing your case.
+
+### Teaching Challenge - Specific Skill:
+
+Pick a teaching challenge you run into regularly. It can be a skill you want students to develop more fully, or a recurring problem (citing sources, for example). Addressing that one skills gap is the starting point for your case.
+
+### If All Else Fails...Look at Others' Cases
+
+In addition to [this site's cases](archive_overview.html), the [Design and Development Resources](design_1.html) page has links to additional case collections.
+
+#### \   
+
+## A Starting Template For Developing a New Case
+
+When you write cases regularly, you develop a workflow that works for you. Until then, or if you have been away from case writing for a while, it helps to have a starting template. The one below will help you assemble the essential first pieces while still leaving plenty of room for creativity.
+
+The [template is also available as a separate Markdown document](downloads/Case_planning_template.md) to download.
+
+### 1. Goals and Topic 
+
+What 1-2 learning goals do you want this case to achieve? Be specific. Use action verbs to state the goals.
+
+* 
+* 
+
+What topic do you want to make your case about? WHY use that topic?
+
+* 
+
+### 2. Scenario
+
+What story or situation that is relevant or familiar to students would require them to use or demonstrate the knowledge or skills that are contained in your learning goals? 
+
+* Can you break the story up into segments with separate goals?
+* Can you organize the scenario so it contains an “and-but-so” conflict or problem?
+* What visuals or artifacts could help bring the story to life for students?
 
 
+### 3. Guide Questions and Supports
+
+What initial questions can you ask students about this scenario that will require them to use a particular thinking strategy or apply a particular set of skills? If they do not have those skills yet, what questions would you ask to lead them through that process? 
+
+Ideally your questions:
+
+* Are open-ended (no clear single best answer)
+* Can be discussed, explored in a small group of 2-6 students
+* Require higher order thinking skills (no simple answers)
+* Get students to think or act in ways that fit the learning goals
+
+What is the MINIMUM amount of supporting information they need? How much would overwhelm them? What can you hold back and provide only if they cannot find or deduce it on their own?
+
+What follow-up questions can you ask that require students to apply or extend what they have learned in the discussion? Ideally these questions:
+
+* Require using or building on the initial information surfaced by the first set of questions
+* At least partly “close the loop”
+* Get students to think or act in ways that fit the learning goals
+
+### 4. Outputs & End Products
+
+How are you going to ask students to provide responses to questions or feedback? For example:
+
+* Show of hands
+* Group reporter
+* Color cards
+* Electronic poll
+* Clickers
+
+What will be your students’ deliverables that you will grade?
+
+* Team items
+* Individual items
+
+Additional information is also in the [Evaluation section](evaluation_overview.html).
+
+### 5. Logistics
+
+What is you plan for running the case?
+
+* How will you introduce the case?
+* What size groups will you have? Self-selected or assigned?
+* How long do you want the case to take?
+* How will you close out the scenario, and move to the next topic?
+
+What is you plan for WHEN things go astray?
+
+* How can you shorten the case if time runs out?
+* What technology do you need that could fail?
+* What is your Plan B if students don’t “get it”?
+
+Additional information is available in the [Implementation section](implementation_overview.html).
+
+#### \   
+
+## Refining Your Case
+
+Once you have a skeleton for the case, wait a day or so before doing more. Pitch it to a colleague and 1-2 students to see what they think. 
+
+* If you still like your initial idea after hearing their responses, start filling in the details.
+* If you are not happy with your idea or how it was received, do not throw it out. Put it into a __Raw Ideas__ folder and revisit it at another time.
+
+#### \   
+
+## Common Writing Mistakes
+
+* Fixating on an idea. Like pro photographers, I have several bad ideas for every one good case idea I can build out. If the story is not coming together, put it aside for later, and try a different one.
+* Being a perfectionist. No case is ever “done.” Cases change and evolve, just like students. 
+* Forgetting to make the case relevant TO STUDENTS. You might love the story, but it needs to engage THEIR curiosity and get THEM to invest emotionally.
+* Writing too much for the time available. 
+    + A rule of thumb is that a mini-case with one paragraph of reading, 1-2 guide questions for group discussion, and 1 follow-up question will take ~ 30 minutes of class time. 
+    + You can adjust that once you know how your own students will respond.
 
 #### \   
 <hr>
-
 

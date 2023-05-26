@@ -20,8 +20,38 @@ Specific questions to ask include:
 
 #### \   
 
+My Suggestions
+* You will have a lot of submissions to grade, so keep them simple and focused. Try to find ways for students to demonstrate what they have learned that take less time to evaluate. For instance, ask students to draw a summary of a process rather than write a description of it. 
+* Have teams submit one group summary rather than individual assignments. If you want to ensure individual accountability:
+o	Rotate who is responsible for submitting the final group summary for each case. 
+o	Have the team keep a log of who contributed which parts of a larger assignment.
+o	Include 1 reflection question that each student must answer separately.
+
+
+
 # Resources for Supporting Evaluation
 
+## Grading Case Assignments
+
+I grade all case-related assignments using a bins-based model (also called specifications grading.) Items are scored on a 5-point scale based on __overall quality__:
+
+5 = Exceptional. Complete, (equivalent to an A, or 95 in course grades)
+4 = Acceptable. Complete, with some minor errors but essentially correct; accurate, acceptable  (B, or 85)
+3 = Needs improvement. Complete, but has significant errors in logic, reasoning, or interpretation (C or 75)
+2 = Seriously flawed. Submitted but incomplete, with multiple basic factual errors. (D or 65)
+0 = Not submitted. (F or 0)
+
+I also sometimes use a 10-point scale, with 4 being the lowest score without failing. Students usually prefer the 10-point scale, but when I compared the two, overall course grades were no different when using the finer grained 10-point scale vs. the 5-point scale. 
+
+Most of my grading time is spent giving written feedback to individuals and teams that focuses on whether they have met my expectations, and how to do better next time. I limit my major suggestions to 3 per assignment; students find it difficult to internalize more than that.
+
+I prefer bins-scoring because it is faster, and when individuals or teams come in for meetings, there are no points to argue for. The conversations are more productive because we focus on the gaps in their knowledge or thinking. 
+
+#### \   
+
+# When and How to Revise Cases
+
+I included this topic here because 
 
 
 #### \   

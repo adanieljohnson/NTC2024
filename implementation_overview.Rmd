@@ -8,21 +8,108 @@ biblio-style: apalike
 ```
 # Goals for Implementation
 
-This stage of the ADDIE process is similar to Design and Development in that there will always be some ongoing redesign as the studen population changes, course goals change, or other course elements become more or less important. 
+This stage of the ADDIE process is similar to Design and Development in that you will have to make adjustments as the student population changes, course goals change, or other course elements become more or less important. 
 
-One strategy for making implementation less difficult is to design cases __assuming__ that you will need to modify them in the future. Treat cases as course modules that can be edited or removed without unduly impacting other cases or activities. This becomes more difficult if you have two or more linked cases that come back to the same model system several times.
+One strategy for avoiding frustration is to design your cases from the start __assuming__ that you will need to modify them in the future. Treat cases as course modules that can be edited or removed without unduly impacting other cases or activities.
 
-Specific questions to ask related to implementation include:
+Specific questions to ask related to implementation:
 
 1. How will the case and related materials be delivered?
-2. How will students complete and submit case work and assessments?
-3. How will the instructor provide support for the case in progress? Adjust or modify the case? Guide students through the process?
+2. How will the instructor provide support for the case in progress? Guide students through the process? 
+3. How will students complete and submit case work and assessments? How will work be graded?
+4. How will the instructor adjust or modify the case when needed?
 
 #### \   
 
-# Resources for Supporting Case Implementation
+# Delivering the Case Materials
+
+The most common ways to deliver cases are:
+
+* Print materials beforehand to hand out in class
+* Show case materials as slides
+* Post files to the campus LMS, a course web site, or a shared file service (Google, Dropbox, Box)
+* Some combination of these methods
+
+Give some thought to how you will control students' access to materials. Do you want students to be able to access all case materials at once, or in stages? 
+
+__CAUTION!__ If you use electronic access, make __certain__ that students can access the materials both on and off campus. Remember, not all students can access the web reliably once they leave campus. 
+
+#### \   
+
+# Guiding and Supporting Students During the Cases
+
+Some sources call this classroom logistics. The assumption is that a well-written case scenario POINTS student towards the desired learning outcomes, but how the case is implemented during class determines whether students REACH them.
+
+Each section below looks at a different logistics issue. The list of questions is not exhaustive, but should be enough to guide you through common pitfalls of using cases. 
+
+## How Will Students Form Discussion Groups?
+
+* Will groups be self-selected or assigned? Will they be one-time groups or semester-long teams?
+    + I do not let students self-assemble. I assemble balanced teams and keep them together for the entire semester if possible. 
+* What size should discussion groups be? 
+    + Best practice is to have groups of 4-7. 
+    + Smaller groups of 3 can work, but groups of more than 7 usually split on their own. 
+
+## How Will I Start the Case?
+
+What can I ask students about the case scenario or topic generally that will get them engaged? I like to start off with questions that:  
+
+* Are open-ended, with no clear single best answer, and no simple answer.
+* Can be discussed sufficiently in 3-5 minutes. (You want them to get working as soon as possible.)
+* Highlight a gap in students' knowledge or thinking skills that the case is designed to fill.
+
+## How Will Students Respond During the Case?
+
+How will students provide responses to questions or feedback during the class sessions? 
+
+* Student teams work at different speeds. A show of hands or clicker poll may not provide feedback in a timely manner. When that happens, I have other response options available. 
+* A way I keep groups moving is to put a summary table on the board, and have teams complete the table as they finish their discussion. 
+    + Faster groups will take more time to fill out their row of the table. 
+    + Slower groups only fill in cells where their answers are significantly different.
+
+## How Will Students Submit Case Assignments?
+
+The campus LMS usually is the simplest way to collect assignments for grading. Again, make sure students can get to it from off-campus.
+
+Some tips to minimize frustration and ease workload: 
+
+* Before making the first assignment, check what file types your local LMS will accept as assignments or attachments. 
+* Tell students what file format(s) to use for assignments. Send items back or ask them to resubmit if files are not in the right format.
+* Have students include their own name in the file name of anything they upload. If you collect assignments by email, this greatly reduces confusion. 
+
+The bins-based grading strategy I use for case work is described on the [Implementation Resources](implementation_1.html) page.
 
 
+## What Will I Do WHEN Things Go Wrong?
+
+These are the most common problems I encounter when using cases.
+
+1. A case takes longer than planned. How could I shorten the case if time runs out? 
+    + First I intentionally write cases I think will take less than the full class period. 
+    + The first time I use a new case, I have 3-4 points in Day 1 where I know I can stop if needed. 
+    + Depending on where we stop on Day 1, I can revise Day 2 activities before next class meeting.
+    + I now write my 2-day cases so that students have time to work with their team for the last part of Day 1. If the case runs long, I shift that time to the beginning of Day 2, and adjust Day 2 work accordingly.
+    
+2. Required technology fails. What will I do if that happens?
+    + I don’t use any hardware or software that I do not trust to be 100% reliable.
+    + I keep backup copies of all files I need on a cloud-based file server (Dropbox) that I can access from another computer. 
+
+3. The students don't “get it.” What is my Plan B? 
+    + My go-to solution when this happens is a __case debrief__. 
+        - I write out a description of the end goals that I hoped they would reach.
+        - I ask the students to critique the case. WHY did they not get to the end point I intended?
+    + The debrief provides students with another opportunity to reach my intended learning goals, AND provides me with data I can use to make revisions.
+
+## How Can I Adjust the Case If Needed?
+
+I write 1-2 follow-up questions that I can ask which require students to apply or extend what they have learned in the discussion. I use these to challenge groups that finish early, or use them to extend the case discussion if it is running short. 
+
+Good follow-up questions:
+
+* Build on the initial information surfaced by the main case activities and questions.
+* Push students to find the limits of the conclusions they just reached or make them find other example of principles they have learned.
+
+I also make use of materials I collected while writing the case. As students are discussing a case, I may find that I did not provide enough supporting information. Usually I have some additional resources that I can provide on the spot. 
 
 #### \   
 <hr>

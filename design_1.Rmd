@@ -1,5 +1,5 @@
 ---
-title: "Design and Development 1"
+title: "Design and Development Resources"
 author: "Dan Johnson"
 date: "5/16/2023"
 output: html_document
@@ -9,19 +9,50 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
+# Sources for Case Scenarios
+
+Science press newsletters can provide many ideas. These three offer free access.
+
+* [AAAS Science News](https://www.science.org/news)
+* [Nature News](https://www.nature.com/news)
+* [Science Daily](https://www.sciencedaily.com/)
+
+Local and national news stories, and local political debates focusing on biological and health issues, make good scenarios. Often news stories can be turned into cases just by adding guide questions and assignments. 
+
 #### \   
 
-# Goals of 
+# Sources for Full Cases
 
+Even if you want to use only cases you wrote, reading others' case workflows will show you different ways to reach your end learning goals.
 
-1. __What are the general learning outcomes?__ What principles, others?
+## NCCSTS
 
-#### \   
+The __National Center for Case Study Teaching in Science (NCCSTS)__ was created and managed by Kip Herreid at the University of Buffalo, and now is hosted by the National Science Teachers Association. Dr. Herreid was a prolific author on the subject of case teaching, and a tireless advocate. 
 
-# Resources for Supporting Analysis
+* [Link to the NSTA/NCCSTS case library](https://www.nsta.org/case-studies)
+* [Books & articles published by Dr. Herreid and his collaborators](https://www.nsta.org/case-studies/resources/publications)
+* Schiller NA, Herreid CF. 2021. _Bibliography on Case Study Teaching in Science._ An extensive list of articles covering all aspects of case teaching from design to evaluation. [Download article.](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwixz5DfmJH_AhXwlWoFHeJvAMA4ChAWegQIFhAB&url=https%3A%2F%2Fpalm.ascb.org%2Fwp-content%2Fuploads%2Fsites%2F13%2F2021%2F04%2FBibliography_Case_Study_Teaching_Science.pdf&usg=AOvVaw0U0dd0shbdt_q-KfPzwhbD)
 
+## University of Delaware, Newark
 
+UDel uses PBL-style cases for most of its STEM teaching. [University of Delaware Institute for Transforming University Education](https://itue.udel.edu/resources-2/) is a great resource if you are thinking about implementing cases as one of your primary course activities. 
+
+## HHMI
+
+[HHMI Biointeractive](https://www.biointeractive.org/) has many cases in its archive of instructional resources. Many of the cases are based on research that HHMI has funded. Most emphasize primary data analysis and interpretation. Biointeractive’s cases can be supplemented with videos from the HHMI lecture library. 
+## CaseIt Simulations 
+
+The [CaseIt Project](https://www.caseitproject.org/) combines case scenarios with online data simulations. The current archive has >50 complete cases. Simulations can be used to build new cases as well.
+
+## Public Broadcasting System
+
+[PBS](https://pbsnc.pbslearningmedia.org/subjects/science/life-science/) has numerous teaching resources linked to their video archives. There are not many full cases, but plenty of links to videos to generate ideas for cases.
+
+## Publications That Include Cases
+
+Lunderberg, MA. 2008. Case Pedagogy in Undergraduate STEM: Research We Have; Research We Need. National Academies Press. [Download article.](http://sites.nationalacademies.org/cs/groups/dbassesite/documents/webpage/dbasse_072622.pdf)
+
+This white paper from an National Academies workshop provides a high-level overview of the origin of cases for STEM teaching. It is somewhat dated, but provides examples of different case strategies.
 
 #### \   
 <hr>
