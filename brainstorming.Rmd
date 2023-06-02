@@ -14,15 +14,16 @@ The first question we are exploring is:
 
 _What would be good topics for new_ __teaching cases__ _in neuroscience?_ 
 
+* 
+* ??
+* 
+* 
+* Microtubule Defects in Neurological Disease
+* Tau-ists vs. Beta-ists: Origins of Alzheimers
 * Psychotropics (MDMA, LSD, psylocibin, mescaline) as treatments for mental health disorders. Can explore or build:
     + 
     + ??
     + 
-* Microtubule Defects in Neurological Disease
-* Tau-ists vs. Beta-ists: Origins of Alzheimers
-* 
-* ??
-* 
 
 #### \   
 
@@ -32,6 +33,10 @@ The second question we are exploring is:
 
 _What would you like to accomplish or support with neuroscience teaching cases?_ 
 
+* 
+* ??
+* 
+* 
 * Learning topic content & concepts
 * Skills training
     + Finding and presenting evidence 
@@ -42,11 +47,6 @@ _What would you like to accomplish or support with neuroscience teaching cases?_
     + Debate
     + Panel review
 * Professional development; teacher & TA training
-* 
-* 
-* ??
-* 
-* 
 
 
 #### \   
@@ -55,11 +55,12 @@ _What would you like to accomplish or support with neuroscience teaching cases?_
 
 As time allows, we'll talk about what case formats might work best in specific situations. Options include:
 
-* Text vs. video based
-* Scenario vs. not
 * 
 * ??
 *
+* 
+* Text vs. video based
+* Scenario vs. not
 
 #### \   
 

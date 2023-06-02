@@ -1,16 +1,14 @@
 ---
-title: "Analysis"
-author: "Dan Johnson"
-date: "5/16/2023"
+title: "Goals of Analysis"
 output: html_document
+bibliography: library.bib
+biblio-style: apalike
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 #### \   
-
-# Goals of Analysis
 
 The first step in the ADDIE process is to determine what specific goals you hope to accomplish in a course. More specifically:
 

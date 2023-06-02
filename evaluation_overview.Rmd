@@ -8,51 +8,184 @@ biblio-style: apalike
 ```
 #### \   
 
-# Goals for Evaluation
+# How to Think About Evaluation
 
-The final step in the ADDIE process is to determine whether your students have achieved the specific goals established in the __Analysis__ stage. In practice, evaluation is an ongoing process. At some point though, you as the instructor need to compile the data collected and decide which learning outcomes students are meeting adequately vs. which outcomes they are not meeting. The answer to the latter question will inform the process of revision, which goes back to the design and develop phase of the process.
+Evaluation is an ongoing process of gauging students’ progress towards the general learning outcomes and benchmarks you established in the __Analysis__ stage. Students’ grades on case activities are important, but only a piece of the puzzle. 
 
-Specific questions to ask include:
+When thinking about evaluation, ask yourself about:
 
-1. What questions did I come up with based on the analysis stage? Does the evaluation process provide sufficient data to answer those questions with confidence?
-2. Are students reaching the end goals of the course overall? That were set in the design and development phase?
-3. Is the implementation process working as expected? Where are students getting confused or off track? Are they able to self-correct? 
+1. Learning Outcomes: 
+    + What original goals did I set in the Analysis stage? 
+    + Am I collecting sufficient (and appropriate) data to answer those questions with confidence?
+2. Transfer: 
+    + Do students know how to apply what they learned now to new situations?
+    + Are students able to build on what they learned now in later courses?
+3. Process: 
+    + Is implementation going as I expected? 
+    + What practical logistical challenges have shown up more than 1-2 times?
+    + What am I (as the instructor) spending most of my time fixing or finding workarounds for?
+    + Where are students getting confused or off track? Are they able to self-correct? 
+    + What are students dissatisfied with? Why?
+
+It is easy to go overboard and design an unsustainable evaluation process. As you are thinking about WHAT to evaluate, think too about the effort needed, and if the data obtained will provide insights that benefit the students.
+
+When deciding what your strategy will be, also remember that you want to:
+
+* Measure progress of each student individually, but 
+* Look at student performance __in aggregate__, not at individual students.
+
+This page describes selected examples of how to evaluating learning outcomes gains, transfer, and process. Additional resources are available on the [Evaluation Resources](evaluation_1.html) page. 
+
+#### \   
+  
+# Evaluating Learning Outcomes
+
+Key questions here are:
+
+* What were the general learning outcomes and benchmarks? 
+* How far have students progressed towards these goals?
+* Am I getting the data I need to make decisions?
+
+The gold standard for evaluating progress towards learning outcomes is pre/post course performance, which requires collecting baseline and end-course data. Students are not likely to perform at their best if you separate outcomes evaluation from their normal class evaluation. Ideally you should make data collection part of your cases and regular classroom assessment process, then pull out the data later. 
+
+For example, in my course using a series of 8 cases, I have 3 questions at the end of the first case that I assume students cannot answer in any depth. I then ask essentially the same questions in a different context in the final case of the semester. I score students’ responses on the two sets of questions using a 10-point scale similar to the Experimental Design Ability Test (EDAT; [Sirum & Humburg, 2011]( https://eric.ed.gov/?id=EJ943887).) 
+
+EDAT-style scoring works well when courses are small because I can get fine-grained feedback from just a few students. It becomes impractical in a case-based course with a large number of students (more than 40 or so.) Now a more scalable strategy is to embed passage-based questions in course exams. This format is used in the Critical Reading section of the SAT, most sections of the MCAT exam, the LSAT, and other professional school entrance exams.
+
+Briefly, students read a short passage similar to a case-type scenario, then answer multiple choice or short open response questions. 
+
+Advantages of passage-based questions:
+
+* Each student must demonstrate their ability without help from working partners.
+* They disadvantage “social loafers” who did not participate in regular class discussions. They will not be prepared to answer such questions on their own.
+* Responses to multiple choice or choice-options questions can be summarized and graphed easily.
+
+Disadvantages of passage-based questions:
+
+* Students have limited time to think before answering questions.
+* Writing good passages and questions requires more instructor time.
 
 #### \   
 
-My Suggestions
-* You will have a lot of submissions to grade, so keep them simple and focused. Try to find ways for students to demonstrate what they have learned that take less time to evaluate. For instance, ask students to draw a summary of a process rather than write a description of it. 
-* Have teams submit one group summary rather than individual assignments. If you want to ensure individual accountability:
-o	Rotate who is responsible for submitting the final group summary for each case. 
-o	Have the team keep a log of who contributed which parts of a larger assignment.
-o	Include 1 reflection question that each student must answer separately.
+## Computational Text Analysis
 
-
-
-# Resources for Supporting Evaluation
-
-## Grading Case Assignments
-
-I grade all case-related assignments using a bins-based model (also called specifications grading.) Items are scored on a 5-point scale based on __overall quality__:
-
-5 = Exceptional. Complete, (equivalent to an A, or 95 in course grades)
-4 = Acceptable. Complete, with some minor errors but essentially correct; accurate, acceptable  (B, or 85)
-3 = Needs improvement. Complete, but has significant errors in logic, reasoning, or interpretation (C or 75)
-2 = Seriously flawed. Submitted but incomplete, with multiple basic factual errors. (D or 65)
-0 = Not submitted. (F or 0)
-
-I also sometimes use a 10-point scale, with 4 being the lowest score without failing. Students usually prefer the 10-point scale, but when I compared the two, overall course grades were no different when using the finer grained 10-point scale vs. the 5-point scale. 
-
-Most of my grading time is spent giving written feedback to individuals and teams that focuses on whether they have met my expectations, and how to do better next time. I limit my major suggestions to 3 per assignment; students find it difficult to internalize more than that.
-
-I prefer bins-scoring because it is faster, and when individuals or teams come in for meetings, there are no points to argue for. The conversations are more productive because we focus on the gaps in their knowledge or thinking. 
+Instructors who use R or Python can use natural language processing packages to analyze pre/post samples of students' writing. Useful metrics can be calculated for hundreds of samples then summarized in just a few minutes. Those interested in learning more about this approach can contact me directly.
 
 #### \   
 
-# When and How to Revise Cases
+# Evaluating Knowledge Transfer
 
-I included this topic here because 
+Key questions here are:
 
+* Can students apply knowlege and skills they learned from cases to novel situations? 
+* Are students able to build on what they learned in later courses?
+
+Evaluations of general learning outcomes usually provide data about knowledge transfer too. For example, if students were required to use Toulmin's practical argumentation model to solve a case during class, they should be able to use that model to solve a novel problem on an exam. 
+
+When planning this part of your evaluation, keep in mind that we tend not to teach biology students HOW to transfer their knowledge and skills. STEM students taking physics or chemistry routinely work on word problems that train them to apply what they learn to new situations. In biology, we assume that students can do this intuitively. If students do not have regular opportunities to practice transferring knowledge and skills (and get feedback), they may not show much improvement.     
+
+#### \   
+
+## Other Ways of Evaluating Knowledge Transfer
+
+### In the News
+
+Give students a news or magazine article about one or more topics covered by cases or coursework. List one specific concept or skill they should have learned, and ask them to:
+
+* Critique the evidence presented
+* Support or debunk the argument or conclusion
+* Argue a different or opposing position
+* Make a hypothesis and design an experiment to test the key conclusion
+* Etc.
+
+This can be a standalone assignment at the end of the semester, or part of a final exam. 
+
+#### \   
+
+### NSF Pre-Proposal
+
+Students write a 3-page pre-proposal pitch of an idea to the NSF. Their pitch should apply one or more concepts that were explored in class to a disease or problem that they did not explore in class. Guidelines and criteria for the pre-proposal should be as similar as reasonably possible to actual federal grant requirements. 
+
+This works best as a final course project. Give students several weeks to work on it. An example of instructions for this type of project are [in the Resources]().
+
+#### \   
+
+### Explainer Video
+
+Students create a short video explaining a concept that was NOT explored in class cases, but is related to the course content. Videos should be:
+
+* Short (under 5-10 minutes)
+* Targeted to a particular audience (I usually tell students that their peers who have NOT had my class are their audience.)
+* Focused on ONE concept.
+* Demonstrate at least one of the skills I want students to carry forward from the class.
+
+The original idea for this evaluation technique (which I use routinely now) came from NSF's Broader Impacts requirement for grant proposals, and HHMI's Biointeractive Program. Most students have a cell phone they can use to create videos, and our institution has video equipment that any student can borrow. The key is requiring students to explain a concept we did NOT talk about in class. With this one activity I can assess content knowledge transfer, vocabulary mastery, teamwork and collaboration,  
+
+Like a pre-proposal, this works best as a final course project. Give students several weeks to work on it.
+
+An example of instructions for this type of project are [in the Resources]().
+
+#### \   
+
+## Evaluating Transfer to Future Courses
+
+This is difficult for three reasons. 
+
+1. Usually we treat each course as a closed module within the curriculum. If your course is not part of a larger program that evaluates forward transfer, the amount and types of data you can collect will be limited.
+2. Student surveys are not reliable. They forget much of what they learned from semester to semester, especially when they encounter new concepts or skills for the first time. 
+3. Students may not realize that they are using newly acquired knowledge or skills, so cannot point to where they first gained them. 
+
+If your case-oriented course is a pre-requisite for any popular advanced courses, ask those instructors if you can survey their students. Similarly, ask any instructors teaching capstone courses if you can poll their students. 
+
+Look on the [Resources](evaluation_1.html) page for more on evaluating forward transfer.
+
+#### \   
+
+# Evaluating Process and Implementation
+
+Questions to ask here are:
+
+* Is implementation going as planned? 
+    + What practical logistical challenges have shown up more than 1-2 times?
+    + What am I (as the instructor) spending most of my time fixing or finding workarounds for?
+* Are students able to navigate and complete the cases successfully?
+    + Where are students getting confused or off track? 
+    + Are students able to self-correct, or do they need more guidance?
+* What are students dissatisfied with? Why?
+
+I find that when I introduce a new case (or add a case to an existing sequence), several implementation problems become apparent almost immediately. When students point these mechanical issues,  __do not wait to fix them!__ You gain students' trust when they know that you are responsive and will address mechanical problems quickly. This translates into:
+
+* Greater willingness to tell you honestly what is or is not working with the cases; and 
+* Greater student buy-in for cases generally.   
+
+#### \   
+
+## Tools for Evaluating Process and Implementation
+
+### End of Case Debrief/Survey
+
+At the conclusion of each case, ask students to debrief aloud in class, or complete a short survey on the course LMS. Informative questions include:
+
+* Was the case topic interesting to you? Why? Is there a topic that you think would work better here?
+    + If students did not find the case scenario interesting, that colors their opinion overall.
+    + Students have insights into what their peers will find interesting the next time. Just changing the topic (but nothing else) often improves student engagement with an unpopular case. 
+<br>    
+* What did I want you to learn from this case?
+    + More than half of students should be able to identify the main learning outcomes of a case. Their responses should become more nuanced and detailed as the course progresses. 
+    + If students are not able to identify the learning goals or do not improve by mid-semester, it suggests they are not transferring their skills from case to case, or are not motivated to engage.
+    <br>
+* Where did your team struggle with this case? What could I do to make it easier? What could your team have done better?
+    + Asking students to reflect on their group process reinforces that they are equally responsible for success.
+    + Asking about process for each case provides data on what might need to be changed next time.
+    + Remember that you cannot please everyone. Look for trends in the responses. An issue that >50% of students raise has higher priority than one <10% of students raise.
+
+#### \   
+
+### End of Semester Evaluations
+
+Like many faculty I think end-of-semester evaluations are not very informative. Students know that what they say will not affect their own experience. For many it is their opportunity to vent frustrations, nothing more. To get better data, we should ask questions while the course is in progress. 
+
+I do rely on end-of-semester evaluations to get feedback on ideas for changes to specific cases or the course overall in the future. Their pre-implementation feedback has kept me from spending many hours on unneeded revisions. With the concluding course as their baseline, I ask current students to rate (using a Likert scale of Strongly disagree to Strongly agree) changes I am considering. I usually get strong support for just 1 in every 4-5 changes I propose. Often they strongly disagree with some of my suggestion; those ideas get dropped unless there is a strong pedagogical reason to override the students' opinion. 
 
 #### \   
 <hr>

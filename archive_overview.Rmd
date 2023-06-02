@@ -16,7 +16,7 @@ Using feedback from 2023 NTC attendees as a starting point I hope to add more te
 
 #### \   
 
-## Available Cases
+# Available Cases
 
 Click on the name of a case to download the student and instructor materials. 
 
@@ -32,7 +32,7 @@ Click on the name of a case to download the student and instructor materials.
 | [Team Work](downloads/Case-Team_Work.docx)| Interrupted;<br>2 sessions| 3 hrs| * Responsible conduct of research<br>* Professional ethical decision-making<br>* External data collection<br>* Self-reflection<br>* Debriefing a group| Advanced| Yes| Model for a classic problem-based learning case.|
 
 
-### Legend 
+## Legend 
 
 Cases are classified by:
 

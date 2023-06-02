@@ -1,5 +1,5 @@
 ---
-title: "Evaluation 1"
+title: "Evaluation Resources"
 bibliography: library.bib
 biblio-style: apalike
 ---
@@ -8,14 +8,62 @@ biblio-style: apalike
 ```
 #### \   
 
-# Goals of 
+# Evaluating Learning Outcomes, Transfer
 
+## General References
 
-1. __What are the general learning outcomes?__ What principles, others?
+* Barkley EF, Major CH. 2016. _Learning Assessment Techniques: A Handbook for College Faculty_, 1st ed. Jossey-Bass. [Amazon](https://www.amazon.com/Learning-Assessment-Techniques-Handbook-College/dp/1119050898)
+    + Describes >50 ways to assess learning across all six Bloom levels, as well as affect and motivation.
+
+* Sirum K, Humburg J. 2011. The Experimental Design Ability Test (EDAT). Bioscene: Journal of College Biology Teaching, v37 n1 p8-16 May 2011. [Link](https://eric.ed.gov/?id=EJ943887) 
+    + A model for writing your own hierarchical rubrics to evaluate writing complexity.
 
 #### \   
 
-# Resources for Supporting Analysis
+## Resources & Tools
+
+* __Diagnostic Questions Clusters (DCQ)__
+    + Cases with linked sets of questions based on the concepts inventory model. The questions are designed to uncover student misconceptions and thinking processes.
+    + The original sets of cases and questions focus on ecology, but other groups have developed DCQs for other topics; search the web for examples. 
+    + Use the original sets as examples to develop new DCQ-type questions that are specific to your situation and goals.
+    + Original source: D'Avanzo C, Anderson CW, Hartley LM, Pelaez N. 2012. A Faculty-Development Model for Transforming Introductory Biology and Ecology Courses. _BioScience_, 62(4), 416–427. [DOI link](https://doi-org/10.1525/bio.2012.62.4.12)
+
+* __Passage-Based Multiple Choice Questions__
+    + The SAT, ACT, and most professional entrance exams use passage-based questions to test higher-level thinking skills.
+    + AAMCAS, Educational Testing Service, and other testing agencies prohibt reuse of their sample questions, but the samples illustrate how multiple choice questions can test more than content knowledge.
+    + [Sample MCAT passages from AAMCAS](https://students-residents.aamc.org/prepare-mcat-exam/mcat-sample-question-guide)
+    + [Sample MCAT passages from Princeton Review](https://www.princetonreview.com/med-school-advice/mcat-study-guide/mcat-sample-questions#!tab2)
+    + [Sample verbal reasoning GRE passages from ETS](https://www.ets.org/gre/test-takers/general-test/prepare/content/verbal-reasoning.html)
+    + [Sample GRE passages from Princeton Review](https://www.princetonreview.com/grad-school-advice/gre-verbal-practice#reading_comprehension)
+
+* __NSF Pre-proposal Project__
+    + A multi-week project in which student teams write a simplified NSF grant pre-proposal. 
+    + Students must apply content knowledge, core concepts, and evidence-based thinking strategies gained from multiple cases completed during the semester. 
+    + [Assignment Guide](downloads/NSF_preproposal_guide.md)
+    + [Sample preproposal](downloads/Example_Preproposal.docx)
+    + [Grading rubric](downloads/Preproposal_rubric.docx)
+
+* __Explainer Video Project__
+    + A multi-week project in which student teams create a video for a general audience that explains a concept NOT covered in course content. 
+    + Students must identify essential information then create a logical structure for presenting that information.
+    + Teams cannot rely on the instructor's logic structure because videos must explain a topic not covered in class. 
+    + [Assignment Guide](downloads/Explainer_video_guide.md)
+    + [Video planning guide](downloads/Video_planning_1.docx)
+    + [Sample storyboard 1](downloads/Storyboard_1.docx)
+    + [Sample storyboard 2](downloads/Storyboard_2.docx)
+    + [Grading rubric](downloads/Explainer_video_rubric.docx)
+
+#### \   
+
+# Evaluating Course Process
+
+## General References
+
+
+
+#### \   
+
+## Resources & Tools
 
 
 

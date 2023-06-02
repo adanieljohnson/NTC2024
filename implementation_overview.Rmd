@@ -40,7 +40,7 @@ __CAUTION!__ If you use electronic access, make __certain__ that students can ac
 
 Some sources call this classroom logistics. The assumption is that a well-written case scenario POINTS student towards the desired learning outcomes, but how the case is implemented during class determines whether students REACH them.
 
-Each section below looks at a different logistics issue. The list of questions is not exhaustive, but should be enough to guide you through common pitfalls of using cases. 
+Each section below looks at a different logistics issue. The list of questions is not exhaustive, but should be enough to guide you through common pitfalls of using cases. Look also in the [RCR Facilitation Guide](downloads/RCR_Facilitator_Guide.md) located in the Implementation Resources.
 
 ## How Will Students Form Discussion Groups?
 
@@ -104,12 +104,26 @@ These are the most common problems I encounter when using cases.
 
 I write 1-2 follow-up questions that I can ask which require students to apply or extend what they have learned in the discussion. I use these to challenge groups that finish early, or use them to extend the case discussion if it is running short. 
 
-Good follow-up questions:
+Good follow-up questions will:
 
-* Build on the initial information surfaced by the main case activities and questions.
-* Push students to find the limits of the conclusions they just reached or make them find other example of principles they have learned.
+* Build on the information surfaced by the main case activities and questions.
+* Push students to find the limits of the conclusions they just reached or make them find other examples of principles they have learned.
 
-I also make use of materials I collected while writing the case. As students are discussing a case, I may find that I did not provide enough supporting information. Usually I have some additional resources that I can provide on the spot. 
+When I am testing new cases, I also keep the materials I collected while writing the case on hand. If it seems that I did not provide enough supporting information initially, I have additional resources that I can share on the spot. 
+
+#### \   
+
+# Practical Implementation Tips
+
+Here are some other suggestions based on my own experiences.
+
+* You will have a lot to grade, so keep submissions  simple and focused. 
+    + Look for ways that students can demonstrate what they have learned that take less time to score. 
+    + For instance, ask students to draw a summary of a process rather than write a description of it. 
+* Have teams submit one assignment per group rather than individual assignments. If you want to ensure individual accountability:
+    + Rotate who is responsible for submitting the final group summary for each case. 
+    + Have the team keep a log of who contributed which parts of a larger assignment.
+    + Include 1 reflection question that each student must answer separately.
 
 #### \   
 <hr>

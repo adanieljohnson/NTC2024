@@ -1,5 +1,5 @@
 ---
-title: "Implementation 1"
+title: "Implementation Resources"
 bibliography: library.bib
 biblio-style: apalike
 ---
@@ -9,29 +9,63 @@ biblio-style: apalike
 
 #### \   
 
-# Resources for Implementation
-## Grading Case Assignments
+# Grading Case Assignments
 
-I grade all case-related assignments using a bins-based model (also called specifications grading.) Items are scored on a 5-point scale based on __overall quality__:
+After trying many methods, I now grade all case-related assignments using a bins-based model (also called specifications grading.) Items are scored on a 5-point scale based on __overall quality__:
 
-5 = Exceptional. Complete, (equivalent to an A, or 95 in course grades)
-4 = Acceptable. Complete, with some minor errors but essentially correct; accurate, acceptable  (B, or 85)
-3 = Needs improvement. Complete, but has significant errors in logic, reasoning, or interpretation (C or 75)
-2 = Seriously flawed. Submitted but incomplete, with multiple basic factual errors. (D or 65)
-0 = Not submitted. (F or 0)
+* 5 = Exceptional. Complete, with no errors. Exceeds expectations for that assignment. (equivalent to an A, or 95 in course grades)
+* 4 = Acceptable. Complete, with some minor errors but essentially correct; accurate, acceptable.  (B, or 85)
+* 3 = Needs improvement. Complete, but has significant errors in logic, reasoning, or interpretation. (C or 75)
+* 2 = Seriously flawed. Submitted but incomplete, with multiple basic factual errors. (D or 65)
+* 0 = Not submitted. (F or 0)
 
-I also sometimes use a 10-point scale, which students seem to prefer, but when I compared the two, overall course grades were no different when using the finer grained 10-point scale vs. the 5-point scale. 
+I sometimes use a 10-point scale instead. Students seem to prefer it, but when I compared the two, overall course grades were no different when using a finer grained 10-point scale vs. a 5-point scale. 
 
-Most of my grading time is spent giving written feedback to individuals and teams that focuses on whether they have met my expectations, what they did well, and how to improve next time. I limit comments to the 3 most important suggestions per assignment; students struggle to internalize more than that.
+I devote most of my grading time to giving written feedback to individuals and teams that focuses on whether they have met my expectations, what they did well, and how to improve next time. I also limit my comments to the 3 most important suggestions per assignment; students struggle to internalize more than that.
 
 Besides being faster, bins scoring means there are no points to argue for. When individuals or teams come in for meetings we are more productive because we focus on the gaps in their knowledge or thinking. 
 
 #### \   
 
-## Case Facilitators' Guide
+# Case Facilitation Guide
 
+A shared case facilitation guide is helpful when more than one instructor is using the same cases or when instructor move in and out of a course or program. New users can see:
 
+* Overall design of the course/program;
+* The learning goals and benchmarks, and rationale behind them;
+* How experienced colleagues manage general class operations;
+* What others do when things go wrong;
+* Tips and tricks others have discovered.
 
+Ideally the facilitation guide will be a shared document that all instructors can modify, or at least add comments and suggestions to. 
+
+Even when cases are only used by only one instructor, a facilitation guide is a useful, centralized place to document the thinking process that led to the cases. It also is a place to put notes on how cases went with particular groups, new ideas for case management, etc.
+
+These documents can help you start your own case facilitation guide:
+
+* A blank template for building a case facilitation guide ([Download](downloads/Facilitation_Guide_Template.md));
+* The abridged facilitation guide from WFUSM's (now-retired) __RCR Education Program *__. 
+    + Download in [Markdown format](downloads/RCR_Facilitator_Guide.md)
+    + Download as a [Word document](downloads/RCR_Facilitator_Guide.docx)
+
+\* WFUSM's RCR Education Program was a 1-year mandatory course for graduate students to fulfill federally mandated responsible conduct of research (RCR) training requirements. Students completed 8 problem-based learning cases, each dealing with 1-3 RCR issues. Student groups of 4-8 were supervised by volunteer facilitators drawn from multiple departments across two campuses. 
+
+The abridged Guide:
+
+* Illustrates how the template can be used to document a case teaching project; and 
+* Outlines strategies for managing some common problems when teaching with cases. 
+* Does not contain:
+    + Documentation for the ethical decision-making framework used in the program; or
+    + Course materials that were published previously elsewhere (see the References section for more.) 
+
+#### \   
+
+# References
+
+1. Bohrer KE, Johnson AD, Miller K, Ferrier, A. 2008. Teaching the Teacher: Introducing and Training TAs in Inquiry–Based Learning Methods. _Proceedings of the 29th Conference of the Association for Biology Laboratory Education_, 29: 67–126. [Link](http://www.ableweb.org/volumes/vol-29/v29reprint.php?ch=3) 
+2. Johnson, AD, Lambros, AM, Peiffer, AM, Tytell, M., Eldridge, JC, Jones, NL. 2010. Teaching Bioethics and Professional Conduct Through Problem-Based Learning. _Proceedings of the 31st Conference of the Association for Biology Laboratory Education_, 31:134-161. [Link](http://www.ableweb.org/volumes/vol-31/v31reprint.php?ch=10) 
+3. Jones, NL, Peiffer, AM, Lambros, A, Guthold, M, Johnson, AD, Tytell, M, Ronca, A, Eldridge, JC. 2010. Developing a problem-based learning (PBL) curriculum for professionalism and scientific integrity training for biomedical graduate students. _Journal of Medical Ethics_, 36:614-619.
+4. Lambros, A. (2004). _Problem-based learning in middle and high school classrooms._ Thousand Oaks, CA, Corwin Press.
 
 #### \   
 <hr>
