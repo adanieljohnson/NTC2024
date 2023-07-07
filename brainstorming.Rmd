@@ -10,7 +10,7 @@ biblio-style: apalike
 
 # Core Topics
 
-_What topics should be in a core set of neuroscience teaching cases?_ 
+_What topics, thinking skills should be in a core set of neuroscience teaching cases?_ 
 
 * Ex. Causes of neurological disease
     + Microtubule defects

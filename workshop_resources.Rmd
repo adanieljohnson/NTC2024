@@ -8,21 +8,18 @@ biblio-style: apalike
 ```
 #### \   
 
-## Workshop Handouts
+## NTC 2023 Materials
 
-* [Main workshop handout](link)
-* [Item](link)
-* [Item](link)
-* [Item](link)
+* [Workshop slides](downloads/NTC23_slides.pptx)
+* [Workshop handout](downloads/NTC23_Case_Workshop_Handout_v1.docx)
 
 #### \   
 
-## Supplemental Materials
+## Outside Resources
 
-* [Item](link)
-* [Item](link)
-* [Item](link)
-* [Item](link)
+* [NSTA Case Studies Library](https://www.nsta.org/case-studies)
+* [Community-derived core list of neuroscience topics - Chen 2023](https://www.lifescied.org/doi/full/10.1187/cbe.22-02-0018)
+
 
 #### \   
 <hr>
