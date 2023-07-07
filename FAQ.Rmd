@@ -1,0 +1,57 @@
+---
+title: "FAQ"
+---
+
+```{r, child="_setup.Rmd"}
+```
+#### \   
+
+# Frequently Asked Questions
+
+## Do cases work in content-intensive courses?
+
+Yes! Case-based teaching has been a routine part of medical, allied health, law, and business education for several decades. Many medical schools use problem-based learning (a structured case-based teaching method) for some to all of their content-intensive curriculum for the first two years.
+
+Teaching cases written specifically for basic STEM fields began to appear in the early 1990s; while not as widely used for STEM undergraduate courses as in the other fields, they are well-established active teaching and learning tools.
+
+#### \   
+
+## What do teaching cases look like? 
+
+There is no one-size-for-all case format, but they do all share some similarities. Regardless of the type, all cases have a scenario or story that focus students on a question or problem. Effective scenarios draw students in and make the exploration authentic, relevant, and meaningful. Nearly all cases also have one or more time blocks when students discuss or work with peers to answer guide questions, collect outside data, analyze information provided by the case, or collaborate in some other way.
+
+Within these general shared parameters, cases can be categorized by:
+
+* Point of view: first person/experiential, historical narrative, scenario, etc.
+* Workflow: continuous, interrupted
+* Endpoint: open-ended (typical of problem-based learning cases), fixed endpoint
+* Time required: mini (less than 1/2 class session), 1-day, multi-day
+* Learning goals: process-, content-, cognitive skills-oriented
+* Delivery method: small-group, lecture-clicker, flipped
+* Connection between cases: standalone, serial, modular/branched
+
+#### \   
+
+## What is the best case type for my course?
+
+The course structure and learning outcomes you want students to achieve through cases will help you decide what kinds of cases are best for your needs.
+
+__Example 1.__ You are teaching a 100-level general biology course with an enrollment of 200 students. You want students to develop data interpretation skills. Given students are not able to discuss the case in small groups, a mini-case (<1/2 class session) where students look at data then respond to prompts using clickers or polls is more likely to fit your needs.
+
+__Example 2.__ You are teaching a 200-level topic-intensive course with an enrollment of 40 students. You want them to apply course concepts to a novel problem. Students have space to meet in small groups during class but cannot meet outside of class. Now the best option might be 1-day interrupted cases where groups report what they discovered through discussion during a debrief at the end of class. The case itself might focus on a real-world problem such as a disease, an emerging invasive species, or a new technology application.
+
+__Example 3.__ You are teaching a senior capstone seminar with 16 students. Your goal is for students to make connections between topics learned in earlier courses. Students can be assigned to permanent working teams for the semester. The better choice here may be a linked series of cases that return several times to a single organism, system, or process, and explore it from different perspectives.
+
+#### \   
+
+## How Do I Get Started?
+
+Decide what topics or skills you want to develop using cases, then decide how to integrate them into your course workflow. There are separate pages in this resource for each of these topics. Once you know what your goals are for cases, you can start choosing existing cases or writing your own to fit your needs.
+
+#### \   
+
+## How Do I Get Started?
+
+The first step often is the hardest for STEM instructors. ; it is to accept that we do not have to tell students every piece of information they need to know. Students can be trusted (and should be expected) to learn some basic factual knowledge on their own.
+
+
