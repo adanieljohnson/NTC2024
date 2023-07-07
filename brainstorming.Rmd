@@ -8,36 +8,26 @@ biblio-style: apalike
 ```
 #### \   
 
-# Topics For New Neuroscience Teaching Cases
+# Core Topics
 
-The first question we are exploring is:
+_What topics should be in a core set of neuroscience teaching cases?_ 
 
-_What would be good topics for new_ __teaching cases__ _in neuroscience?_ 
-
+* Ex. Causes of neurological disease
+    + Microtubule defects
+    + Protein misfolding - tau vs. beta-amyloid
+* 
 * 
 * ??
 * 
 * 
-* Microtubule Defects in Neurological Disease
-* Tau-ists vs. Beta-ists: Origins of Alzheimers
-* Psychotropics (MDMA, LSD, psylocibin, mescaline) as treatments for mental health disorders. Can explore or build:
-    + 
-    + ??
-    + 
 
 #### \   
 
-# Goals For New Neuroscience Teaching Cases
+# Case Goals
 
-The second question we are exploring is:
+_What do you hope to accomplish or support with neuroscience teaching cases?_ 
 
-_What would you like to accomplish or support with neuroscience teaching cases?_ 
-
-* 
-* ??
-* 
-* 
-* Learning topic content & concepts
+* Teach content & concepts
 * Skills training
     + Finding and presenting evidence 
     + Evidence-based decision-making 
@@ -47,20 +37,26 @@ _What would you like to accomplish or support with neuroscience teaching cases?_
     + Debate
     + Panel review
 * Professional development; teacher & TA training
+* 
+* 
+* ??
+* 
+* 
 
 
 #### \   
 
 # Formats For New Neuroscience Teaching Cases
 
-As time allows, we'll talk about what case formats might work best in specific situations. Options include:
+_What case formats would be most appropriate?_
 
+* Text vs. video based
+* Scenario vs. data 
+* 
 * 
 * ??
 *
 * 
-* Text vs. video based
-* Scenario vs. not
 
 #### \   
 
