@@ -10,7 +10,7 @@ biblio-style: apalike
 
 ## NTC 2023 Materials
 
-* [Workshop slides](downloads/NTC23_slides.pptx)
+* [Workshop slides](downloads/NTC_2023_v1.pptx)
 * [Workshop handout](downloads/NTC23_Case_Workshop_Handout_v1.docx)
 
 #### \   
