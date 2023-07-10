@@ -27,6 +27,7 @@ Click on the name of a case to download the student and instructor materials.
 | [Eating Flossflower Changes Manduca Development](downloads/Case-Effects_of_feeding_flossflower_on_Manduca_development.docx)| Continuous;<br>1 session| 30-60 min.| * Designing experiments<br>* Interpreting results<br>* Summarizing observations<br>* Reporting in a notebook| Introductory| Yes| Good case for: teaching experimental design; training TAs how to manage group discussions; introducing lab notebooks or scientific writing.|
 | [Mapping a Promoter](downloads/Case-Mapping_a_Promoter.docx)| Interrupted;<br>2 sessions| 2-3 hrs| * Understanding how transcription factors bind to promoters<br>* Interpreting data from multiple sources <br>* Supporting a conclusion with experimental evidence| Intermediate| Yes| Is extensively annotated to show how case was constructed, and how each piece contributes to learning goals.|
 | [Genes of Autism](downloads/Case-Genes_of_Autism.docx)| Interrupted;<br>2 sessions| 2-3 hrs| * Understanding how epigenetic regulation controls multiple genes<br>* Linking clinical features to genes <br>* Supporting a conclusion with experimental evidence| Intermediate or Advanced| Yes| Model case for exploring genetics of any multi-factorial disease. Focuses more on logic than a single right answer.|
+| [Dogs to DNA](downloads/Case-From_Dogs_to_DNA.docx)| Linked set of<br> 3 interrupted<br> cases;<br>1 session/<br>case| 1 hr/<br>case| * Genetic principles<br>* Connecting genotypes<br>  to phenotypes<br>| Intermediate| Yes| Example of how to build a set of linked cases around one thematic model.|
 | [FDA Clinical Trial Approvals](downloads/Case-FDA_Clinical_Trial_Approvals.docx)| Interrupted;<br>2 sessions| 3 hrs| * Learning how clinical trials are conducted<br>* Evaluating proposals  based on set criteria| Intermediate<br>to advanced| Yes| Model for introducing clinical trial or research proposal review process in any field.|
 | [Is DU Ammo Causing Cancer?](downloads/Case-Is_DU_Causing_Cancer.docx)| Interrupted;<br>2 sessions| 2 hrs| * Using course concepts and content knowledge to understand a social issue<br>* Comparing claims, evidence from lay press and scientific sources<br>* Synthesizing, summarizing evidence<br>* Explaining evidence to a non-technical audience| Advanced| Yes| Model for applying evidence to controversial anecdotal claims.|
 | [Team Work](downloads/Case-Team_Work.docx)| Interrupted;<br>2 sessions| 3 hrs| * Responsible conduct of research<br>* Professional ethical decision-making<br>* External data collection<br>* Self-reflection<br>* Debriefing a group| Advanced| Yes| Model for a classic problem-based learning case.|
@@ -36,7 +37,7 @@ Click on the name of a case to download the student and instructor materials.
 
 Cases are classified by:
 
-* __Format__: single- or multiple sessions case; continuous or interrupted 
+* __Format__: single- or multiple sessions case; continuous or interrupted. Linked sets are 2+ cases using the same background information. 
 * __Time required__ (excluding outside reading, research)
 * __Focus or key activities__ build:
     + Content and conceptual knowledge, general knowledge, and/or discipline-specific knowledge
