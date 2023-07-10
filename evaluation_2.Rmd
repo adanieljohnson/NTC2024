@@ -28,6 +28,8 @@ Avoid revising an existing case just before you give it to your students. Making
 
 These questions can help you identify what you might want to revise.
 
+#### \   
+
 ## Class Logistics
 
 1. Is the case running as planned?
@@ -56,6 +58,8 @@ These questions can help you identify what you might want to revise.
     + What are you (as the instructor) spending most of your time fixing or finding workarounds for?
     + What changes to the case would eliminate the workarounds?
 
+#### \   
+
 ## Learning Outcomes
 
 7. Are students meeting all learning outcomes, some outcomes, or none?
@@ -65,6 +69,8 @@ These questions can help you identify what you might want to revise.
 8. Can students apply what they learned from the case to new situations? Are students referring back to prior cases or class work when they answer the current case questions?
     + If not, what could you do as part of the case to develop transfer skills?
     + Students may not know how to call back prior work. Try adding a nudge question to the case that specifically asks them to make connections to a past case or class activity.
+
+#### \   
 
 ## Student Engagement
 
@@ -77,8 +83,7 @@ These questions can help you identify what you might want to revise.
         - If not, you might consider reframing the introductory background to make the scenario more relevant to the students. 
         - Changing just the lead-in often improves student engagement with an unpopular case. 
     
-#### \   
-<hr>
+#### \  
 
 # How Much Should You Revise a Case? 
 
@@ -106,4 +111,5 @@ It is harder to let go of a case that you wrote and enjoy, and that students lik
     + If there is no emotional connection to the case, an essential affective element of learning is missing.
 
 #### \   
+
 <hr>

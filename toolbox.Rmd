@@ -49,18 +49,4 @@ Twine is an open-source application for writing interactive, non-linear stories.
 
 # Item
 
-#### \   
-
-# Item
-
-#### \  
-
-# Item
-
-#### \   
-
-# Item
-
-#### \   
-
 <hr>

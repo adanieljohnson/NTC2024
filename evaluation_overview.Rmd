@@ -188,4 +188,5 @@ Like many faculty I think end-of-semester evaluations are not very informative. 
 I do rely on end-of-semester evaluations to get feedback on ideas for changes to specific cases or the course overall in the future. Their pre-implementation feedback has kept me from spending many hours on unneeded revisions. With the concluding course as their baseline, I ask current students to rate (using a Likert scale of Strongly disagree to Strongly agree) changes I am considering. I usually get strong support for just 1 in every 4-5 changes I propose. Often they strongly disagree with some of my suggestion; those ideas get dropped unless there is a strong pedagogical reason to override the students' opinion. 
 
 #### \   
+
 <hr>

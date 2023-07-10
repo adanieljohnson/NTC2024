@@ -59,13 +59,10 @@ biblio-style: apalike
 
 ## General References
 
-
-
 #### \   
 
 ## Resources & Tools
 
-
-
 #### \   
+
 <hr>

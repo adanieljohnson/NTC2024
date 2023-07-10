@@ -52,17 +52,25 @@ The design and development phase is when instructors have the most opportunities
 
 Kip Herreid, the founder of the National Clearinghouse for Case Studies Teaching in Science (NCCSTS), always says, “to write a case, start with a story.” You may have a specific story in mind that you want to build a case around. If not, these three exercises can get your mental juices flowing.
 
+#### \   
+
 ### Applied Thinking - Daily News:
 
 As professionals we read and process news differently than our students. Pick a story published in the last 24 hours that is relevant to an open question in your field or to a topic that you think students should understand better but do not currently. That story is the starting point for writing your case.
+
+#### \   
 
 ### Making Connections - Trigger Points:
 
 Pick a major event or change in your discipline. Now pick one seemingly minor event, development, or other factor that CONTRIBUTED to the bigger event. How that earlier event contributed to the latter one is the starting point for writing your case.
 
+#### \   
+
 ### Teaching Challenge - Specific Skill:
 
 Pick a teaching challenge you run into regularly. It can be a skill you want students to develop more fully, or a recurring problem (citing sources, for example). Addressing that one skills gap is the starting point for your case.
+
+#### \   
 
 ### If All Else Fails...Look at Others' Cases
 
@@ -76,6 +84,8 @@ When you write cases regularly, you develop a workflow that works for you. Until
 
 The [template is also available as a separate Markdown document](downloads/Case_planning_template.md) to download.
 
+#### \   
+
 ### 1. Goals and Topic 
 
 What 1-2 learning goals do you want this case to achieve? Be specific. Use action verbs to state the goals.
@@ -87,6 +97,8 @@ What topic do you want to make your case about? WHY use that topic?
 
 * 
 
+#### \   
+
 ### 2. Scenario
 
 What story or situation that is relevant or familiar to students would require them to use or demonstrate the knowledge or skills that are contained in your learning goals? 
@@ -95,6 +107,7 @@ What story or situation that is relevant or familiar to students would require t
 * Can you organize the scenario so it contains an “and-but-so” conflict or problem?
 * What visuals or artifacts could help bring the story to life for students?
 
+#### \   
 
 ### 3. Guide Questions and Supports
 
@@ -115,6 +128,8 @@ What follow-up questions can you ask that require students to apply or extend wh
 * At least partly “close the loop”
 * Get students to think or act in ways that fit the learning goals
 
+#### \   
+
 ### 4. Outputs & End Products
 
 How are you going to ask students to provide responses to questions or feedback? For example:
@@ -131,6 +146,8 @@ What will be your students’ deliverables that you will grade?
 * Individual items
 
 Additional information is also in the [Evaluation section](evaluation_overview.html).
+
+#### \   
 
 ### 5. Logistics
 
@@ -170,5 +187,6 @@ Once you have a skeleton for the case, wait a day or so before doing more. Pitch
     + You can adjust that once you know how your own students will respond.
 
 #### \   
+
 <hr>
 

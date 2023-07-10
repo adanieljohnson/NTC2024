@@ -7,6 +7,7 @@ biblio-style: apalike
 ```{r, child="_setup.Rmd"}
 ```
 #### \   
+
 # Setting Neuroscience Learning Outcomes 
 
 If your local program does not have learning outcome goals developed already, [Chen and Phillips (2023)](https://www.lifescied.org/doi/full/10.1187/cbe.22-02-0018)\cite{Chen2023} published community-driven standards for neuroscience topics based on a nationwide survey of neuroscience educators.

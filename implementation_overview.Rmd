@@ -6,6 +6,9 @@ biblio-style: apalike
 
 ```{r, child="_setup.Rmd"}
 ```
+
+#### \   
+
 # Goals for Implementation
 
 This stage of the ADDIE process is similar to Design and Development in that you will have to make adjustments as the student population changes, course goals change, or other course elements become more or less important. 
@@ -42,6 +45,8 @@ Some sources call this classroom logistics. The assumption is that a well-writte
 
 Each section below looks at a different logistics issue. The list of questions is not exhaustive, but should be enough to guide you through common pitfalls of using cases. Look also in the [RCR Facilitation Guide](downloads/RCR_Facilitator_Guide.md) located in the Implementation Resources.
 
+#### \   
+
 ## How Will Students Form Discussion Groups?
 
 * Will groups be self-selected or assigned? Will they be one-time groups or semester-long teams?
@@ -49,6 +54,8 @@ Each section below looks at a different logistics issue. The list of questions i
 * What size should discussion groups be? 
     + Best practice is to have groups of 4-7. 
     + Smaller groups of 3 can work, but groups of more than 7 usually split on their own. 
+
+#### \   
 
 ## How Will I Start the Case?
 
@@ -58,6 +65,8 @@ What can I ask students about the case scenario or topic generally that will get
 * Can be discussed sufficiently in 3-5 minutes. (You want them to get working as soon as possible.)
 * Highlight a gap in students' knowledge or thinking skills that the case is designed to fill.
 
+#### \   
+
 ## How Will Students Respond During the Case?
 
 How will students provide responses to questions or feedback during the class sessions? 
@@ -66,6 +75,8 @@ How will students provide responses to questions or feedback during the class se
 * A way I keep groups moving is to put a summary table on the board, and have teams complete the table as they finish their discussion. 
     + Faster groups will take more time to fill out their row of the table. 
     + Slower groups only fill in cells where their answers are significantly different.
+
+#### \   
 
 ## How Will Students Submit Case Assignments?
 
@@ -79,6 +90,7 @@ Some tips to minimize frustration and ease workload:
 
 The bins-based grading strategy I use for case work is described on the [Implementation Resources](implementation_1.html) page.
 
+#### \   
 
 ## What Will I Do WHEN Things Go Wrong?
 
@@ -99,6 +111,8 @@ These are the most common problems I encounter when using cases.
         - I write out a description of the end goals that I hoped they would reach.
         - I ask the students to critique the case. WHY did they not get to the end point I intended?
     + The debrief provides students with another opportunity to reach my intended learning goals, AND provides me with data I can use to make revisions.
+
+#### \   
 
 ## How Can I Adjust the Case If Needed?
 
@@ -126,4 +140,5 @@ Here are some other suggestions based on my own experiences.
     + Include 1 reflection question that each student must answer separately.
 
 #### \   
+
 <hr>
