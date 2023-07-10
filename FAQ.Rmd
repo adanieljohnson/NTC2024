@@ -12,41 +12,43 @@ Definitely! Case-based teaching has been a core part of medical, allied health, 
 
 Teaching cases written specifically for basic STEM fields began to appear in the early 1990s; while not as widely used for STEM undergraduate courses as in the other fields, they are well-established active teaching and learning tools.
 
-Also, there is a misconception that students learn less with cases vs. lecture-based content-intensive courses. Studies have shown that a typical lecture course can deliver 3-5 central concepts per hour (~120 central concepts/semester). Students may do well on short-term recall (i.e., in-class exams), but retain just 5-10% of what they learn 15-30 days. In other words, students take just 6-12 central concepts forward to the next semester. 
+Also, there is a misconception that students learn less with cases vs. lecture-based content-intensive courses. Studies have shown that a typical lecture course can deliver 3-5 central concepts per hour (~120 central concepts/semester). Students may do well on in-class exams that emphasize short-term recall, but will retain just 5-10% of what they learn for 15-30 days. Put another way, most students take only 6-12 central concepts forward from their current course to the next semester. 
 
-If a case-based course covers just 25% of that same content (30 concepts), but students retain ~60%, they carry (120 x .25 x .60 = ) 18 core concepts forward (50% more). The instructor also has a better idea of which concepts are carried forward, because they have selected which 25% of the lecture-based concepts they prioritized. Finally, retained content is more readily transferred to new situations.
+If a case-based course covers just 25% of that same content (30 concepts), but students retain ~60%, they carry (120 x .25 x .60 = ) 18 core concepts forward (50% more). The instructor also has a better idea of which concepts are carried forward, because they have selected which 25% of the lecture-based concepts they prioritized. Additionally, the retained content is more readily transferred to new situations.
 
 #### \   
 
 ## What do teaching cases look like? 
 
-There is no one-size-for-all case format, but they do all share some similarities. Thet have a scenario or story that focus students on a question or problem. Effective scenarios draw students in and make the exploration authentic, relevant, and meaningful. Nearly all cases also have one or more time blocks when students discuss or work with peers to answer guide questions, collect outside data, analyze information provided by the case, or collaborate in some other way.
+There is no one-size-for-all case format, but all cases do share some similarities. They all have a patient, scenario or story that focus students on a question or problem. Good scenarios draw students in and make the exploration authentic, relevant, and meaningful. 
+
+Nearly all cases have one or more time blocks when students discuss or work with peers to answer guide questions, collect outside data, analyze information provided by the case, or collaborate in some other way.
 
 Within these general shared parameters, cases can be categorized by:
 
-* Point of view: first person/experiential, historical narrative, scenario, etc.
+* Point of view: first person/experiential, historical narrative, patient history, scenario, etc.
 * Workflow: continuous, interrupted
-* Endpoint: open-ended (typical of problem-based learning cases), fixed endpoint
-* Time required: mini (less than 1/2 class session), 1-day, multi-day
+* Endpoint: open-ended (most common in problem-based learning cases), fixed endpoint
+* Time required: mini (less than 1/2 class session), 1-day, multi-day, linked series
 * Learning goals: process-, content-, cognitive skills-oriented
 * Delivery method: small-group, lecture-clicker, flipped
-* Connection between cases: standalone, serial, modular/branched
+* Connection between cases: standalone, serial, modular/branched, linked series
 
 #### \   
 
 ## What is the best case type for my course?
 
-The course structure and learning outcomes you want students to achieve through cases will help you decide what kinds of cases are best for your needs.
+There is no simple answer. The course structure and learning outcomes you want students to achieve through cases will determine what kinds of cases are best for your needs.
 
-__Example 1.__ You are teaching a 100-level general biology course with an enrollment of 200 students. You want students to develop data interpretation skills. Given students are not able to discuss the case in small groups, a mini-case (<1/2 class session) where students look at data then respond to prompts using clickers or polls is more likely to fit your needs.
+__Example 1.__ You are teaching a 100-level general biology course with an enrollment of 200 students. You want students to develop data interpretation skills. Given students are unable to discuss the case in small groups, a mini-case (<1/2 class session) where students look at data then respond to prompts using clickers or polls is more likely to fit your needs.
 
-__Example 2.__ You are teaching a 200-level topic-intensive course with an enrollment of 40 students. You want them to apply course concepts to a novel problem. Students have space to meet in small groups during class but cannot meet outside of class. Now the best option might be 1-day interrupted cases where groups report what they discovered through discussion during a debrief at the end of class. The case itself might focus on a real-world problem such as a disease, an emerging invasive species, or a new technology application.
+__Example 2.__ You are teaching a 200-level topic-intensive course with an enrollment of 40 students. You want them to apply course concepts to a novel problem. Students have time to meet in small groups during class but cannot meet outside of class. Here the best option might be 1-day interrupted cases where groups report what they discovered through discussion during a debrief at the end of class. The case itself might focus on a real-world problem such as a disease, an emerging invasive species, or a new technology application.
 
-__Example 3.__ You are teaching a senior capstone seminar with 16 students. Your goal is for students to make connections between topics learned in earlier courses. Students can be assigned to permanent working teams for the semester. The better choice here may be a linked series of cases that return several times to a single organism, system, or process, and explore it from different perspectives.
+__Example 3.__ You are teaching a senior capstone seminar with 16 students. Your goal is for students to make connections between topics learned in earlier courses. Students can be assigned to permanent working teams for the semester. The best choice here is probably a linked series of cases that return several times to a single organism, system, or process, and explore it from different perspectives.
 
 #### \   
 
-## How do I get started?
+## How do I get started using teaching cases?
 
 First decide what topics or skills you want to develop using cases, then decide how to integrate them into your course workflow. Once you know what your goals are for cases, you can start choosing existing cases or writing your own to fit your needs. There are separate pages in this website that examine each of these steps in more depth.
 
@@ -54,7 +56,9 @@ First decide what topics or skills you want to develop using cases, then decide 
 
 ## What are the biggest barriers to using cases?
 
-Every instructor will answer this differently. Personally I think the biggest hurdle for most STEM instructors is accepting that we do not have to tell students every piece of information they need to know. Students can be trusted (and should be expected) to learn some basic factual knowledge on their own. I think students' biggest hurdle is not having the "right" answers to memorize and regurgitate. It takes time for them to get comfortable with how the scientific community actually works. 
+Every instructor has different challenges. Personally I think the biggest hurdle for most STEM instructors is accepting that we do not have to tell students every piece of information they need to know. Students can be trusted (_and should be expected_) to learn some basic factual knowledge on their own. 
+
+In my experience, the students' biggest hurdle is not having the "right" answers to memorize and regurgitate. They need time and repetition before they get comfortable with cases, even though they better reflect how the scientific community actually works. 
 
 #### \   
 

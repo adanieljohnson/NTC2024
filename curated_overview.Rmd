@@ -8,7 +8,7 @@ biblio-style: apalike
 ```
 #### \   
 
-This project's resources are organized around a modified ADDIE model of curriculum design (U. Florida, 1975), with elements of backwards design (Wiggins & McTighe, 1999). The two are very similar, but more faculty are familiar with backwards design. 
+The case teaching resources on this site are organized around a modified ADDIE model of curriculum design (U. Florida, 1975), with elements of backwards design (Wiggins & McTighe, 1999). The two are very similar, but more faculty are familiar with backwards design. 
 
 The five steps of the ADDIE Model are:
 

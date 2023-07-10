@@ -21,8 +21,8 @@ Using feedback from 2023 NTC attendees as a starting point I hope to add more te
 Click on the name of a case to download the student and instructor materials. 
 
 |Name|Format|Time Req'd|Focus or <br>Key Activities|Level|Instructor<br>Notes|Comments|
-|:---|:---:|:---:|:----------------|:---:|:---:|:-----------------|
-| [What is Life?](Case-What_is_Life_annotated.pptx)|Continuous|30 min.|* Applying prior knowledge<br>* Assessing evidence|Nonmajors|Yes|Model for slides-based cases that work in large lecture courses|
+|:---|:---:|:---:|:----------------:|:---:|:---:|:-----------------:|
+| [What is Life?](Case-What_Is_Life_annotated.pptx)|Continuous|30 min.|* Applying prior knowledge<br>* Assessing evidence|Nonmajors|Yes|Model for slides-based cases that work in large lecture courses|
 | [Banning Cancer-Causing Foods](downloads/Case-Cancer_Foods.docx)| Interrupted;<br>2 sessions|2 hrs| * Finding, assessing evidence for lay press claims<br>* Prioritizing points for oral arguments| Nonmajors| Yes| Model for building decision-making cases|
 | [Eating Flossflower Changes Manduca Development](downloads/Case-Effects_of_feeding_flossflower_on_Manduca_development.docx)| Continuous;<br>1 session| 30-60 min.| * Designing experiments<br>* Interpreting results<br>* Summarizing observations<br>* Reporting in a notebook| Introductory| Yes| Good case for: teaching experimental design; training TAs how to manage group discussions; introducing lab notebooks or scientific writing.|
 | [Mapping a Promoter](downloads/Case-Mapping_a_Promoter.docx)| Interrupted;<br>2 sessions| 2-3 hrs| * Understanding how transcription factors bind to promoters<br>* Interpreting data from multiple sources <br>* Supporting a conclusion with experimental evidence| Intermediate| Yes| Is extensively annotated to show how case was constructed, and how each piece contributes to learning goals.|

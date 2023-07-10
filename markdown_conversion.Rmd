@@ -1,7 +1,5 @@
 ---
 title: "Converting Markdown Files"
-author: "Dan Johnson"
-date: "5/16/2023"
 output: html_document
 ---
 
@@ -45,8 +43,7 @@ To download a single file:
 
 In 2022 we gave a training workshop on using Markdown and document conversion at the Association for Biology Lab Education (ABLE) annual meeting.
 
-1.  The full [ABLE Workshop repository](https://github.com/adanieljohnson/ABLE_2022_Workshop) describes additional tools and resources in more detail.
-2.  [Download a copy of the quick guide to file conversion]() here.
+The full [ABLE Workshop repository](https://github.com/adanieljohnson/ABLE_2022_Workshop) describes additional tools and resources in more detail, as well as how to quickly interconvert file formats. 
 
 #### \   
 
@@ -91,7 +88,7 @@ MS Word files are formatted using a standard template. To reformat documents a d
 
 ### Advanced Tool: Pandoc
 
-[**Pandoc**](https://pandoc.org/index.html), a "universal document converter." It can read many different document file types, then convert one format to another. Some file types get fussy when converted, but Markdown and Pandoc play very nicely together.
+[**Pandoc**](https://pandoc.org/index.html) is a "universal document converter" that can read many different document file types, then convert one format to another. Some file types get fussy when converted, but Markdown and Pandoc play very nicely together.
 
 Pandoc is the engine underneath R Studio and most other file converters. It runs from your computer's command line, but is easy to install and use. If you would like to try it yourself:
 

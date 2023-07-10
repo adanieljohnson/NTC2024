@@ -1,5 +1,5 @@
 ---
-title: "Brainstorming"
+title: "Brainstorming Session"
 bibliography: library.bib
 biblio-style: apalike
 ---
@@ -8,16 +8,16 @@ biblio-style: apalike
 ```
 #### \   
 
-# Core Topics
+# Core Case Topics
 
 _What topics, thinking skills should be in a core set of neuroscience teaching cases?_ 
 
-* Ex. Causes of neurological disease
+* Ex. Origins of neurological defects, disease
     + Microtubule defects
     + Protein misfolding - tau vs. beta-amyloid
-* 
-* 
 * ??
+* 
+* 
 * 
 * 
 
@@ -27,34 +27,34 @@ _What topics, thinking skills should be in a core set of neuroscience teaching c
 
 _What do you hope to accomplish or support with neuroscience teaching cases?_ 
 
-* Teach content & concepts
-* Skills training
-    + Finding and presenting evidence 
-    + Evidence-based decision-making 
+* Content & concepts mastery (see above)
+* Building disciplinary skills:
+    + Reading skills
+    + Finding, summarizing reliable evidence 
     + Interpreting data
+    + Evidence-based decision-making 
     + Other skills?
-* Applied thinking
-    + Debate
-    + Panel review
+* Applied thinking (aka, transfer) skills
 * Professional development; teacher & TA training
-* 
-* 
 * ??
+* 
+* 
 * 
 * 
 
 
 #### \   
 
-# Formats For New Neuroscience Teaching Cases
+# Case Formats
 
-_What case formats would be most appropriate?_
+_What case formats would be most engaging, appropriate for neuroscience teaching cases?_
 
 * Text vs. video based
+* Historical/clinical vs. narrative
 * Scenario vs. data 
-* 
-* 
 * ??
+* 
+* 
 *
 * 
 
