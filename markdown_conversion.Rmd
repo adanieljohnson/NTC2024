@@ -19,7 +19,7 @@ Workshop files are stored in a GitHub repository. Originally created for sharing
 
 To download a full repository of files:
 
-<center>![Downloading a gitHub archive](https://github.com/adanieljohnson/bio_case_writing/blob/main/siteimages/File_access.png?raw=true)</center>
+<center>![Downloading a gitHub archive](https://github.com/adanieljohnson/NTC2023/blob/main/images/File_access.png?raw=true)</center>
 
 <br>
 
@@ -29,7 +29,7 @@ To download a full repository of files:
 
 To download a single file:
 
-<center>![Downloading a single GitHub file](https://github.com/adanieljohnson/bio_case_writing/blob/main/siteimages/Single_file.png?raw=true)</center>
+<center>![Downloading a single GitHub file](https://github.com/adanieljohnson/NTC2023/blob/main/images/Single_file.png?raw=true)</center>
 
 <br>
 
@@ -73,7 +73,7 @@ There are many free MD to HTML converters available. Two very good ones are [**M
 
 R Studio is very good for converting both .Rmd and .md files to well-formatted Word documents.
 
-<center>![Converting Markdown to Word format](https://github.com/adanieljohnson/ABLE_2022_Workshop/blob/main/images/Preview-Word-ABLE.png?raw=true)</center>
+<center>![Converting Markdown to Word format](https://github.com/adanieljohnson/NTC2023/blob/main/images/Preview-Word-ABLE.png?raw=true)</center>
 
 <br>
 
