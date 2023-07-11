@@ -18,7 +18,7 @@ biblio-style: apalike
 ## Outside Resources
 
 * [NSTA Case Studies Library](https://www.nsta.org/case-studies)
-* [Community-derived core list of neuroscience topics - Chen 2023](https://www.lifescied.org/doi/full/10.1187/cbe.22-02-0018)
+* [Community-derived core list of neuroscience topics - Chen-Lew 2023](https://www.lifescied.org/doi/full/10.1187/cbe.22-02-0018)
 
 
 #### \   

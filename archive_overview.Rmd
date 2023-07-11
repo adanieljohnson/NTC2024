@@ -8,30 +8,32 @@ biblio-style: apalike
 ```
 #### \   
 
-Cases in this collection were selected to: 1) illustrate the range of case formats and variety of skills that students can build using cases; and 2) provide templates that have been tested already with students.
+Cases in this collection were selected to: 1) illustrate the range of case formats and variety of skills that students can build using cases; and 2) provide student-tested templates for writing new cases.
 
-Some of the cases have aged out as their fields have progressed, so cannot be used as they are currently. Still they are good examples of specific case structures and organization strategies. The basic frameworks can be updated by overlaying new content or a different topic. 
+Some cases have aged out so cannot be used in their current form, but they still exemplify good case structures and organization strategies. Their basic frameworks can be updated with new content or used for a new case on a different topic. 
 
-Using feedback from 2023 NTC attendees as a starting point I hope to add more templates and examples illustrating other specific case strategies.
+Case titles marked "N" explore topics specifically relevant to neuroscience.
+
+Using feedback from 2023 NTC attendees as a starting point I hope to add more templates and examples illustrating other case formats.
 
 #### \   
 
 # Available Cases
 
-Click on the name of a case to download the student and instructor materials. 
+Click on the name of a case to download the student and instructor materials.  
 
 |Name|Format|Time Req'd|Focus or <br>Key Activities|Level|Instructor<br>Notes|Comments|
 |:---|:---:|:---:|:----------------|:---|:---|:-----------------|
 | [What is Life?](downloads/Case-What_Is_Life_annotated.pptx)|Continuous|30 min.|* Applying prior knowledge<br>* Assessing evidence|Nonmajors|Yes|Model for slides-based cases that work in large lecture courses|
 | [Banning Cancer-Causing Foods](downloads/Case-Cancer_Foods.docx)| Interrupted;<br>2 sessions|2 hrs| * Finding, assessing evidence for lay press claims<br>* Prioritizing points for oral arguments| Nonmajors| Yes| Model for building decision-making cases|
-| [Eating Flossflower Changes Manduca Development](downloads/Case-Effects_of_feeding_flossflower_on_Manduca_development.docx)| Continuous;<br>1 session| 30-60 min.| * Designing experiments<br>* Interpreting results<br>* Summarizing observations<br>* Reporting in a notebook| Introductory| Yes| Good case for: teaching experimental design; training TAs how to manage group discussions; introducing lab notebooks or scientific writing.|
+| [Eating Flossflower Changes Manduca Development](downloads/Case-Effects_of_feeding_flossflower_on_Manduca_development.docx)| Continuous;<br>1 session| 30-60 min.| * Designing experiments<br>* Interpreting results<br>* Summarizing observations<br>* Reporting in a notebook| Introductory| Yes| Good case for teaching experimental design, introducing lab notebooks or scientific writing, training TAs to lead discussions.|
 | [Mapping a Promoter](downloads/Case-Mapping_a_Promoter.docx)| Interrupted;<br>2 sessions| 2-3 hrs| * How transcription factors bind to promoters<br>* Interpreting data from multiple sources <br>* Supporting a conclusion with experimental evidence| Intermediate| Yes| Is extensively annotated to show how case was constructed, and how each piece contributes to learning goals.|
-| [Genes of Autism](downloads/Case-Genes_of_Autism.docx)| Interrupted;<br>2 sessions| 2-3 hrs| * How epigenetics controls multiple genes<br>* Linking clinical features to genes <br>* Supporting a conclusion with experimental evidence| Intermediate or Advanced| Yes| Model case for exploring genetics of any multi-factorial disease. Focuses more on logic than a single right answer.|
-| [Microtubules in Neural Diseases](downloads/Case-Microtubules_in_Neural_Diseases.docx)| Interrupted;<br>2 sessions| 2-3 hrs| * Connecting cell changes to disease<br>* Identifying key data in research reviews| Advanced| Partial| A capstone exercise where students show ability to make connections, summarize studies.|
-| [From Dogs to DNA](downloads/Case-From_Dogs_to_DNA.docx)| Linked set of 3 interrupted cases;<br>1 session/ case| 1 hr/ case| * Genetic principles<br>* Connecting genotypes  to phenotypes<br>* Evolution of behavior<br>| Intermediate| Yes| Example of how to build a set of linked cases around one thematic model.|
-| [FDA Clinical Trial Approvals](downloads/Case-FDA_Clinical_Trial_Approvals.docx)| Interrupted;<br>2 sessions| 3 hrs| * Learning how clinical trials are conducted<br>* Evaluating proposals  based on set criteria| Intermediate<br>to advanced| Yes| Model for introducing clinical trial or research proposal review process in any field.|
-| [Is DU Ammo Causing Cancer?](downloads/Case-Is_DU_Causing_Cancer.docx)| Interrupted;<br>2 sessions| 2 hrs| * Using course concepts and content knowledge to understand a social issue<br>* Comparing claims, evidence from lay press and scientific sources<br>* Synthesizing, summarizing evidence<br>* Explaining evidence to a non-technical audience| Advanced| Yes| Model for applying evidence to controversial anecdotal claims.|
-| [Team Work](downloads/Case-Team_Work.docx)| Interrupted;<br>2 sessions| 3 hrs| * Responsible conduct of research<br>* Professional ethical decision-making<br>* External data collection<br>* Self-reflection<br>* Debriefing a group| Advanced| Yes| Model for a classic problem-based learning case.|
+| [Genes of Autism (N)](downloads/Case-Genes_of_Autism.docx)| Interrupted;<br>2 sessions| 2-3 hrs| * How epigenetics controls multiple genes<br>* Linking clinical features to genes <br>* Supporting a conclusion with experimental evidence| Intermediate or Advanced| Yes| Model case for exploring genetics of any multi-factorial disease. Focuses more on logic than a single right answer.|
+| [Microtubules in Neural Diseases (N)](downloads/Case-Microtubules_in_Neural_Diseases.docx)| Interrupted;<br>2 sessions| 2-3 hrs| * Connecting cell changes to disease<br>* Identifying key data in research reviews| Advanced| Partial| A capstone exercise where students show ability to make connections, summarize studies.|
+| [From Dogs to DNA (N)](downloads/Case-From_Dogs_to_DNA.docx)| Linked set of 3 interrupted cases;<br>1 session/ case| 1 hr/ case| * Genetic principles<br>* Connecting genotypes to phenotypes<br>* Evolution of behavior<br>| Intermediate| Yes| Example of a linked case set built around one thematic model.|
+| [FDA Clinical Trial Approvals (N)](downloads/Case-FDA_Clinical_Trial_Approvals.docx)| Interrupted;<br>2 sessions| 3 hrs| * Learning how clinical trials are conducted<br>* Evaluating proposals  based on set criteria| Intermediate<br>to advanced| Yes| Model for introducing clinical trial or research proposal review process in any field.|
+| [Is DU Ammo Causing Cancer?](downloads/Case-Is_DU_Causing_Cancer.docx)| Interrupted;<br>2 sessions| 2 hrs| * Using course concepts and content knowledge to understand a social issue<br>* Testing claims of lay press against scientific evidence<br>* Synthesizing, summarizing evidence<br>* Explaining evidence to a non-technical audience| Advanced| Yes| Model for applying evidence to controversial anecdotal claims.|
+| [Team Work (N)](downloads/Case-Team_Work.docx)| Interrupted;<br>2 sessions| 3 hrs| * Responsible conduct of research<br>* Professional ethical decision-making<br>* External data collection<br>* Self-reflection<br>* Debriefing a group| Advanced| Yes| Model for a classic problem-based learning case.|
 
 
 ## Legend 
@@ -52,7 +54,7 @@ Cases are classified by:
     + Advanced (senior undergraduates, graduate students)
 * __Instructor notes__: 
     + Yes. Case includes full instructor’s notes
-    + Partial. Case notes are incomplete
+    + Partial. Case notes are incomplete or in draft form
     + None. Only the case scenario and student materials are available currently
 
 

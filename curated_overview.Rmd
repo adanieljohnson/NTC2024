@@ -22,7 +22,9 @@ The first step in ADDIE (and backwards design) is to analyze the learning situat
 
 ![](images/ADDIE_backwards_design.png)
 
-_ADDIE model of instructional design, mapped onto backwards design workflow._<br>
+<center>
+_ADDIE model of instructional design, mapped onto backwards design workflow._
+</center><br>
 
 Next comes the design and development phase. Typically we cycle back and forther between the two many times prior to implementation, so for simplicity I combined them into one step. This better fits the backwards design model as well, where design is part of the cyclic phase.
 
