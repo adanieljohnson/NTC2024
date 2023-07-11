@@ -12,10 +12,10 @@ biblio-style: apalike
 
 ## General References
 
-* Barkley EF, Major CH. 2016. _Learning Assessment Techniques: A Handbook for College Faculty_, 1st ed. Jossey-Bass. [Amazon](https://www.amazon.com/Learning-Assessment-Techniques-Handbook-College/dp/1119050898)
+* Barkley EF, Major CH. 2016. _Learning Assessment Techniques: A Handbook for College Faculty_, 1st ed. Jossey-Bass. [Link to Amazon](https://www.amazon.com/Learning-Assessment-Techniques-Handbook-College/dp/1119050898)
     + Describes >50 ways to assess learning across all six Bloom levels, as well as affect and motivation.
 
-* Sirum K, Humburg J. 2011. The Experimental Design Ability Test (EDAT). Bioscene: Journal of College Biology Teaching, v37 n1 p8-16 May 2011. [Link](https://eric.ed.gov/?id=EJ943887) 
+* Sirum K, Humburg J. 2011. The Experimental Design Ability Test (EDAT). Bioscene: Journal of College Biology Teaching, v37 n1 p8-16 May 2011. [Link to article](https://eric.ed.gov/?id=EJ943887) 
     + A model for writing your own hierarchical rubrics to evaluate writing complexity.
 
 #### \   
@@ -41,17 +41,17 @@ biblio-style: apalike
     + Students must apply content knowledge, core concepts, and evidence-based thinking strategies gained from multiple cases completed during the semester. 
     + [Assignment Guide](downloads/NSF_preproposal_guide.md)
     + [Sample preproposal](downloads/Example_Preproposal.docx)
-    + [Grading rubric](downloads/Preproposal_rubric.docx)
+    + [Grading Rubric](downloads/Preproposal_rubric.docx)
 
 * __Explainer Video Project__
     + A multi-week project in which student teams create a video for a general audience that explains a concept NOT covered in course content. 
     + Students must identify essential information then create a logical structure for presenting that information.
     + Teams cannot rely on the instructor's logic structure because videos must explain a topic not covered in class. 
     + [Assignment Guide](downloads/Explainer_video_guide.md)
-    + [Video planning guide](downloads/Video_planning_1.docx)
-    + [Sample storyboard 1](downloads/Storyboard_1.docx)
-    + [Sample storyboard 2](downloads/Storyboard_2.docx)
-    + [Grading rubric](downloads/Explainer_video_rubric.docx)
+    + [Video Planning Guide](downloads/Video_planning_1.docx)
+    + [Sample Storyboard 1](downloads/Storyboard_1.docx)
+    + [Sample Storyboard 2](downloads/Storyboard_2.docx)
+    + [Grading Rubric](downloads/Explainer_video_rubric.docx)
 
 #### \   
 

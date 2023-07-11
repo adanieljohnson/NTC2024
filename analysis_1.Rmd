@@ -21,7 +21,7 @@ Many programs also have a detailed curriculum map describing when students are e
 
 To understand how performance goals and benchmarks work, look at this general learning outcome:
 
-> Develop an ability to draw reasonable inferences from observations of the natural world.
+> _Develop an ability to draw reasonable inferences from observations of the natural world._
 
 How will instructors actually measure students’ progress towards achieving it? 
 
@@ -33,19 +33,23 @@ __Benchmarks__ are descriptions of how students are progressing towards the acti
     + perform the desired activity, 
     + implement the expected thinking skill, or 
     + transfer prior learning to the new task. 
-    
+
+<br>
+
 2. __Developmental.__ If students are asked to perform a task related to a general learning outcome, their performance indicates they have some exposure and ability, but are not yet able to consistently and accurately perform the desired activity, implement the expected thinking skill, or transfer prior learning to the new task. Students in the developmental stage often demonstrate mastery level performance when working on one case activity, only to perform poorly when asked to complete a similar task again in a different context.
 
 3. __Mastery.__ When students are asked to perform a task related to a general learning outcome, they consistently choose the appropriate strategy and use relevant prior knowledge accurately. They can solve new problems and identify the relevant components in novel problems that tell them what skills need to be applied. They consistently and accurately perform the desired activity, implement the expected thinking skill, or transfer prior learning even when the connections are not obvious.  
 
 Developing functional performance goal statements usually is the hardest step in the development process. To jump-start the process, try the following thought exercise. 
 
-> Imagine that a student has come to you saying, “I am sure that I learned more in your course than my grade reflects. What do I have to physically do to convince you that I reached your stated goals for this course?” 
-> Given that challenge, how would you respond to the student? (paraphrased from Diamond, 1998)
+> _Imagine that a student has come to you saying, “I am sure that I learned more in your course than my grade reflects. What do I have to physically do to convince you that I reached your stated goals for this course?”_ 
+> _Given that challenge, how would you respond to the student? (paraphrased from Diamond, 1998)_
 
 Performance goals can help instructors choose the most effective instructional methods, and communicate course expectations to students. For students, performance goals serve as a mechanism for self–assessment of progress.
 
 Typically performance goals and their associated benchmarks are described using action verbs. This list of action verbs comes from the Eberly Center for Teaching Excellence at Carnegie Mellon University. The verbs are grouped around the six levels in Bloom’s taxonomy. Focus more on how the verbs impact wording of performance goals, not on the taxonomic levels.
+
+<br>
 
 |Remember|Understand|Apply|Analyze|Evaluate|Create|
 |:-:|:-:|:-:|:-:|:-:|:-:|
@@ -70,6 +74,7 @@ Typically performance goals and their associated benchmarks are described using 
 | |Review| | | |Develop|
 | |Rewrite| | | | |
 
+<br>
 
 Here are some examples of performance goals for our general learning outcome:
 
