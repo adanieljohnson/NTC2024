@@ -8,21 +8,6 @@ biblio-style: apalike
 ```
 #### \   
 
-# Core Case Topics
-
-_What topics, thinking skills should be in a core set of neuroscience teaching cases?_ 
-
-* Ex. Origins of neurological defects, disease
-    + Microtubule defects
-    + Protein misfolding - tau vs. beta-amyloid
-* ??
-* 
-* 
-* 
-* 
-
-#### \   
-
 # Case Goals
 
 _What do you hope to accomplish or support with neuroscience teaching cases?_ 
@@ -56,6 +41,21 @@ _What case formats would be most engaging, appropriate for neuroscience teaching
 * 
 * 
 *
+* 
+
+#### \   
+
+# Core Case Topics
+
+_What topics, thinking skills should be in a core set of neuroscience teaching cases?_ 
+
+* Ex. Origins of neurological defects, disease
+    + Microtubule defects
+    + Protein misfolding - tau vs. beta-amyloid
+* ??
+* 
+* 
+* 
 * 
 
 #### \   
