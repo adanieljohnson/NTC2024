@@ -1,5 +1,5 @@
 ---
-title: "Brainstorming Session"
+title: "Brainstorming Ideas"
 bibliography: library.bib
 biblio-style: apalike
 ---
@@ -12,21 +12,49 @@ biblio-style: apalike
 
 _What do you hope to accomplish or support with neuroscience teaching cases?_ 
 
-* Content & concepts mastery (see above)
-* Building disciplinary skills:
-    + Reading skills
-    + Finding, summarizing reliable evidence 
-    + Interpreting data
-    + Evidence-based decision-making 
-    + Other skills?
-* Applied thinking (aka, transfer) skills
-* Professional development; teacher & TA training
-* ??
-* 
-* 
-* 
-* 
+There is no hard boundary b/w the listed goals; cases can support both immediate and longer-range goals simultaneously. Links after listed items connect to relevant resource pages.
 
+* Within-Course Goals
+    + Content & concepts mastery
+        - Develop skills in R (or any specific knowledge domain) [(Link)](URL)
+    + Basic disciplinary skills:
+        - Reading skills [(Link)](URL)
+        - Finding, summarizing reliable evidence [(Link)](URL)
+        - Interpreting data [(Link)](URL)
+    + Applied thinking (aka, transfer) skills [(Link)](URL)
+        - Integrate and apply content to new situations [(Link)](URL)
+        - Evidence-based decision-making [(Link)](URL)
+
+* Metacognitive Goals
+    + Taking ownership of learning [(Link)](URL)
+    + Team building/student cohesion [(Link)](URL)
+    + Tolerance for ambiguity [(Link)](URL)
+
+* Cross-Cutting Goals
+    + Collaborative problem solving [(Link)](URL)
+    + Project management skills [(Link)](URL)
+    + Increased retention [(Link)](URL)
+
+* Professional development
+    + Teacher & TA training [(Link)](URL)
+
+#### \   
+
+# Implementation Barriers
+
+_What implementation barriers or challenges do you expect to encounter, or would keep you from using cases?_
+
+Links after bulleted items go to project pages addressing these challenges.
+
+* In the class itself
+    + Freeloaders/social loafing [(Link)](URL)
+    + Cheating, sharing across semesters [(Link)](URL)
+    + Student discomfort with non-lecture format [(Link)](URL)
+    + How to provide constructive feedback [(Link)](URL)
+
+* Outside/beyond the class
+    + Do I know enough to write cases on topics outside of my expertise? [(Link)](URL)
+    + Students giving lower ratings on course evaluations [(Link)](URL)
 
 #### \   
 
@@ -34,27 +62,24 @@ _What do you hope to accomplish or support with neuroscience teaching cases?_
 
 _What case formats would be most engaging, appropriate for neuroscience teaching cases?_
 
+Cases can be:
+
 * Text vs. video based
 * Historical/clinical vs. narrative
 * Scenario vs. data 
 * ??
 * 
 * 
-*
-* 
+
+A general outline of different case types and formats [is here](https://adanieljohnson.github.io/NTC2023/FAQ.html). For a more in-depth review, [download this handout.](https://adanieljohnson.github.io/NTC2023/downloads/NTC23_Case_Workshop_Handout_v1.docx) Examples of different case formats are in the [case collection](https://adanieljohnson.github.io/NTC2023/archive_overview.html).
 
 #### \   
 
 # Core Case Topics
 
-_What topics, thinking skills should be in a core set of neuroscience teaching cases?_ 
+_What topics, thinking skills should be included in a core set of neuroscience teaching cases?_ 
 
-* Ex. Origins of neurological defects, disease
-    + Microtubule defects
-    + Protein misfolding - tau vs. beta-amyloid
 * ??
-* 
-* 
 * 
 * 
 
