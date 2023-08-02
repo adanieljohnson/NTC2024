@@ -1,8 +1,6 @@
-# NTC2023
+# Case Writing Resources
 
-This is the supplemental web site for Dr. Dan Johnson's 2023 Neuroscience Teaching Conference presentation, _“Using problem-oriented discussion cases to develop neuroscience students’ thinking skills.”_.
-
-Materials from the presentation, supporting resources, examples of different cases,and additional curated tools for case writing and implementation are listed in the live menu at the top of each page. Sections within the current page are listed in the menu on the left side. 
+This web site has case design, implementation, and evaluation resources, examples of different cases,and additional curated tools for case writing and implementation are listed in the live menu at the top of each page. Sections within the current page are listed in the menu on the left side. 
 
 Some curated resources may not be directly accessible via the web site, and require downloading.
 <br>
