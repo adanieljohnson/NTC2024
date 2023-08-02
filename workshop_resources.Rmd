@@ -1,5 +1,5 @@
 ---
-title: "Workshop Resources"
+title: "Other Resources"
 bibliography: library.bib
 biblio-style: apalike
 ---
@@ -8,18 +8,52 @@ biblio-style: apalike
 ```
 #### \   
 
-## NTC 2023 Materials
-
-* [Workshop slides](downloads/NTC_2023_v2.pptx)
-* [Workshop handout](downloads/NTC23_Case_Workshop_Handout_v1.docx)
-
+These are some other case-related resources on the web. 
 #### \   
 
-## Outside Resources
+## General/Cross-Topic Resources
 
 * [NSTA Case Studies Library](https://www.nsta.org/case-studies)
-* [Community-derived core list of neuroscience topics - Chen-Lew 2023](https://www.lifescied.org/doi/full/10.1187/cbe.22-02-0018)
-
 
 #### \   
+
+## Disciplinary Resources
+
+### General Biology
+
+* Item
+* Item
+
+#### \   
+
+### Neuroscience
+
+* [Community-derived core list of neuroscience topics - Chen-Lew 2023](https://www.lifescied.org/doi/full/10.1187/cbe.22-02-0018)
+
+* Item
+* Item
+
+#### \   
+
+### Chemistry, Physics
+
+* Item
+* Item
+
+#### \   
+
+### Engineering
+
+* Item
+* Item
+
+#### \   
+
+### Mathematics, Statistics
+
+* Item
+* Item
+
+#### \   
+
 <hr>

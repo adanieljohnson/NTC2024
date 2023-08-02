@@ -1,21 +1,11 @@
-name: "2023 NTC Workshop"
+name: "Case Writing Resources"
 output_dir: "docs"
 navbar:
-  title: "2023 NTC Case Presentation"
+  title: "Case Writing Resources"
   right:
-  - text: "Workshop Resources"
-    icon: fa-download
-    href: workshop_resources.html
   - text: "Brainstorming"
     icon: fa-comments
     href: brainstorming.html
-    menu: 
-    - text: "Brainstorming"
-      icon: fa-comments
-      href: brainstorming.html
-    - text: "FAQ"
-      icon: fa-comments
-      href: FAQ.html
   - text: "Case Writing"
     icon: fa-folder-open
     href: curated_overview.html
@@ -53,13 +43,16 @@ navbar:
     - text: "Evaluation Resources"
       icon: fa-crosshairs
       href: evaluation_1.html
-  - text: "Example Cases"
+  - text: "Cases Collection"
     icon: fa-share-alt
     href: archive_overview.html
     menu: 
-    - text: "Cases Summary"
+    - text: "Example Cases"
       icon: fa-share-alt
       href: archive_overview.html
+    - text: "Full Collection"
+      icon: fa-share-alt
+      href: collection_overview.html
   - text: "Toolbox"
     icon: fa-wrench
     href: toolbox.html

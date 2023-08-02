@@ -8,35 +8,38 @@ biblio-style: apalike
 ```
 #### \   
 
+Before you start writing your own cases, take time to think about WHY you want to use them, and HOW you can best use them. When you have a general idea of what you want to do, use the ADDIE model to refine your plan and start building your personal case set.
+
+#### \   
+
 # Case Goals
 
-_What do you hope to accomplish or support with neuroscience teaching cases?_ 
+_What do you hope to accomplish or support with your teaching cases?_ 
 
-There is no hard boundary b/w the listed goals; cases can support both immediate and longer-range goals simultaneously. Links after listed items connect to relevant resource pages.
+Cases can support both immediate and longer-range goals simultaneously; the listed goals are a starting point for discussion. 
 
 * Within-Course Goals
     + Content & concepts mastery
-        - Develop skills in R (or any specific knowledge domain) [(Link)](URL)
+        - Example: develop skills in R (or any specific knowledge domain) 
     + Basic disciplinary skills:
-        - Reading skills [(Link)](URL)
-        - Finding, summarizing reliable evidence [(Link)](URL)
-        - Interpreting data [(Link)](URL)
-    + Applied thinking (aka, transfer) skills [(Link)](URL)
-        - Integrate and apply content to new situations [(Link)](URL)
-        - Evidence-based decision-making [(Link)](URL)
+        - Ex. reading skills 
+        - Ex. finding, summarizing reliable evidence 
+        - Ex. interpreting data 
+    + Applied thinking (aka, transfer) skills 
+        - Ex. integrate and apply content to new situations 
+        - Ex. evidence-based decision-making 
 
 * Metacognitive Goals
-    + Taking ownership of learning [(Link)](URL)
-    + Team building/student cohesion [(Link)](URL)
-    + Tolerance for ambiguity [(Link)](URL)
+    + Ex. taking ownership of learning 
+    + Ex. team building/student cohesion
 
 * Cross-Cutting Goals
-    + Collaborative problem solving [(Link)](URL)
-    + Project management skills [(Link)](URL)
-    + Increased retention [(Link)](URL)
+    + Ex. collaborative problem solving 
+    + Ex. project management skills
+    + Ex. increased retention
 
 * Professional development
-    + Teacher & TA training [(Link)](URL)
+    + Ex. teacher & TA training
 
 #### \   
 
@@ -47,41 +50,31 @@ _What implementation barriers or challenges do you expect to encounter, or would
 Links after bulleted items go to project pages addressing these challenges.
 
 * In the class itself
-    + Freeloaders/social loafing [(Link)](URL)
-    + Cheating, sharing across semesters [(Link)](URL)
-    + Student discomfort with non-lecture format [(Link)](URL)
-    + How to provide constructive feedback [(Link)](URL)
+    + Ex. freeloaders/social loafing
+    + Ex. cheating, sharing across semesters [(Link)](URL)
+    + Ex. student discomfort with non-lecture format [(Link)](URL)
+    + Ex. how to provide constructive feedback [(Link)](URL)
 
 * Outside/beyond the class
-    + Do I know enough to write cases on topics outside of my expertise? [(Link)](URL)
-    + Students giving lower ratings on course evaluations [(Link)](URL)
+    + Ex. do I know enough to write cases on topics outside of my expertise? [(Link)](URL)
+    + Ex. students giving lower ratings on course evaluations [(Link)](URL)
 
 #### \   
 
 # Case Formats
 
-_What case formats would be most engaging, appropriate for neuroscience teaching cases?_
+_What case formats would be most engaging, appropriate for my teaching cases?_
 
-Cases can be:
+For example, cases can be:
 
 * Text vs. video based
 * Historical/clinical vs. narrative
 * Scenario vs. data 
-* ??
 * 
 * 
-
-A general outline of different case types and formats [is here](https://adanieljohnson.github.io/NTC2023/FAQ.html). For a more in-depth review, [download this handout.](https://adanieljohnson.github.io/NTC2023/downloads/NTC23_Case_Workshop_Handout_v1.docx) Examples of different case formats are in the [case collection](https://adanieljohnson.github.io/NTC2023/archive_overview.html).
-
-#### \   
-
-# Core Case Topics
-
-_What topics, thinking skills should be included in a core set of neuroscience teaching cases?_ 
-
-* ??
 * 
-* 
+
+A general outline of different case types and formats [is here](https://adanieljohnson.github.io/case-writing-resources/FAQ.html). For a more in-depth review, [download this handout.](https://adanieljohnson.github.io/case-writing-resources/downloads/NTC23_Case_Workshop_Handout_v1.docx) Examples of different case formats are in the [case collection](https://adanieljohnson.github.io/case-writing-resources/archive_overview.html).
 
 #### \   
 

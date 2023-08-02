@@ -1,5 +1,5 @@
 ---
-title: "Example Cases"
+title: "Cases Collection"
 bibliography: library.bib
 biblio-style: apalike
 ---
@@ -8,9 +8,11 @@ biblio-style: apalike
 ```
 #### \   
 
-Cases were chosen for this set that: 1) illustrate the range of case formats and variety of skills that students can build using cases; and 2) provide student-tested templates for writing new cases.
+These cases have been contributed to our collection by authors who: 
 
-Some cases have aged out and cannot be used in their current form, but still exemplify good case structures and organization strategies. Their basic frameworks can be updated with new content or used for a new case on a different topic. 
+* used our case writing resources;
+* want to share cases they have written previously; or
+* have models for other case formats they want to share.
 
 Click on the name of a case to download the student and instructor materials.  
 
@@ -47,8 +49,8 @@ Cases are classified by:
     + Intermediate (200-/300-level courses)
     + Advanced (senior undergraduates, graduate students)
 * __Instructor notes__: 
-    + Yes. Case includes full instructor’s notes
-    + Partial. Case notes are incomplete or in draft form
-    + None. Only the case scenario and student materials are available currently
+    + Yes. Case includes full instructor’s notes.
+    + Partial. Case notes are incomplete or in draft form.
+    + None. Only the case scenario and student materials are available currently.
 
 #### \   
