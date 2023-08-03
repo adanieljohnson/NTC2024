@@ -12,9 +12,23 @@ Tools not described under one of the ADDIE categories or with broader uses are c
 
 #### \   
 
-# Minimal Case Templates
+# Case Templates
+
+## Minimal Case Template
 
 Minimal case template files can be downloded in [Markdown format](downloads/Case-Template.md) or [MS Word format](downloads/Case-Template.docx).
+
+#### \   
+
+## 1-3-9 Branched Case Template
+
+Several case authors have suggested a __branching case format__ that does not follow one storyline, but instead lets students follow different paths. Aside from the challenge of writing the content, there is the practical problem of managing students' access. 
+
+__Twine__ could be the ideal platform for writing branched cases. It is an open-source application for writing interactive, non-linear stories. Twine creates one-page HTML documents divided into multiple sub-windows. Windows are connected together so viewers can read one window, then pick where they want to go next. 
+
+* [Learn more about Twine here.](https://twinery.org/)
+* [Download a working sample Twine web page here.](downloads/Twine_demo_template.html)
+* [Download a template for a 1-3-9 Twine web page here.](downloads/Template_for_1-3-9_Case.html)
 
 #### \   
 
@@ -30,23 +44,5 @@ This entire web site was written in R Studio's variant, R Markdown. Several down
 * To learn more about using Markdown and the R Markdown variant see [http://rmarkdown.rstudio.com](http://rmarkdown.rstudio.com).
 
 #### \   
-
-# One-Three-Nine Branched Case Format
-
-Several case authors have suggested __branching cases__ that do not follow one storyline, but instead let students follow different paths. Aside from the challenge of writing the content, there is the practical problem of managing students' access. __Twine__ could be the ideal platform for writing branched cases. 
-
-Twine is an open-source application for writing interactive, non-linear stories. Twine creates one-page HTML documents divided into multiple sub-windows. Windows are connected together so viewers can read one window, then pick where they want to go next. 
-
-* [Learn more about Twine here.](https://twinery.org/)
-* [Download a working sample Twine web page here.](downloads/Twine_demo_template.html)
-* [Download a template for a 1-3-9 Twine web page here.](downloads/Template_for_1-3-9_Case.html)
-
-#### \   
-
-# Item
-
-#### \   
-
-# Item
 
 <hr>
