@@ -1,0 +1,96 @@
+---
+title: "Case Groups"
+bibliography: library.bib
+biblio-style: apalike
+---
+
+```{r, child="_setup.Rmd"}
+```
+
+#### \   
+
+These groups of cases from the full collection illustrate show how one case might be used in multiple courses. Cases marked __(RV)__ would need some revision to fit within that specific course.
+
+#### \   
+
+# Introductory Biology
+
+* [What is Life?](downloads/Case-What_Is_Life_annotated.pptx)
+    + Model for slides-based cases that work in large lecture courses
+* [Eating Flossflower Changes Manduca Development](downloads/Case-Effects_of_feeding_flossflower_on_Manduca_development.docx)
+    + Good case for teaching experimental design, introducing lab notebooks or scientific writing, training TAs to lead discussions.
+* [Banning Cancer-Causing Foods](downloads/Case-Cancer_Foods.docx)
+    + Model for building decision-making cases
+* [From Dogs to DNA](downloads/Case-From_Dogs_to_DNA.docx)
+    + Example of a linked case set built around one thematic model.
+* [Team Work](downloads/Case-Team_Work.docx)
+    + Model for a classic problem-based learning case.
+
+#### \   
+
+# Cellular and Molecular Biology
+
+* [What is Life?](downloads/Case-What_Is_Life_annotated.pptx)
+    + Model for slides-based cases that work in large lecture courses
+* [Eating Flossflower Changes Manduca Development](downloads/Case-Effects_of_feeding_flossflower_on_Manduca_development.docx)
+    + Good case for teaching experimental design, introducing lab notebooks or scientific writing, training TAs to lead discussions.
+* [Mapping a Promoter](downloads/Case-Mapping_a_Promoter.docx)
+    + Supporting a conclusion with experimental evidence. Is extensively annotated to show how case was constructed, and how each piece contributes to learning goals.
+* [Genes of Autism](downloads/Case-Genes_of_Autism.docx)
+    + Model case for exploring genetics of any multi-factorial disease. Focuses more on logic than a single right answer.|
+* [Microtubules in Neural Diseases](downloads/Case-Microtubules_in_Neural_Diseases.docx)
+    + A capstone exercise where students show ability to make connections, summarize studies.
+* [From Dogs to DNA](downloads/Case-From_Dogs_to_DNA.docx)
+    + Example of a linked case set built around one thematic model.
+
+#### \   
+
+# Genetics
+
+* [What is Life? (RV)](downloads/Case-What_Is_Life_annotated.pptx)
+    + Model for slides-based cases that work in large lecture courses
+* [Mapping a Promoter](downloads/Case-Mapping_a_Promoter.docx)
+    + Supporting a conclusion with experimental evidence. Is extensively annotated to show how case was constructed, and how each piece contributes to learning goals.
+* [Genes of Autism](downloads/Case-Genes_of_Autism.docx)
+    + Model case for exploring genetics of any multi-factorial disease. Focuses more on logic than a single right answer.|
+* [From Dogs to DNA](downloads/Case-From_Dogs_to_DNA.docx)
+    + Example of a linked case set built around one thematic model.
+
+#### \   
+
+# Anatomy and Physiology
+
+* [Eating Flossflower Changes Manduca Development](downloads/Case-Effects_of_feeding_flossflower_on_Manduca_development.docx)
+    + Good case for teaching experimental design, introducing lab notebooks or scientific writing, training TAs to lead discussions.
+* [Banning Cancer-Causing Foods](downloads/Case-Cancer_Foods.docx)
+    + Model for building decision-making cases
+* [Microtubules in Neural Diseases](downloads/Case-Microtubules_in_Neural_Diseases.docx)
+    + A capstone exercise where students show ability to make connections, summarize studies.
+* [From Dogs to DNA (RV)](downloads/Case-From_Dogs_to_DNA.docx)
+    + Example of a linked case set built around one thematic model.
+
+#### \   
+
+# Neuroscience
+
+* [Genes of Autism](downloads/Case-Genes_of_Autism.docx)
+    + Model case for exploring genetics of any multi-factorial disease. Focuses more on logic than a single right answer.|
+* [Microtubules in Neural Diseases](downloads/Case-Microtubules_in_Neural_Diseases.docx)
+    + A capstone exercise where students show ability to make connections, summarize studies.
+* [FDA Clinical Trial Approvals (RV)](downloads/Case-FDA_Clinical_Trial_Approvals.docx)
+    + Model for introducing clinical trial or research proposal review process in any field.|
+
+#### \   
+
+# Bioethics
+
+* [Team Work](downloads/Case-Team_Work.docx)
+    + Model for a classic problem-based learning case.
+* [Banning Cancer-Causing Foods (RV)](downloads/Case-Cancer_Foods.docx)
+    + Model for building decision-making cases
+* [FDA Clinical Trial Approvals](downloads/Case-FDA_Clinical_Trial_Approvals.docx)
+    + Model for introducing clinical trial or research proposal review process in any field.|
+* [Is DU Ammo Causing Cancer?](downloads/Case-Is_DU_Causing_Cancer.docx)
+    + Model for applying evidence to controversial anecdotal claims.
+
+#### \   

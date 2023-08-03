@@ -50,6 +50,9 @@ navbar:
     - text: "Example Cases"
       icon: fa-share-alt
       href: archive_overview.html
+    - text: "Case Groups"
+      icon: fa-share-alt
+      href: case_groups.html
     - text: "Full Collection"
       icon: fa-share-alt
       href: collection_overview.html

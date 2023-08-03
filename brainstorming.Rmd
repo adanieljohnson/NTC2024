@@ -8,7 +8,9 @@ biblio-style: apalike
 ```
 #### \   
 
-Before you start writing your own cases, take time to think about WHY you want to use them, and HOW you can best use them. When you have a general idea of what you want to do, use the ADDIE model to refine your plan and start building your personal case set.
+Before you start picking or writing cases, think about WHY you want to use them, and HOW you can best use them. The questions on this page will help you get started.
+
+When you have a basic idea of what you want to accomplish with cases, read the overview of the [ADDIE model of curriculum design.](https://adanieljohnson.github.io/Case_Writing_Resources/curated_overview.html) Use the ADDIE model to refine your plan and start building your personal case set.
 
 #### \   
 
@@ -16,7 +18,7 @@ Before you start writing your own cases, take time to think about WHY you want t
 
 _What do you hope to accomplish or support with your teaching cases?_ 
 
-Cases can support both immediate and longer-range goals simultaneously; the listed goals are a starting point for discussion. 
+The goals listed below are not comprehensive, just starting points to stimulate your thinking. 
 
 * Within-Course Goals
     + Content & concepts mastery
@@ -28,18 +30,17 @@ Cases can support both immediate and longer-range goals simultaneously; the list
     + Applied thinking (aka, transfer) skills 
         - Ex. integrate and apply content to new situations 
         - Ex. evidence-based decision-making 
-
 * Metacognitive Goals
     + Ex. taking ownership of learning 
     + Ex. team building/student cohesion
-
 * Cross-Cutting Goals
     + Ex. collaborative problem solving 
     + Ex. project management skills
     + Ex. increased retention
-
-* Professional development
+* Professional Development
     + Ex. teacher & TA training
+* ?
+* ?
 
 #### \   
 
@@ -47,34 +48,33 @@ Cases can support both immediate and longer-range goals simultaneously; the list
 
 _What implementation barriers or challenges do you expect to encounter, or would keep you from using cases?_
 
-Links after bulleted items go to project pages addressing these challenges.
+Again, the list below is just to stimulate your thinking.
 
-* In the class itself
+* In-class challenges
     + Ex. freeloaders/social loafing
-    + Ex. cheating, sharing across semesters [(Link)](URL)
-    + Ex. student discomfort with non-lecture format [(Link)](URL)
-    + Ex. how to provide constructive feedback [(Link)](URL)
-
-* Outside/beyond the class
-    + Ex. do I know enough to write cases on topics outside of my expertise? [(Link)](URL)
-    + Ex. students giving lower ratings on course evaluations [(Link)](URL)
+    + Ex. cheating, sharing across semesters
+    + Ex. student discomfort with non-lecture format
+    + Ex. how to provide constructive feedback 
+* Challenges outside/beyond class time
+    + Ex. do I know enough to write cases on topics outside of my expertise? 
+    + Ex. students giving lower ratings on course evaluations
+* ?
+* ?
 
 #### \   
 
 # Case Formats
 
-_What case formats would be most engaging, appropriate for my teaching cases?_
+_What case format(s) would be most engaging, appropriate for your student population?_
 
-For example, cases can be:
+There is no one "best" case format that works in all situations. For example, cases can be:
 
 * Text vs. video based
-* Historical/clinical vs. narrative
-* Scenario vs. data 
-* 
-* 
-* 
+* Historical/clinical vs. narrative stories
+* Scenario- vs. data-centric 
+* Other formats
 
-A general outline of different case types and formats [is here](https://adanieljohnson.github.io/case-writing-resources/FAQ.html). For a more in-depth review, [download this handout.](https://adanieljohnson.github.io/case-writing-resources/downloads/NTC23_Case_Workshop_Handout_v1.docx) Examples of different case formats are in the [case collection](https://adanieljohnson.github.io/case-writing-resources/archive_overview.html).
+Different case types and formats [are outlined here](https://adanieljohnson.github.io/case-writing-resources/FAQ.html). [Download this handout](https://adanieljohnson.github.io/case-writing-resources/downloads/NTC23_Case_Workshop_Handout_v1.docx) for more detailed descriptions. The [case collection](https://adanieljohnson.github.io/case-writing-resources/archive_overview.html) has examples of different case formats.
 
 #### \   
 
