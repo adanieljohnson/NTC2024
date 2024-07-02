@@ -1,12 +1,12 @@
 name: "Case Writing Resources"
 output_dir: "docs"
 navbar:
-  title: "Case Writing Resources"
+  title: "STEM Case Writing Resources"
   right:
   - text: "Brainstorming"
     icon: fa-comments
     href: brainstorming.html
-  - text: "Case Writing"
+  - text: "Writing Guide"
     icon: fa-folder-open
     href: curated_overview.html
     menu: 
