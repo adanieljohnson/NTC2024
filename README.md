@@ -1,6 +1,4 @@
-# Piedmont NC Bonsai
-
-Welcome to our site. 
+# Welcome to the Neuroscience Teaching Cases Site 
 
 We encourage others to use the resources available here. Except where noted otherwise, all materials may be reused and adapted under terms of a Creative Commons license.
 
