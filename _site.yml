@@ -6,6 +6,9 @@ navbar:
   - text: "Brainstorming"
     icon: fa-comments
     href: brainstorming.html
+  - text: "FAQ"
+    icon: fa-comments
+    href: FAQ.html
   - text: "Writing Guide"
     icon: fa-folder-open
     href: curated_overview.html

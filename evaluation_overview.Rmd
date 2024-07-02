@@ -106,7 +106,7 @@ This can be a standalone assignment at the end of the semester, or part of a fin
 
 Students write a 3-page pre-proposal pitch of an idea to the NSF. Their pitch should apply one or more concepts that were explored in class to a disease or problem that they did not explore in class. Guidelines and criteria for the pre-proposal should be as similar as reasonably possible to actual federal grant requirements. 
 
-This works best as a final course project. Give students several weeks to work on it. An example of instructions for this type of project are [in the Resources]().
+This works best as a final course project. Give students several weeks to work on it. An example of instructions for this type of project are [in the Resources](downloads/NSF_preproposal_guide.md).
 
 #### \   
 
@@ -123,7 +123,7 @@ The original idea for this evaluation technique (which I use routinely now) came
 
 Like a pre-proposal, this works best as a final course project. Give students several weeks to work on it.
 
-An example of instructions for this type of project are [in the Resources]().
+An example of instructions for this type of project are [in the Resources](downloads/Explainer_video_guide.md).
 
 #### \   
 

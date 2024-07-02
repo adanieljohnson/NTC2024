@@ -10,7 +10,7 @@ biblio-style: apalike
 
 Before you start picking or writing cases, think about WHY you want to use them, and HOW you can best use them. The questions on this page will help you get started.
 
-When you have a basic idea of what you want to accomplish with cases, read the overview of the [ADDIE model of curriculum design.](https://adanieljohnson.github.io/Case_Writing_Resources/curated_overview.html) Use the ADDIE model to refine your plan and start building your personal case set.
+When you have a basic idea of what you want to accomplish with cases, read the overview of the [ADDIE model of curriculum design.](https://adanieljohnson.github.io/NTC2024/curated_overview.html) Use the ADDIE model to refine your plan and start building your personal case set.
 
 #### \   
 
@@ -74,7 +74,7 @@ There is no one "best" case format that works in all situations. For example, ca
 * Scenario- vs. data-centric 
 * Other formats
 
-Different case types and formats [are outlined here](https://adanieljohnson.github.io/case-writing-resources/FAQ.html). [Download this handout](https://adanieljohnson.github.io/case-writing-resources/downloads/NTC23_Case_Workshop_Handout_v1.docx) for more detailed descriptions. The [case collection](https://adanieljohnson.github.io/case-writing-resources/archive_overview.html) has examples of different case formats.
+Different case types and formats [are outlined here](https://adanieljohnson.github.io/NTC2024/FAQ.html). [Download this handout](https://adanieljohnson.github.io/NTC2024/downloads/NTC23_Case_Workshop_Handout_v1.docx) for more detailed descriptions. The [case collection](https://adanieljohnson.github.io/NTC2024/archive_overview.html) has examples of different case formats.
 
 #### \   
 

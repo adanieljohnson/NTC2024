@@ -44,7 +44,7 @@ Even when cases are only used by only one instructor, a facilitation guide is a 
 These documents can help you start your own case facilitation guide:
 
 * A blank template for building a case facilitation guide ([Download](downloads/Facilitation_Guide_Template.md));
-* The abridged facilitation guide from WFUSM's (now-retired) __RCR Education Program *__. 
+* The abridged facilitation guide from WFUSM's (now-retired) __RCR Education Program__. 
     + Download in [Markdown format](downloads/RCR_Facilitator_Guide.md)
     + Download as a [Word document](downloads/RCR_Facilitator_Guide.docx)
 

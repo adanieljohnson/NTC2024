@@ -23,13 +23,13 @@ To download a full repository of files:
 
 <br>
 
-1.  Go to the URL for the repository. The [URL for this presentation](https://github.com/adanieljohnson/bio_case_writing) is `https://github.com/adanieljohnson/bio_case_writing`.
+1.  Go to the URL for the repository. The [URL for this presentation](https://github.com/adanieljohnson/NTC2024) is `https://github.com/adanieljohnson/NTC2024`.
 2.  Look in the upper right of the main file list for a Code button (orange arrow in screenshot above). Click to show options to download the full repository. A ZIP file archive (blue arrow) is the safest choice.
 3.  Download a copy of the full set of files to your local computer. Click on the ZIP archive to open it.
 
 To download a single file:
 
-<center>![Downloading a single GitHub file](https://github.com/adanieljohnson/NTC2023/blob/main/images/Single_file.png?raw=true)</center>
+<center>![Downloading a single GitHub file](https://github.com/adanieljohnson/NTC2024/blob/main/images/Single_file.png?raw=true)</center>
 
 <br>
 

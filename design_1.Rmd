@@ -46,6 +46,7 @@ UDel uses PBL-style cases for most of its STEM teaching. [University of Delaware
 ## HHMI
 
 [HHMI Biointeractive](https://www.biointeractive.org/) has many cases in its archive of instructional resources. Many of the cases are based on research that HHMI has funded. Most emphasize primary data analysis and interpretation. Biointeractive’s cases can be supplemented with videos from the HHMI lecture library. 
+
 #### \   
 
 ## CaseIt Simulations 

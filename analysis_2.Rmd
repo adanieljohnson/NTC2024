@@ -24,8 +24,7 @@ Briefly, they define neuroscience's core concepts as the overarching principles 
 
 5. __Information processing:__ Outputs from a unit in the nervous system depend on the inputs it receives as well as information filtering and modulation performed by the unit. Information processing can be studied at multiple levels of granularity, including synapses, subcellular arbors, circuits, and systems. At each level, the output of a unit in the nervous system is dependent upon the inputs it receives and processes.
 
-6. __Nervous system functions:__ Nervous systems function to coordinate survival responses to the environment, permit behavior in a timely manner, and
-maintain homeostatic regulation. Nervous systems detect and monitor external and internal environmental conditions, in conjunction with using stored information, to direct an appropriate response. 
+6. __Nervous system functions:__ Nervous systems function to coordinate survival responses to the environment, permit behavior in a timely manner, and maintain homeostatic regulation. Nervous systems detect and monitor external and internal environmental conditions, in conjunction with using stored information, to direct an appropriate response. 
 
 7. __Plasticity:__ Nervous systems reorganize their structure, function, and connections in response to experience. The nervous system is malleable. From early developmental stages and throughout life, the nervous system strengthens and weakens components and connections in response to experience. This modulation, or plasticity, occurs in response to intrinsic and extrinsic experiences, such as sensory input, behavior, and pathological processes.
 
@@ -49,7 +48,7 @@ TGI also has proven extremely useful as a catalyst for new course development, a
 
 ## Examples of Learning Outcomes
 
-[This article by Brownell, et al.](https://www.lifescied.org/doi/10.1187/cbe.13-12-0233)\cite{Brownell2014} and this 2023 article by [Clark and Hsu](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10074271/)\cite{Clark2023} are good overviews of the process.
+This article by [Brownell, et al.](https://www.lifescied.org/doi/10.1187/cbe.13-12-0233)\cite{Brownell2014} and this 2023 article by [Clark and Hsu](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10074271/)\cite{Clark2023} are good overviews of the process.
 
 These are two examples of program-level general learning outcomes. Individual courses within the programs would be designed to meet a subset of these outcomes.
 
