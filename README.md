@@ -1,13 +1,8 @@
-# Case Writing Resources
+# Piedmont NC Bonsai
 
-This web site has case design, implementation, and evaluation resources, examples of different cases,and additional curated tools for case writing and implementation are listed in the live menu at the top of each page. Sections within the current page are listed in the menu on the left side. 
+Welcome to our site. 
 
-Some curated resources may not be directly accessible via the web site, and require downloading.
-<br>
-
-# Using Site Resources
-
-I encourage others to use the resources available here for their own teaching practices. Except where noted otherwise, all materials may be reused and adapted under terms of a Creative Commons license.
+We encourage others to use the resources available here. Except where noted otherwise, all materials may be reused and adapted under terms of a Creative Commons license.
 
 <p><center><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a></center></p><p>Except where noted otherwise, this work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
 <br>
