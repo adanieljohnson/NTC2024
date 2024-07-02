@@ -13,8 +13,8 @@
 
 <title>Implementation Resources</title>
 
-<script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.23/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/spacelab.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -29,7 +29,7 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
@@ -37,8 +37,8 @@
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
 <script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.0/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.0/css/v4-shims.min.css" rel="stylesheet" />
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -59,6 +59,7 @@ if (window.hljs) {
   }
 }
 </script>
+
 
 
 
@@ -88,6 +89,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -145,11 +149,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -178,8 +186,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -187,16 +195,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -313,7 +314,7 @@ div.tocify {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -333,7 +334,7 @@ div.tocify {
   </a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     <span class="fa fa-folder-open"></span>
      
     Case Writing
@@ -421,7 +422,7 @@ div.tocify {
   </ul>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     <span class="fa fa-share-alt"></span>
      
     Cases Collection
@@ -453,7 +454,7 @@ div.tocify {
   </ul>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     <span class="fa fa-wrench"></span>
      
     Toolbox
@@ -496,24 +497,41 @@ div.tocify {
 </div>
 <div id="grading-case-assignments" class="section level1">
 <h1>Grading Case Assignments</h1>
-<p>After trying many methods, I now grade all case-related assignments using a bins-based model (also called specifications grading.) Items are scored on a 5-point scale based on <strong>overall quality</strong>:</p>
+<p>After trying many methods, I now grade all case-related assignments
+using a bins-based model (also called specifications grading.) Items are
+scored on a 5-point scale based on <strong>overall quality</strong>:</p>
 <ul>
-<li>5 = Exceptional. Complete, with no errors. Exceeds expectations for that assignment. (equivalent to an A, or 95 in course grades)</li>
-<li>4 = Acceptable. Complete, with some minor errors but essentially correct; accurate, acceptable. (B, or 85)</li>
-<li>3 = Needs improvement. Complete, but has significant errors in logic, reasoning, or interpretation. (C or 75)</li>
-<li>2 = Seriously flawed. Submitted but incomplete, with multiple basic factual errors. (D or 65)</li>
+<li>5 = Exceptional. Complete, with no errors. Exceeds expectations for
+that assignment. (equivalent to an A, or 95 in course grades)</li>
+<li>4 = Acceptable. Complete, with some minor errors but essentially
+correct; accurate, acceptable. (B, or 85)</li>
+<li>3 = Needs improvement. Complete, but has significant errors in
+logic, reasoning, or interpretation. (C or 75)</li>
+<li>2 = Seriously flawed. Submitted but incomplete, with multiple basic
+factual errors. (D or 65)</li>
 <li>0 = Not submitted. (F or 0)</li>
 </ul>
-<p>I sometimes use a 10-point scale instead. Students seem to prefer it, but when I compared the two, overall course grades were no different when using a finer grained 10-point scale vs. a 5-point scale.</p>
-<p>I devote most of my grading time to giving written feedback to individuals and teams that focuses on whether they have met my expectations, what they did well, and how to improve next time. I also limit my comments to the 3 most important suggestions per assignment; students struggle to internalize more than that.</p>
-<p>Besides being faster, bins scoring means there are no points to argue for. When individuals or teams come in for meetings we are more productive because we focus on the gaps in their knowledge or thinking.</p>
+<p>I sometimes use a 10-point scale instead. Students seem to prefer it,
+but when I compared the two, overall course grades were no different
+when using a finer grained 10-point scale vs. a 5-point scale.</p>
+<p>I devote most of my grading time to giving written feedback to
+individuals and teams that focuses on whether they have met my
+expectations, what they did well, and how to improve next time. I also
+limit my comments to the 3 most important suggestions per assignment;
+students struggle to internalize more than that.</p>
+<p>Besides being faster, bins scoring means there are no points to argue
+for. When individuals or teams come in for meetings we are more
+productive because we focus on the gaps in their knowledge or
+thinking.</p>
 <div id="section-1" class="section level4">
 <h4> </h4>
 </div>
 </div>
 <div id="case-facilitation-guide" class="section level1">
 <h1>Case Facilitation Guide</h1>
-<p>A shared case facilitation guide is helpful when more than one instructor is using the same cases or when instructor move in and out of a course or program. New users can see:</p>
+<p>A shared case facilitation guide is helpful when more than one
+instructor is using the same cases or when instructor move in and out of
+a course or program. New users can see:</p>
 <ul>
 <li>Overall design of the course/program;</li>
 <li>The learning goals and benchmarks, and rationale behind them;</li>
@@ -521,26 +539,44 @@ div.tocify {
 <li>What others do when things go wrong;</li>
 <li>Tips and tricks others have discovered.</li>
 </ul>
-<p>Ideally the facilitation guide will be a shared document that all instructors can modify, or at least add comments and suggestions to.</p>
-<p>Even when cases are only used by only one instructor, a facilitation guide is a useful, centralized place to document the thinking process that led to the cases. It also is a place to put notes on how cases went with particular groups, new ideas for case management, etc.</p>
-<p>These documents can help you start your own case facilitation guide:</p>
+<p>Ideally the facilitation guide will be a shared document that all
+instructors can modify, or at least add comments and suggestions to.</p>
+<p>Even when cases are only used by only one instructor, a facilitation
+guide is a useful, centralized place to document the thinking process
+that led to the cases. It also is a place to put notes on how cases went
+with particular groups, new ideas for case management, etc.</p>
+<p>These documents can help you start your own case facilitation
+guide:</p>
 <ul>
-<li>A blank template for building a case facilitation guide (<a href="downloads/Facilitation_Guide_Template.md">Download</a>);</li>
-<li>The abridged facilitation guide from WFUSM’s (now-retired) __RCR Education Program *__.
+<li>A blank template for building a case facilitation guide (<a
+href="downloads/Facilitation_Guide_Template.md">Download</a>);</li>
+<li>The abridged facilitation guide from WFUSM’s (now-retired) __RCR
+Education Program *__.
 <ul>
-<li>Download in <a href="downloads/RCR_Facilitator_Guide.md">Markdown format</a></li>
-<li>Download as a <a href="downloads/RCR_Facilitator_Guide.docx">Word document</a></li>
+<li>Download in <a href="downloads/RCR_Facilitator_Guide.md">Markdown
+format</a></li>
+<li>Download as a <a href="downloads/RCR_Facilitator_Guide.docx">Word
+document</a></li>
 </ul></li>
 </ul>
-<p>* WFUSM’s RCR Education Program was a 1-year mandatory course for graduate students to fulfill federally mandated responsible conduct of research (RCR) training requirements. Students completed 8 problem-based learning cases, each dealing with 1-3 RCR issues. Student groups of 4-8 were supervised by volunteer facilitators drawn from multiple departments across two campuses.</p>
+<p>* WFUSM’s RCR Education Program was a 1-year mandatory course for
+graduate students to fulfill federally mandated responsible conduct of
+research (RCR) training requirements. Students completed 8 problem-based
+learning cases, each dealing with 1-3 RCR issues. Student groups of 4-8
+were supervised by volunteer facilitators drawn from multiple
+departments across two campuses.</p>
 <p>The abridged Guide:</p>
 <ul>
-<li>Illustrates how the template can be used to document a case teaching project; and</li>
-<li>Outlines strategies for managing some common problems when teaching with cases.</li>
+<li>Illustrates how the template can be used to document a case teaching
+project; and</li>
+<li>Outlines strategies for managing some common problems when teaching
+with cases.</li>
 <li>Does not contain:
 <ul>
-<li>Documentation for the ethical decision-making framework used in the program; or</li>
-<li>Course materials that were published previously elsewhere (see the References section for more.)</li>
+<li>Documentation for the ethical decision-making framework used in the
+program; or</li>
+<li>Course materials that were published previously elsewhere (see the
+References section for more.)</li>
 </ul></li>
 </ul>
 <div id="section-2" class="section level4">
@@ -550,10 +586,23 @@ div.tocify {
 <div id="references" class="section level1">
 <h1>References</h1>
 <ol style="list-style-type: decimal">
-<li>Bohrer KE, Johnson AD, Miller K, Ferrier, A. 2008. Teaching the Teacher: Introducing and Training TAs in Inquiry–Based Learning Methods. <em>Proceedings of the 29th Conference of the Association for Biology Laboratory Education</em>, 29: 67–126. <a href="http://www.ableweb.org/volumes/vol-29/v29reprint.php?ch=3">Link</a></li>
-<li>Johnson, AD, Lambros, AM, Peiffer, AM, Tytell, M., Eldridge, JC, Jones, NL. 2010. Teaching Bioethics and Professional Conduct Through Problem-Based Learning. <em>Proceedings of the 31st Conference of the Association for Biology Laboratory Education</em>, 31:134-161. <a href="http://www.ableweb.org/volumes/vol-31/v31reprint.php?ch=10">Link</a></li>
-<li>Jones, NL, Peiffer, AM, Lambros, A, Guthold, M, Johnson, AD, Tytell, M, Ronca, A, Eldridge, JC. 2010. Developing a problem-based learning (PBL) curriculum for professionalism and scientific integrity training for biomedical graduate students. <em>Journal of Medical Ethics</em>, 36:614-619.</li>
-<li>Lambros, A. (2004). <em>Problem-based learning in middle and high school classrooms.</em> Thousand Oaks, CA, Corwin Press.</li>
+<li>Bohrer KE, Johnson AD, Miller K, Ferrier, A. 2008. Teaching the
+Teacher: Introducing and Training TAs in Inquiry–Based Learning Methods.
+<em>Proceedings of the 29th Conference of the Association for Biology
+Laboratory Education</em>, 29: 67–126. <a
+href="http://www.ableweb.org/volumes/vol-29/v29reprint.php?ch=3">Link</a></li>
+<li>Johnson, AD, Lambros, AM, Peiffer, AM, Tytell, M., Eldridge, JC,
+Jones, NL. 2010. Teaching Bioethics and Professional Conduct Through
+Problem-Based Learning. <em>Proceedings of the 31st Conference of the
+Association for Biology Laboratory Education</em>, 31:134-161. <a
+href="http://www.ableweb.org/volumes/vol-31/v31reprint.php?ch=10">Link</a></li>
+<li>Jones, NL, Peiffer, AM, Lambros, A, Guthold, M, Johnson, AD, Tytell,
+M, Ronca, A, Eldridge, JC. 2010. Developing a problem-based learning
+(PBL) curriculum for professionalism and scientific integrity training
+for biomedical graduate students. <em>Journal of Medical Ethics</em>,
+36:614-619.</li>
+<li>Lambros, A. (2004). <em>Problem-based learning in middle and high
+school classrooms.</em> Thousand Oaks, CA, Corwin Press.</li>
 </ol>
 <div id="section-3" class="section level4">
 <h4> </h4>

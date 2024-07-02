@@ -13,8 +13,8 @@
 
 <title>Revising Your Cases</title>
 
-<script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.23/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/spacelab.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -29,7 +29,7 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
@@ -37,8 +37,8 @@
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
 <script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.0/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.0/css/v4-shims.min.css" rel="stylesheet" />
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -59,6 +59,7 @@ if (window.hljs) {
   }
 }
 </script>
+
 
 
 
@@ -88,6 +89,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -145,11 +149,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -178,8 +186,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -187,16 +195,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -313,7 +314,7 @@ div.tocify {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -333,7 +334,7 @@ div.tocify {
   </a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     <span class="fa fa-folder-open"></span>
      
     Case Writing
@@ -421,7 +422,7 @@ div.tocify {
   </ul>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     <span class="fa fa-share-alt"></span>
      
     Cases Collection
@@ -453,7 +454,7 @@ div.tocify {
   </ul>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     <span class="fa fa-wrench"></span>
      
     Toolbox
@@ -493,26 +494,40 @@ div.tocify {
 
 <div id="section" class="section level4">
 <h4> </h4>
-<p>I admit that I spend more time and energy tweaking cases than I should. It is easy to convince myself that I can “get it just right this time.”</p>
+<p>I admit that I spend more time and energy tweaking cases than I
+should. It is easy to convince myself that I can “get it just right this
+time.”</p>
 <blockquote>
-<p>If I change “X” students will get to where I want them to go more easily. If I clarify “Y” they won’t get as confused on Day 2. If I switch…</p>
+<p>If I change “X” students will get to where I want them to go more
+easily. If I clarify “Y” they won’t get as confused on Day 2. If I
+switch…</p>
 </blockquote>
-<p>Over-editing can make your cases too easy, or add elements that break the flow. Make it a habit to NOT revise your cases until they truly need them.</p>
+<p>Over-editing can make your cases too easy, or add elements that break
+the flow. Make it a habit to NOT revise your cases until they truly need
+them.</p>
 </div>
 <div id="section-1" class="section level4">
 <h4> </h4>
 </div>
 <div id="when-should-you-revise-a-case" class="section level1">
 <h1>When Should You Revise a Case?</h1>
-<p>I think the best time to make revisions is right after students have finished working through it. Problems with the case are fresher in your mind. You might want to wait to see how students perform on the next case or a linked case, or until you have additional evaluation data, but make revisions sooner rather than later.</p>
-<p>Avoid revising an existing case just before you give it to your students. Making <strong>minor</strong> tweaks is a good way to refresh your memory of an upcoming case, but you can easily go to far if you do more.</p>
+<p>I think the best time to make revisions is right after students have
+finished working through it. Problems with the case are fresher in your
+mind. You might want to wait to see how students perform on the next
+case or a linked case, or until you have additional evaluation data, but
+make revisions sooner rather than later.</p>
+<p>Avoid revising an existing case just before you give it to your
+students. Making <strong>minor</strong> tweaks is a good way to refresh
+your memory of an upcoming case, but you can easily go to far if you do
+more.</p>
 <div id="section-2" class="section level4">
 <h4> </h4>
 </div>
 </div>
 <div id="what-should-you-revise" class="section level1">
 <h1>What Should You Revise?</h1>
-<p>These questions can help you identify what you might want to revise.</p>
+<p>These questions can help you identify what you might want to
+revise.</p>
 <div id="section-3" class="section level4">
 <h4> </h4>
 </div>
@@ -522,37 +537,52 @@ div.tocify {
 <li>Is the case running as planned?
 <ul>
 <li>Does the case fit in the allotted time?</li>
-<li>Are students spending class time on task (discussing ideas, looking up information related to the case), or talking about non-class topics?
+<li>Are students spending class time on task (discussing ideas, looking
+up information related to the case), or talking about non-class topics?
 <ul>
-<li>If students are not spending class time on topic, does the case need more content or a more in-depth assignment.</li>
+<li>If students are not spending class time on topic, does the case need
+more content or a more in-depth assignment.</li>
 <li>Or, is the case too easy for most students?</li>
 </ul></li>
 </ul></li>
-<li>If students get stuck, confused, or off track, do they need a little prompting to get back on track, or a lot?
+<li>If students get stuck, confused, or off track, do they need a little
+prompting to get back on track, or a lot?
 <ul>
-<li>I find that students learn a great deal from experiencing “positive confusion,” that is, confusion that they overcome successfully.
+<li>I find that students learn a great deal from experiencing “positive
+confusion,” that is, confusion that they overcome successfully.
 <ul>
-<li>If students get back on track after one small prompt, they are experiencing positive confusion.</li>
-<li>If they remain lost, you may need to edit the guide questions to give clearer hints of the next logical step.</li>
+<li>If students get back on track after one small prompt, they are
+experiencing positive confusion.</li>
+<li>If they remain lost, you may need to edit the guide questions to
+give clearer hints of the next logical step.</li>
 </ul></li>
 </ul></li>
 <li>What questions are students asking repeatedly?
 <ul>
-<li>Would additional specific information in the case materials answer the question without hurting the case flow?</li>
-<li>Be careful not to over-compensate here and eliminate a point of positive confusion.</li>
+<li>Would additional specific information in the case materials answer
+the question without hurting the case flow?</li>
+<li>Be careful not to over-compensate here and eliminate a point of
+positive confusion.</li>
 </ul></li>
-<li>Are you getting the same questions about the case homework assignments from multiple students?
+<li>Are you getting the same questions about the case homework
+assignments from multiple students?
 <ul>
-<li>It is normal for students to have random questions about requirements.</li>
-<li>If half of the students or groups ask essentially the same questions, the instructions for the assignments may be unclear.</li>
+<li>It is normal for students to have random questions about
+requirements.</li>
+<li>If half of the students or groups ask essentially the same
+questions, the instructions for the assignments may be unclear.</li>
 </ul></li>
-<li>Are submitted responses to the case assignments meeting your expectations?
+<li>Are submitted responses to the case assignments meeting your
+expectations?
 <ul>
-<li>If not, you may need to provide additional guidelines, or an example of what you expect.</li>
+<li>If not, you may need to provide additional guidelines, or an example
+of what you expect.</li>
 </ul></li>
-<li>What practical logistical challenges have shown up more than 1-2 times?
+<li>What practical logistical challenges have shown up more than 1-2
+times?
 <ul>
-<li>What are you (as the instructor) spending most of your time fixing or finding workarounds for?</li>
+<li>What are you (as the instructor) spending most of your time fixing
+or finding workarounds for?</li>
 <li>What changes to the case would eliminate the workarounds?</li>
 </ul></li>
 </ol>
@@ -565,13 +595,21 @@ div.tocify {
 <ol start="7" style="list-style-type: decimal">
 <li>Are students meeting all learning outcomes, some outcomes, or none?
 <ul>
-<li>Not every student will meet all goals, but all who participated fully should meet a majority of goals.</li>
-<li>If more than one goal was unmet, would meeting one particular goal help students meet the others? If so, that goal should be the priority in revision.</li>
+<li>Not every student will meet all goals, but all who participated
+fully should meet a majority of goals.</li>
+<li>If more than one goal was unmet, would meeting one particular goal
+help students meet the others? If so, that goal should be the priority
+in revision.</li>
 </ul></li>
-<li>Can students apply what they learned from the case to new situations? Are students referring back to prior cases or class work when they answer the current case questions?
+<li>Can students apply what they learned from the case to new
+situations? Are students referring back to prior cases or class work
+when they answer the current case questions?
 <ul>
-<li>If not, what could you do as part of the case to develop transfer skills?</li>
-<li>Students may not know how to call back prior work. Try adding a nudge question to the case that specifically asks them to make connections to a past case or class activity.</li>
+<li>If not, what could you do as part of the case to develop transfer
+skills?</li>
+<li>Students may not know how to call back prior work. Try adding a
+nudge question to the case that specifically asks them to make
+connections to a past case or class activity.</li>
 </ul></li>
 </ol>
 <div id="section-5" class="section level4">
@@ -585,16 +623,21 @@ div.tocify {
 <ul>
 <li>Could they identify the main learning outcomes for the case?
 <ul>
-<li>If not, consider adding that as a routine question to all case homework assignments.</li>
+<li>If not, consider adding that as a routine question to all case
+homework assignments.</li>
 </ul></li>
-<li>What did students say they struggled with, or that you as the facilitator could have done to help?
+<li>What did students say they struggled with, or that you as the
+facilitator could have done to help?
 <ul>
-<li>You may need to provide more guidance on how to work as a team, or rearrange when you provide certain case information.</li>
+<li>You may need to provide more guidance on how to work as a team, or
+rearrange when you provide certain case information.</li>
 </ul></li>
 <li>Did students find the case topic interesting?
 <ul>
-<li>If not, you might consider reframing the introductory background to make the scenario more relevant to the students.</li>
-<li>Changing just the lead-in often improves student engagement with an unpopular case.</li>
+<li>If not, you might consider reframing the introductory background to
+make the scenario more relevant to the students.</li>
+<li>Changing just the lead-in often improves student engagement with an
+unpopular case.</li>
 </ul></li>
 </ul></li>
 </ol>
@@ -605,31 +648,55 @@ div.tocify {
 </div>
 <div id="how-much-should-you-revise-a-case" class="section level1">
 <h1>How Much Should You Revise a Case?</h1>
-<p>I try to correct all of the basic mechanical issues in a case before I use it again. If there is no easy fix, I plan how to work around them more quickly next time. I am more cautious when making changes that affect learning outcomes or student engagement. One change can have unforeseen effects on how the case unfolds. Personally, I avoid changing more than 3 big features of a case at one time.</p>
-<p>For active cases I keep a running list of ideas for revision or improvement. Changes that I think will have the largest positive impact are at the top; those are what I change first. After using the revised case another time, I revisit the list, add new ideas, drop changes that are no longer relevent, and re-prioritize the list.</p>
-<p>Most cases I revised this way have reached a stable form after 2-4 cycles.</p>
+<p>I try to correct all of the basic mechanical issues in a case before
+I use it again. If there is no easy fix, I plan how to work around them
+more quickly next time. I am more cautious when making changes that
+affect learning outcomes or student engagement. One change can have
+unforeseen effects on how the case unfolds. Personally, I avoid changing
+more than 3 big features of a case at one time.</p>
+<p>For active cases I keep a running list of ideas for revision or
+improvement. Changes that I think will have the largest positive impact
+are at the top; those are what I change first. After using the revised
+case another time, I revisit the list, add new ideas, drop changes that
+are no longer relevent, and re-prioritize the list.</p>
+<p>Most cases I revised this way have reached a stable form after 2-4
+cycles.</p>
 <div id="section-7" class="section level4">
 <h4> </h4>
 </div>
 </div>
 <div id="when-should-you-retire-a-case" class="section level1">
 <h1>When Should You Retire a Case?</h1>
-<p>A case that is not accomplishing your goals should be retired. For instance, I described above how I prioritize case revisions. If a case is not stable and working as I want by its fifth iteration, it probably needs to be retired and replaced with something else.<br />
-It is harder to let go of a case that you wrote and enjoy, and that students like. Eventually they do age out. Signs that a case might need to be retired are:</p>
+<p>A case that is not accomplishing your goals should be retired. For
+instance, I described above how I prioritize case revisions. If a case
+is not stable and working as I want by its fifth iteration, it probably
+needs to be retired and replaced with something else.<br />
+It is harder to let go of a case that you wrote and enjoy, and that
+students like. Eventually they do age out. Signs that a case might need
+to be retired are:</p>
 <ul>
-<li>The central story is no longer topical, or the controversy the case explores has been resolved.
+<li>The central story is no longer topical, or the controversy the case
+explores has been resolved.
 <ul>
-<li>A teaching rule of thumb is that undergraduates are unlikely to understand or care about any social or cultural reference more than 7 years old.</li>
-<li>For example, it might be hard to imagine now in 2023, but most cases written about COVID-19 will be stale by 2030.</li>
+<li>A teaching rule of thumb is that undergraduates are unlikely to
+understand or care about any social or cultural reference more than 7
+years old.</li>
+<li>For example, it might be hard to imagine now in 2023, but most cases
+written about COVID-19 will be stale by 2030.</li>
 </ul></li>
 <li>The field has moved on.
 <ul>
-<li>In the early 2000s I read a case debating whether apex predators should have been reintroduced into Yellowstone Valley. Twenty years later, multiple studies have made the core debate moot.</li>
-<li>The debate case structure itself is probably still usable; it just needs a new framing story.</li>
+<li>In the early 2000s I read a case debating whether apex predators
+should have been reintroduced into Yellowstone Valley. Twenty years
+later, multiple studies have made the core debate moot.</li>
+<li>The debate case structure itself is probably still usable; it just
+needs a new framing story.</li>
 </ul></li>
-<li>Students are less enthusiastic about the topic, or you as the facilitator do not enjoy leading students through the case.
+<li>Students are less enthusiastic about the topic, or you as the
+facilitator do not enjoy leading students through the case.
 <ul>
-<li>If there is no emotional connection to the case, an essential affective element of learning is missing.</li>
+<li>If there is no emotional connection to the case, an essential
+affective element of learning is missing.</li>
 </ul></li>
 </ul>
 <div id="section-8" class="section level4">

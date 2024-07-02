@@ -13,8 +13,8 @@
 
 <title>Frequently Asked Questions</title>
 
-<script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.23/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/spacelab.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -29,7 +29,7 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
@@ -37,8 +37,8 @@
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
 <script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.0/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.0/css/v4-shims.min.css" rel="stylesheet" />
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -59,6 +59,7 @@ if (window.hljs) {
   }
 }
 </script>
+
 
 
 
@@ -88,6 +89,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -145,11 +149,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -178,8 +186,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -187,16 +195,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -313,7 +314,7 @@ div.tocify {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -333,7 +334,7 @@ div.tocify {
   </a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     <span class="fa fa-folder-open"></span>
      
     Case Writing
@@ -421,7 +422,7 @@ div.tocify {
   </ul>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     <span class="fa fa-share-alt"></span>
      
     Cases Collection
@@ -453,7 +454,7 @@ div.tocify {
   </ul>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     <span class="fa fa-wrench"></span>
      
     Toolbox
@@ -494,55 +495,120 @@ div.tocify {
 <div id="section" class="section level4">
 <h4> </h4>
 </div>
-<div id="do-cases-work-in-content-intensive-courses" class="section level2">
+<div id="do-cases-work-in-content-intensive-courses"
+class="section level2">
 <h2>Do cases work in content-intensive courses?</h2>
-<p>Definitely! Case-based teaching has been a core part of medical, allied health, law, and business education for several decades. Many medical schools use problem-based learning (a structured case-based teaching method) for some to all of their content-intensive curriculum for the first two years.</p>
-<p>Teaching cases written specifically for basic STEM fields began to appear in the early 1990s; while not as widely used for STEM undergraduate courses as in the other fields, they are well-established active teaching and learning tools.</p>
-<p>Also, there is a misconception that students learn less with cases vs. lecture-based content-intensive courses. Studies have shown that a typical lecture course can deliver 3-5 central concepts per hour (~120 central concepts/semester). Students may do well on in-class exams that emphasize short-term recall, but will retain just 5-10% of what they learn for 15-30 days. Put another way, most students take only 6-12 central concepts forward from their current course to the next semester.</p>
-<p>If a case-based course covers just 25% of that same content (30 concepts), but students retain ~60%, they carry (120 x .25 x .60 = ) 18 core concepts forward (50% more). The instructor also has a better idea of which concepts are carried forward, because they have selected which 25% of the lecture-based concepts they prioritized. Additionally, the retained content is more readily transferred to new situations.</p>
+<p>Definitely! Case-based teaching has been a core part of medical,
+allied health, law, and business education for several decades. Many
+medical schools use problem-based learning (a structured case-based
+teaching method) for some to all of their content-intensive curriculum
+for the first two years.</p>
+<p>Teaching cases written specifically for basic STEM fields began to
+appear in the early 1990s; while not as widely used for STEM
+undergraduate courses as in the other fields, they are well-established
+active teaching and learning tools.</p>
+<p>Also, there is a misconception that students learn less with cases
+vs. lecture-based content-intensive courses. Studies have shown that a
+typical lecture course can deliver 3-5 central concepts per hour (~120
+central concepts/semester). Students may do well on in-class exams that
+emphasize short-term recall, but will retain just 5-10% of what they
+learn for 15-30 days. Put another way, most students take only 6-12
+central concepts forward from their current course to the next
+semester.</p>
+<p>If a case-based course covers just 25% of that same content (30
+concepts), but students retain ~60%, they carry (120 x .25 x .60 = ) 18
+core concepts forward (50% more). The instructor also has a better idea
+of which concepts are carried forward, because they have selected which
+25% of the lecture-based concepts they prioritized. Additionally, the
+retained content is more readily transferred to new situations.</p>
 <div id="section-1" class="section level4">
 <h4> </h4>
 </div>
 </div>
 <div id="what-do-teaching-cases-look-like" class="section level2">
 <h2>What do teaching cases look like?</h2>
-<p>There is no one-size-for-all case format, but all cases do share some similarities. They all have a patient, scenario or story that focus students on a question or problem. Good scenarios draw students in and make the exploration authentic, relevant, and meaningful.</p>
-<p>Nearly all cases have one or more time blocks when students discuss or work with peers to answer guide questions, collect outside data, analyze information provided by the case, or collaborate in some other way.</p>
-<p>Within these general shared parameters, cases can be categorized by:</p>
+<p>There is no one-size-for-all case format, but all cases do share some
+similarities. They all have a patient, scenario or story that focus
+students on a question or problem. Good scenarios draw students in and
+make the exploration authentic, relevant, and meaningful.</p>
+<p>Nearly all cases have one or more time blocks when students discuss
+or work with peers to answer guide questions, collect outside data,
+analyze information provided by the case, or collaborate in some other
+way.</p>
+<p>Within these general shared parameters, cases can be categorized
+by:</p>
 <ul>
-<li>Point of view: first person/experiential, historical narrative, patient history, scenario, etc.</li>
+<li>Point of view: first person/experiential, historical narrative,
+patient history, scenario, etc.</li>
 <li>Workflow: continuous, interrupted</li>
-<li>Endpoint: open-ended (most common in problem-based learning cases), fixed endpoint</li>
-<li>Time required: mini (less than 1/2 class session), 1-day, multi-day, linked series</li>
+<li>Endpoint: open-ended (most common in problem-based learning cases),
+fixed endpoint</li>
+<li>Time required: mini (less than 1/2 class session), 1-day, multi-day,
+linked series</li>
 <li>Learning goals: process-, content-, cognitive skills-oriented</li>
 <li>Delivery method: small-group, lecture-clicker, flipped</li>
-<li>Connection between cases: standalone, serial, modular/branched, linked series</li>
+<li>Connection between cases: standalone, serial, modular/branched,
+linked series</li>
 </ul>
 <div id="section-2" class="section level4">
 <h4> </h4>
 </div>
 </div>
-<div id="what-is-the-best-case-type-for-my-course" class="section level2">
+<div id="what-is-the-best-case-type-for-my-course"
+class="section level2">
 <h2>What is the best case type for my course?</h2>
-<p>There is no simple answer. The course structure and learning outcomes you want students to achieve through cases will determine what kinds of cases are best for your needs.</p>
-<p><strong>Example 1.</strong> You are teaching a 100-level general biology course with an enrollment of 200 students. You want students to develop data interpretation skills. Given students are unable to discuss the case in small groups, a mini-case (&lt;1/2 class session) where students look at data then respond to prompts using clickers or polls is more likely to fit your needs.</p>
-<p><strong>Example 2.</strong> You are teaching a 200-level topic-intensive course with an enrollment of 40 students. You want them to apply course concepts to a novel problem. Students have time to meet in small groups during class but cannot meet outside of class. Here the best option might be 1-day interrupted cases where groups report what they discovered through discussion during a debrief at the end of class. The case itself might focus on a real-world problem such as a disease, an emerging invasive species, or a new technology application.</p>
-<p><strong>Example 3.</strong> You are teaching a senior capstone seminar with 16 students. Your goal is for students to make connections between topics learned in earlier courses. Students can be assigned to permanent working teams for the semester. The best choice here is probably a linked series of cases that return several times to a single organism, system, or process, and explore it from different perspectives.</p>
+<p>There is no simple answer. The course structure and learning outcomes
+you want students to achieve through cases will determine what kinds of
+cases are best for your needs.</p>
+<p><strong>Example 1.</strong> You are teaching a 100-level general
+biology course with an enrollment of 200 students. You want students to
+develop data interpretation skills. Given students are unable to discuss
+the case in small groups, a mini-case (&lt;1/2 class session) where
+students look at data then respond to prompts using clickers or polls is
+more likely to fit your needs.</p>
+<p><strong>Example 2.</strong> You are teaching a 200-level
+topic-intensive course with an enrollment of 40 students. You want them
+to apply course concepts to a novel problem. Students have time to meet
+in small groups during class but cannot meet outside of class. Here the
+best option might be 1-day interrupted cases where groups report what
+they discovered through discussion during a debrief at the end of class.
+The case itself might focus on a real-world problem such as a disease,
+an emerging invasive species, or a new technology application.</p>
+<p><strong>Example 3.</strong> You are teaching a senior capstone
+seminar with 16 students. Your goal is for students to make connections
+between topics learned in earlier courses. Students can be assigned to
+permanent working teams for the semester. The best choice here is
+probably a linked series of cases that return several times to a single
+organism, system, or process, and explore it from different
+perspectives.</p>
 <div id="section-3" class="section level4">
 <h4> </h4>
 </div>
 </div>
-<div id="how-do-i-get-started-using-teaching-cases" class="section level2">
+<div id="how-do-i-get-started-using-teaching-cases"
+class="section level2">
 <h2>How do I get started using teaching cases?</h2>
-<p>First decide what topics or skills you want to develop using cases, then decide how to integrate them into your course workflow. Once you know what your goals are for cases, you can start choosing existing cases or writing your own to fit your needs. There are separate pages in this website that examine each of these steps in more depth.</p>
+<p>First decide what topics or skills you want to develop using cases,
+then decide how to integrate them into your course workflow. Once you
+know what your goals are for cases, you can start choosing existing
+cases or writing your own to fit your needs. There are separate pages in
+this website that examine each of these steps in more depth.</p>
 <div id="section-4" class="section level4">
 <h4> </h4>
 </div>
 </div>
-<div id="what-are-the-biggest-barriers-to-using-cases" class="section level2">
+<div id="what-are-the-biggest-barriers-to-using-cases"
+class="section level2">
 <h2>What are the biggest barriers to using cases?</h2>
-<p>Every instructor has different challenges. Personally I think the biggest hurdle for most STEM instructors is accepting that we do not have to tell students every piece of information they need to know. Students can be trusted (<em>and should be expected</em>) to learn some basic factual knowledge on their own.</p>
-<p>In my experience, the students’ biggest hurdle is not having the “right” answers to memorize and regurgitate. They need time and repetition before they get comfortable with cases, even though they better reflect how the scientific community actually works.</p>
+<p>Every instructor has different challenges. Personally I think the
+biggest hurdle for most STEM instructors is accepting that we do not
+have to tell students every piece of information they need to know.
+Students can be trusted (<em>and should be expected</em>) to learn some
+basic factual knowledge on their own.</p>
+<p>In my experience, the students’ biggest hurdle is not having the
+“right” answers to memorize and regurgitate. They need time and
+repetition before they get comfortable with cases, even though they
+better reflect how the scientific community actually works.</p>
 <div id="section-5" class="section level4">
 <h4> </h4>
 </div>

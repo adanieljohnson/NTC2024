@@ -13,8 +13,8 @@
 
 <title>BibTex Formats</title>
 
-<script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.23/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/spacelab.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -29,7 +29,7 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
@@ -37,8 +37,8 @@
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
 <script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.0/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.0/css/v4-shims.min.css" rel="stylesheet" />
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -59,6 +59,7 @@ if (window.hljs) {
   }
 }
 </script>
+
 
 
 
@@ -88,6 +89,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -145,11 +149,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -178,8 +186,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -187,16 +195,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -313,7 +314,7 @@ div.tocify {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -333,7 +334,7 @@ div.tocify {
   </a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     <span class="fa fa-folder-open"></span>
      
     Case Writing
@@ -421,7 +422,7 @@ div.tocify {
   </ul>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     <span class="fa fa-share-alt"></span>
      
     Cases Collection
@@ -453,7 +454,7 @@ div.tocify {
   </ul>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     <span class="fa fa-wrench"></span>
      
     Toolbox
@@ -496,18 +497,25 @@ div.tocify {
 </div>
 <div id="using-bibtex-for-citations" class="section level1">
 <h1>Using BibTex for Citations</h1>
-<p>Cited references for this web site are managed using BibTex. Sources are added to the <strong>library.bib</strong> file in the formats shown below. To learn more about using BibTex go to either:</p>
+<p>Cited references for this web site are managed using BibTex. Sources
+are added to the <strong>library.bib</strong> file in the formats shown
+below. To learn more about using BibTex go to either:</p>
 <ul>
 <li><a href="https://www.bibtex.com/">https://www.bibtex.com/</a></li>
-<li><a href="http://www.bibtex.org/Format/">http://www.bibtex.org/Format/</a></li>
+<li><a
+href="http://www.bibtex.org/Format/">http://www.bibtex.org/Format/</a></li>
 </ul>
 <div id="section-1" class="section level4">
 <h4> </h4>
 </div>
 <div id="embedding-references" class="section level2">
 <h2>Embedding References</h2>
-<p>Each entry in the <strong>library.bib</strong> file follows a specific format. Each entry also has a unique name that usually is on the first line (which begins with the @ symbol), immediately after the opening curly brace.</p>
-<p>The example below is the entry for an article referenced by one of the example cases.</p>
+<p>Each entry in the <strong>library.bib</strong> file follows a
+specific format. Each entry also has a unique name that usually is on
+the first line (which begins with the @ symbol), immediately after the
+opening curly brace.</p>
+<p>The example below is the entry for an article referenced by one of
+the example cases.</p>
 <pre><code>@article{Tunaz2004InsectGR,
   title={Insect Growth Regulators for Insect Pest Control},
   author={Hasan Tunaz},
@@ -516,9 +524,17 @@ div.tocify {
   volume={28},
   pages={377-387}
 }</code></pre>
-<p>The unique name for this source is <code>Tunaz2004InsectGR</code>. It can be called to any page in the web site by embedding the name in correct format.</p>
-<p>The in-text command used to cite references stored in .bib file is <code>\cite{citation_key}</code>. Replace “citation_key” with the unique identifier associated with the entry in the .bib file. Put the command where the in-text citation should appear. This one command adds the in-text citation, AND appends the reference list to the bottom of the web page.</p>
-<p>For example, to cite the Tunaz, 2004 article shown above, put in the command:</p>
+<p>The unique name for this source is <code>Tunaz2004InsectGR</code>. It
+can be called to any page in the web site by embedding the name in
+correct format.</p>
+<p>The in-text command used to cite references stored in .bib file is
+<code>\cite{citation_key}</code>. Replace “citation_key” with the unique
+identifier associated with the entry in the .bib file. Put the command
+where the in-text citation should appear. This one command adds the
+in-text citation, AND appends the reference list to the bottom of the
+web page.</p>
+<p>For example, to cite the Tunaz, 2004 article shown above, put in the
+command:</p>
 <pre><code>\cite{Tunaz2004InsectGR}</code></pre>
 <div id="section-2" class="section level4">
 <h4> </h4>
@@ -557,7 +573,9 @@ div.tocify {
 </div>
 <div id="inproceedings" class="section level3">
 <h3>Inproceedings</h3>
-<p>A paper that has been published in conference proceedings. The usage of conference and inproceedings is the same. The conference entry was included for Scribe compatibility.</p>
+<p>A paper that has been published in conference proceedings. The usage
+of conference and inproceedings is the same. The conference entry was
+included for Scribe compatibility.</p>
 <pre><code>@inproceedings{CitekeyInproceedings,
   author    = &quot;Holleis, Paul and Wagner, Matthias and Koolwaaij, Johan&quot;,
   title     = &quot;Studying mobile context-aware social services in the wild&quot;,
@@ -571,7 +589,9 @@ div.tocify {
 </div>
 <div id="techreport" class="section level3">
 <h3>Techreport</h3>
-<p>An institutionally published report such as a report from a school, a government organization, an organization, or a company. This entry type is also frequently used for white papers and working papers.</p>
+<p>An institutionally published report such as a report from a school, a
+government organization, an organization, or a company. This entry type
+is also frequently used for white papers and working papers.</p>
 <pre><code>@techreport{CitekeyTechreport,
   title       = &quot;{W}asatch {S}olar {P}roject Final Report&quot;,
   author      = &quot;Bennett, Vicki and Bowman, Kate and Wright, Sarah&quot;,
@@ -611,7 +631,8 @@ div.tocify {
 </div>
 <div id="booklet" class="section level3">
 <h3>Booklet</h3>
-<p>A printed work that is bound, but does not have a clearly identifiable publisher or supporting institution.</p>
+<p>A printed work that is bound, but does not have a clearly
+identifiable publisher or supporting institution.</p>
 <pre><code>@booklet{CitekeyBooklet,
   title        = &quot;Canoe tours in {S}weden&quot;,
   author       = &quot;Maria Swetla&quot;, 
@@ -622,7 +643,8 @@ div.tocify {
 </div>
 <div id="incollection" class="section level3">
 <h3>Incollection</h3>
-<p>A titled section of a book. Such as a short story within the larger collection of short stories that make up the book.</p>
+<p>A titled section of a book. Such as a short story within the larger
+collection of short stories that make up the book.</p>
 <pre><code>@incollection{CitekeyIncollection,
   author    = &quot;Shapiro, Howard M.&quot;,
   editor    = &quot;Hawley, Teresa S. and Hawley, Robert G.&quot;,
@@ -637,7 +659,8 @@ div.tocify {
 </div>
 <div id="manual" class="section level2">
 <h2>Manual</h2>
-<p>A technical manual for a machine software such as would come with a purchase to explain operation to the new owner.</p>
+<p>A technical manual for a machine software such as would come with a
+purchase to explain operation to the new owner.</p>
 <pre><code>@manual{CitekeyManual,
   title        = &quot;{R}: A Language and Environment for Statistical Computing&quot;,
   author       = &quot;{R Core Team}&quot;,
@@ -675,7 +698,9 @@ div.tocify {
 </div>
 <div id="miscellaneous" class="section level2">
 <h2>Miscellaneous</h2>
-<p>Used if none of the other entry types quite match the source. Frequently used to cite web pages, but can be anything from lecture slides to personal notes.</p>
+<p>Used if none of the other entry types quite match the source.
+Frequently used to cite web pages, but can be anything from lecture
+slides to personal notes.</p>
 <pre><code>@misc{CitekeyMisc,
   title        = &quot;Pluto: The &#39;Other&#39; Red Planet&quot;,
   author       = &quot;{NASA}&quot;,
@@ -685,7 +710,8 @@ div.tocify {
 }</code></pre>
 <div id="unpublished" class="section level3">
 <h3>Unpublished</h3>
-<p>A document that has not been officially published such as a paper draft or manuscript in preparation.</p>
+<p>A document that has not been officially published such as a paper
+draft or manuscript in preparation.</p>
 <pre><code>@unpublished{CitekeyUnpublished,
   author = &quot;Mohinder Suresh&quot;,
   title  = &quot;Evolution: a revised theory&quot;,
@@ -700,7 +726,8 @@ div.tocify {
 <h2>BibTex Field Types</h2>
 <div id="standard-field-types" class="section level3">
 <h3>Standard Field Types</h3>
-<p>These are the fields that are used most often to create a citation.</p>
+<p>These are the fields that are used most often to create a
+citation.</p>
 <ul>
 <li>address: address of the publisher or the institution</li>
 <li>annote: an annotation</li>
@@ -710,12 +737,16 @@ div.tocify {
 <li>edition: edition number of a book</li>
 <li>editor: list of editors of a book</li>
 <li>howpublished: a publication notice for unusual publications</li>
-<li>institution: name of the institution that published and/or sponsored the report</li>
-<li>journal: name of the journal or magazine the article was published in</li>
+<li>institution: name of the institution that published and/or sponsored
+the report</li>
+<li>journal: name of the journal or magazine the article was published
+in</li>
 <li>month: the month during the work was published</li>
 <li>note: notes about the reference</li>
-<li>number: number of the report or the issue number for a journal article</li>
-<li>organization: name of the institution that organized or sponsored the conference or that published the manual</li>
+<li>number: number of the report or the issue number for a journal
+article</li>
+<li>organization: name of the institution that organized or sponsored
+the conference or that published the manual</li>
 <li>pages: page numbers or a page range</li>
 <li>publisher: name of the publisher</li>
 <li>school: name of the university or degree awarding institution</li>
@@ -731,7 +762,8 @@ div.tocify {
 </div>
 <div id="non-standard-field-types" class="section level3">
 <h3>Non-standard field types</h3>
-<p>These fields are frequently used, but are not supported by all BibTeX styles.</p>
+<p>These fields are frequently used, but are not supported by all BibTeX
+styles.</p>
 <ul>
 <li>doi: DOI number (like 10.1038/d41586-018-07848-2)</li>
 <li>issn: ISSN number (like 1476-4687)</li>

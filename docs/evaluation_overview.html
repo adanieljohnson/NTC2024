@@ -13,8 +13,8 @@
 
 <title>Evaluation</title>
 
-<script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.23/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/spacelab.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -29,7 +29,7 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
@@ -37,8 +37,8 @@
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
 <script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.0/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.0/css/v4-shims.min.css" rel="stylesheet" />
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -59,6 +59,7 @@ if (window.hljs) {
   }
 }
 </script>
+
 
 
 
@@ -88,6 +89,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -145,11 +149,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -178,8 +186,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -187,16 +195,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -313,7 +314,7 @@ div.tocify {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -333,7 +334,7 @@ div.tocify {
   </a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     <span class="fa fa-folder-open"></span>
      
     Case Writing
@@ -421,7 +422,7 @@ div.tocify {
   </ul>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     <span class="fa fa-share-alt"></span>
      
     Cases Collection
@@ -453,7 +454,7 @@ div.tocify {
   </ul>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     <span class="fa fa-wrench"></span>
      
     Toolbox
@@ -496,35 +497,52 @@ div.tocify {
 </div>
 <div id="how-to-think-about-evaluation" class="section level1">
 <h1>How to Think About Evaluation</h1>
-<p>Evaluation is an ongoing process of gauging students’ progress towards the general learning outcomes and benchmarks you established in the <strong>Analysis</strong> stage. Students’ grades on case activities are important, but only a piece of the puzzle.</p>
+<p>Evaluation is an ongoing process of gauging students’ progress
+towards the general learning outcomes and benchmarks you established in
+the <strong>Analysis</strong> stage. Students’ grades on case activities
+are important, but only a piece of the puzzle.</p>
 <p>When thinking about evaluation, ask yourself about:</p>
 <ol style="list-style-type: decimal">
 <li>Learning Outcomes:
 <ul>
 <li>What original goals did I set in the Analysis stage?</li>
-<li>Am I collecting sufficient (and appropriate) data to answer those questions with confidence?</li>
+<li>Am I collecting sufficient (and appropriate) data to answer those
+questions with confidence?</li>
 </ul></li>
 <li>Transfer:
 <ul>
-<li>Do students know how to apply what they learned now to new situations?</li>
-<li>Are students able to build on what they learned now in later courses?</li>
+<li>Do students know how to apply what they learned now to new
+situations?</li>
+<li>Are students able to build on what they learned now in later
+courses?</li>
 </ul></li>
 <li>Process:
 <ul>
 <li>Is implementation going as I expected?</li>
-<li>What practical logistical challenges have shown up more than 1-2 times?</li>
-<li>What am I (as the instructor) spending most of my time fixing or finding workarounds for?</li>
-<li>Where are students getting confused or off track? Are they able to self-correct?</li>
+<li>What practical logistical challenges have shown up more than 1-2
+times?</li>
+<li>What am I (as the instructor) spending most of my time fixing or
+finding workarounds for?</li>
+<li>Where are students getting confused or off track? Are they able to
+self-correct?</li>
 <li>What are students dissatisfied with? Why?</li>
 </ul></li>
 </ol>
-<p>It is easy to go overboard and design an unsustainable evaluation process. As you are thinking about WHAT to evaluate, think too about the effort needed, and if the data obtained will provide insights that benefit the students.</p>
-<p>When deciding what your strategy will be, also remember that you want to:</p>
+<p>It is easy to go overboard and design an unsustainable evaluation
+process. As you are thinking about WHAT to evaluate, think too about the
+effort needed, and if the data obtained will provide insights that
+benefit the students.</p>
+<p>When deciding what your strategy will be, also remember that you want
+to:</p>
 <ul>
 <li>Measure progress of each student individually, but</li>
-<li>Look at student performance <strong>in aggregate</strong>, not at individual students.</li>
+<li>Look at student performance <strong>in aggregate</strong>, not at
+individual students.</li>
 </ul>
-<p>This page describes selected examples of how to evaluating learning outcomes gains, transfer, and process. Additional resources are available on the <a href="evaluation_1.html">Evaluation Resources</a> page.</p>
+<p>This page describes selected examples of how to evaluating learning
+outcomes gains, transfer, and process. Additional resources are
+available on the <a href="evaluation_1.html">Evaluation Resources</a>
+page.</p>
 <div id="section-1" class="section level4">
 <h4> </h4>
 </div>
@@ -537,27 +555,56 @@ div.tocify {
 <li>How far have students progressed towards these goals?</li>
 <li>Am I getting the data I need to make decisions?</li>
 </ul>
-<p>The gold standard for evaluating progress towards learning outcomes is pre/post course performance, which requires collecting baseline and end-course data. Students are not likely to perform at their best if you separate outcomes evaluation from their normal class evaluation. Ideally you should make data collection part of your cases and regular classroom assessment process, then pull out the data later.</p>
-<p>For example, in my course using a series of 8 cases, I have 3 questions at the end of the first case that I assume students cannot answer in any depth. I then ask essentially the same questions in a different context in the final case of the semester. I score students’ responses on the two sets of questions using a 10-point scale similar to the Experimental Design Ability Test (EDAT; <a href="https://eric.ed.gov/?id=EJ943887">Sirum &amp; Humburg, 2011</a>.)</p>
-<p>EDAT-style scoring works well when courses are small because I can get fine-grained feedback from just a few students. It becomes impractical in a case-based course with a large number of students (more than 40 or so.) Now a more scalable strategy is to embed passage-based questions in course exams. This format is used in the Critical Reading section of the SAT, most sections of the MCAT exam, the LSAT, and other professional school entrance exams.</p>
-<p>Briefly, students read a short passage similar to a case-type scenario, then answer multiple choice or short open response questions.</p>
+<p>The gold standard for evaluating progress towards learning outcomes
+is pre/post course performance, which requires collecting baseline and
+end-course data. Students are not likely to perform at their best if you
+separate outcomes evaluation from their normal class evaluation. Ideally
+you should make data collection part of your cases and regular classroom
+assessment process, then pull out the data later.</p>
+<p>For example, in my course using a series of 8 cases, I have 3
+questions at the end of the first case that I assume students cannot
+answer in any depth. I then ask essentially the same questions in a
+different context in the final case of the semester. I score students’
+responses on the two sets of questions using a 10-point scale similar to
+the Experimental Design Ability Test (EDAT; <a
+href="https://eric.ed.gov/?id=EJ943887">Sirum &amp; Humburg,
+2011</a>.)</p>
+<p>EDAT-style scoring works well when courses are small because I can
+get fine-grained feedback from just a few students. It becomes
+impractical in a case-based course with a large number of students (more
+than 40 or so.) Now a more scalable strategy is to embed passage-based
+questions in course exams. This format is used in the Critical Reading
+section of the SAT, most sections of the MCAT exam, the LSAT, and other
+professional school entrance exams.</p>
+<p>Briefly, students read a short passage similar to a case-type
+scenario, then answer multiple choice or short open response
+questions.</p>
 <p>Advantages of passage-based questions:</p>
 <ul>
-<li>Each student must demonstrate their ability without help from working partners.</li>
-<li>They disadvantage “social loafers” who did not participate in regular class discussions. They will not be prepared to answer such questions on their own.</li>
-<li>Responses to multiple choice or choice-options questions can be summarized and graphed easily.</li>
+<li>Each student must demonstrate their ability without help from
+working partners.</li>
+<li>They disadvantage “social loafers” who did not participate in
+regular class discussions. They will not be prepared to answer such
+questions on their own.</li>
+<li>Responses to multiple choice or choice-options questions can be
+summarized and graphed easily.</li>
 </ul>
 <p>Disadvantages of passage-based questions:</p>
 <ul>
 <li>Students have limited time to think before answering questions.</li>
-<li>Writing good passages and questions requires more instructor time.</li>
+<li>Writing good passages and questions requires more instructor
+time.</li>
 </ul>
 <div id="section-2" class="section level4">
 <h4> </h4>
 </div>
 <div id="computational-text-analysis" class="section level2">
 <h2>Computational Text Analysis</h2>
-<p>Instructors who use R or Python can use natural language processing packages to analyze pre/post samples of students’ writing. Useful metrics can be calculated for hundreds of samples then summarized in just a few minutes. Those interested in learning more about this approach can contact me directly.</p>
+<p>Instructors who use R or Python can use natural language processing
+packages to analyze pre/post samples of students’ writing. Useful
+metrics can be calculated for hundreds of samples then summarized in
+just a few minutes. Those interested in learning more about this
+approach can contact me directly.</p>
 <div id="section-3" class="section level4">
 <h4> </h4>
 </div>
@@ -567,51 +614,87 @@ div.tocify {
 <h1>Evaluating Knowledge Transfer</h1>
 <p>Key questions here are:</p>
 <ul>
-<li>Can students apply knowlege and skills they learned from cases to novel situations?</li>
-<li>Are students able to build on what they learned in later courses?</li>
+<li>Can students apply knowlege and skills they learned from cases to
+novel situations?</li>
+<li>Are students able to build on what they learned in later
+courses?</li>
 </ul>
-<p>Evaluations of general learning outcomes usually provide data about knowledge transfer too. For example, if students were required to use Toulmin’s practical argumentation model to solve a case during class, they should be able to use that model to solve a novel problem on an exam.</p>
-<p>When planning this part of your evaluation, keep in mind that we tend not to teach biology students HOW to transfer their knowledge and skills. STEM students taking physics or chemistry routinely work on word problems that train them to apply what they learn to new situations. In biology, we assume that students can do this intuitively. If students do not have regular opportunities to practice transferring knowledge and skills (and get feedback), they may not show much improvement.</p>
+<p>Evaluations of general learning outcomes usually provide data about
+knowledge transfer too. For example, if students were required to use
+Toulmin’s practical argumentation model to solve a case during class,
+they should be able to use that model to solve a novel problem on an
+exam.</p>
+<p>When planning this part of your evaluation, keep in mind that we tend
+not to teach biology students HOW to transfer their knowledge and
+skills. STEM students taking physics or chemistry routinely work on word
+problems that train them to apply what they learn to new situations. In
+biology, we assume that students can do this intuitively. If students do
+not have regular opportunities to practice transferring knowledge and
+skills (and get feedback), they may not show much improvement.</p>
 <div id="section-4" class="section level4">
 <h4> </h4>
 </div>
-<div id="other-ways-of-evaluating-knowledge-transfer" class="section level2">
+<div id="other-ways-of-evaluating-knowledge-transfer"
+class="section level2">
 <h2>Other Ways of Evaluating Knowledge Transfer</h2>
 <div id="in-the-news" class="section level3">
 <h3>In the News</h3>
-<p>Give students a news or magazine article about one or more topics covered by cases or coursework. List one specific concept or skill they should have learned, and ask them to:</p>
+<p>Give students a news or magazine article about one or more topics
+covered by cases or coursework. List one specific concept or skill they
+should have learned, and ask them to:</p>
 <ul>
 <li>Critique the evidence presented</li>
 <li>Support or debunk the argument or conclusion</li>
 <li>Argue a different or opposing position</li>
-<li>Make a hypothesis and design an experiment to test the key conclusion</li>
+<li>Make a hypothesis and design an experiment to test the key
+conclusion</li>
 <li>Etc.</li>
 </ul>
-<p>This can be a standalone assignment at the end of the semester, or part of a final exam.</p>
+<p>This can be a standalone assignment at the end of the semester, or
+part of a final exam.</p>
 <div id="section-5" class="section level4">
 <h4> </h4>
 </div>
 </div>
 <div id="nsf-pre-proposal" class="section level3">
 <h3>NSF Pre-Proposal</h3>
-<p>Students write a 3-page pre-proposal pitch of an idea to the NSF. Their pitch should apply one or more concepts that were explored in class to a disease or problem that they did not explore in class. Guidelines and criteria for the pre-proposal should be as similar as reasonably possible to actual federal grant requirements.</p>
-<p>This works best as a final course project. Give students several weeks to work on it. An example of instructions for this type of project are <a href="">in the Resources</a>.</p>
+<p>Students write a 3-page pre-proposal pitch of an idea to the NSF.
+Their pitch should apply one or more concepts that were explored in
+class to a disease or problem that they did not explore in class.
+Guidelines and criteria for the pre-proposal should be as similar as
+reasonably possible to actual federal grant requirements.</p>
+<p>This works best as a final course project. Give students several
+weeks to work on it. An example of instructions for this type of project
+are <a href="">in the Resources</a>.</p>
 <div id="section-6" class="section level4">
 <h4> </h4>
 </div>
 </div>
 <div id="explainer-video" class="section level3">
 <h3>Explainer Video</h3>
-<p>Students create a short video explaining a concept that was NOT explored in class cases, but is related to the course content. Videos should be:</p>
+<p>Students create a short video explaining a concept that was NOT
+explored in class cases, but is related to the course content. Videos
+should be:</p>
 <ul>
 <li>Short (under 5-10 minutes)</li>
-<li>Targeted to a particular audience (I usually tell students that their peers who have NOT had my class are their audience.)</li>
+<li>Targeted to a particular audience (I usually tell students that
+their peers who have NOT had my class are their audience.)</li>
 <li>Focused on ONE concept.</li>
-<li>Demonstrate at least one of the skills I want students to carry forward from the class.</li>
+<li>Demonstrate at least one of the skills I want students to carry
+forward from the class.</li>
 </ul>
-<p>The original idea for this evaluation technique (which I use routinely now) came from NSF’s Broader Impacts requirement for grant proposals, and HHMI’s Biointeractive Program. Most students have a cell phone they can use to create videos, and our institution has video equipment that any student can borrow. The key is requiring students to explain a concept we did NOT talk about in class. With this one activity I can assess content knowledge transfer, vocabulary mastery, teamwork and collaboration,</p>
-<p>Like a pre-proposal, this works best as a final course project. Give students several weeks to work on it.</p>
-<p>An example of instructions for this type of project are <a href="">in the Resources</a>.</p>
+<p>The original idea for this evaluation technique (which I use
+routinely now) came from NSF’s Broader Impacts requirement for grant
+proposals, and HHMI’s Biointeractive Program. Most students have a cell
+phone they can use to create videos, and our institution has video
+equipment that any student can borrow. The key is requiring students to
+explain a concept we did NOT talk about in class. With this one activity
+I can assess content knowledge transfer, vocabulary mastery, teamwork
+and collaboration,</p>
+<p>Like a pre-proposal, this works best as a final course project. Give
+students several weeks to work on it.</p>
+<p>An example of instructions for this type of project are <a href="">in
+the Resources</a>.</p>
 <div id="section-7" class="section level4">
 <h4> </h4>
 </div>
@@ -621,12 +704,23 @@ div.tocify {
 <h2>Evaluating Transfer to Future Courses</h2>
 <p>This is difficult for three reasons.</p>
 <ol style="list-style-type: decimal">
-<li>Usually we treat each course as a closed module within the curriculum. If your course is not part of a larger program that evaluates forward transfer, the amount and types of data you can collect will be limited.</li>
-<li>Student surveys are not reliable. They forget much of what they learned from semester to semester, especially when they encounter new concepts or skills for the first time.</li>
-<li>Students may not realize that they are using newly acquired knowledge or skills, so cannot point to where they first gained them.</li>
+<li>Usually we treat each course as a closed module within the
+curriculum. If your course is not part of a larger program that
+evaluates forward transfer, the amount and types of data you can collect
+will be limited.</li>
+<li>Student surveys are not reliable. They forget much of what they
+learned from semester to semester, especially when they encounter new
+concepts or skills for the first time.</li>
+<li>Students may not realize that they are using newly acquired
+knowledge or skills, so cannot point to where they first gained
+them.</li>
 </ol>
-<p>If your case-oriented course is a pre-requisite for any popular advanced courses, ask those instructors if you can survey their students. Similarly, ask any instructors teaching capstone courses if you can poll their students.</p>
-<p>Look on the <a href="evaluation_1.html">Resources</a> page for more on evaluating forward transfer.</p>
+<p>If your case-oriented course is a pre-requisite for any popular
+advanced courses, ask those instructors if you can survey their
+students. Similarly, ask any instructors teaching capstone courses if
+you can poll their students.</p>
+<p>Look on the <a href="evaluation_1.html">Resources</a> page for more
+on evaluating forward transfer.</p>
 <div id="section-8" class="section level4">
 <h4> </h4>
 </div>
@@ -638,46 +732,71 @@ div.tocify {
 <ul>
 <li>Is implementation going as planned?
 <ul>
-<li>What practical logistical challenges have shown up more than 1-2 times?</li>
-<li>What am I (as the instructor) spending most of my time fixing or finding workarounds for?</li>
+<li>What practical logistical challenges have shown up more than 1-2
+times?</li>
+<li>What am I (as the instructor) spending most of my time fixing or
+finding workarounds for?</li>
 </ul></li>
 <li>Are students able to navigate and complete the cases successfully?
 <ul>
 <li>Where are students getting confused or off track?</li>
-<li>Are students able to self-correct, or do they need more guidance?</li>
+<li>Are students able to self-correct, or do they need more
+guidance?</li>
 </ul></li>
 <li>What are students dissatisfied with? Why?</li>
 </ul>
-<p>I find that when I introduce a new case (or add a case to an existing sequence), several implementation problems become apparent almost immediately. When students point these mechanical issues, <strong>do not wait to fix them!</strong> You gain students’ trust when they know that you are responsive and will address mechanical problems quickly. This translates into:</p>
+<p>I find that when I introduce a new case (or add a case to an existing
+sequence), several implementation problems become apparent almost
+immediately. When students point these mechanical issues, <strong>do not
+wait to fix them!</strong> You gain students’ trust when they know that
+you are responsive and will address mechanical problems quickly. This
+translates into:</p>
 <ul>
-<li>Greater willingness to tell you honestly what is or is not working with the cases; and</li>
+<li>Greater willingness to tell you honestly what is or is not working
+with the cases; and</li>
 <li>Greater student buy-in for cases generally.</li>
 </ul>
 <div id="section-9" class="section level4">
 <h4> </h4>
 </div>
-<div id="tools-for-evaluating-process-and-implementation" class="section level2">
+<div id="tools-for-evaluating-process-and-implementation"
+class="section level2">
 <h2>Tools for Evaluating Process and Implementation</h2>
 <div id="end-of-case-debriefsurvey" class="section level3">
 <h3>End of Case Debrief/Survey</h3>
-<p>At the conclusion of each case, ask students to debrief aloud in class, or complete a short survey on the course LMS. Informative questions include:</p>
+<p>At the conclusion of each case, ask students to debrief aloud in
+class, or complete a short survey on the course LMS. Informative
+questions include:</p>
 <ul>
-<li>Was the case topic interesting to you? Why? Is there a topic that you think would work better here?
+<li>Was the case topic interesting to you? Why? Is there a topic that
+you think would work better here?
 <ul>
-<li>If students did not find the case scenario interesting, that colors their opinion overall.</li>
-<li>Students have insights into what their peers will find interesting the next time. Just changing the topic (but nothing else) often improves student engagement with an unpopular case. <br><br />
+<li>If students did not find the case scenario interesting, that colors
+their opinion overall.</li>
+<li>Students have insights into what their peers will find interesting
+the next time. Just changing the topic (but nothing else) often improves
+student engagement with an unpopular case. <br><br />
 </li>
 </ul></li>
 <li>What did I want you to learn from this case?
 <ul>
-<li>More than half of students should be able to identify the main learning outcomes of a case. Their responses should become more nuanced and detailed as the course progresses.</li>
-<li>If students are not able to identify the learning goals or do not improve by mid-semester, it suggests they are not transferring their skills from case to case, or are not motivated to engage. <br></li>
+<li>More than half of students should be able to identify the main
+learning outcomes of a case. Their responses should become more nuanced
+and detailed as the course progresses.</li>
+<li>If students are not able to identify the learning goals or do not
+improve by mid-semester, it suggests they are not transferring their
+skills from case to case, or are not motivated to engage. <br></li>
 </ul></li>
-<li>Where did your team struggle with this case? What could I do to make it easier? What could your team have done better?
+<li>Where did your team struggle with this case? What could I do to make
+it easier? What could your team have done better?
 <ul>
-<li>Asking students to reflect on their group process reinforces that they are equally responsible for success.</li>
-<li>Asking about process for each case provides data on what might need to be changed next time.</li>
-<li>Remember that you cannot please everyone. Look for trends in the responses. An issue that &gt;50% of students raise has higher priority than one &lt;10% of students raise.</li>
+<li>Asking students to reflect on their group process reinforces that
+they are equally responsible for success.</li>
+<li>Asking about process for each case provides data on what might need
+to be changed next time.</li>
+<li>Remember that you cannot please everyone. Look for trends in the
+responses. An issue that &gt;50% of students raise has higher priority
+than one &lt;10% of students raise.</li>
 </ul></li>
 </ul>
 <div id="section-10" class="section level4">
@@ -686,8 +805,20 @@ div.tocify {
 </div>
 <div id="end-of-semester-evaluations" class="section level3">
 <h3>End of Semester Evaluations</h3>
-<p>Like many faculty I think end-of-semester evaluations are not very informative. Students know that what they say will not affect their own experience. For many it is their opportunity to vent frustrations, nothing more. To get better data, we should ask questions while the course is in progress.</p>
-<p>I do rely on end-of-semester evaluations to get feedback on ideas for changes to specific cases or the course overall in the future. Their pre-implementation feedback has kept me from spending many hours on unneeded revisions. With the concluding course as their baseline, I ask current students to rate (using a Likert scale of Strongly disagree to Strongly agree) changes I am considering. I usually get strong support for just 1 in every 4-5 changes I propose. Often they strongly disagree with some of my suggestion; those ideas get dropped unless there is a strong pedagogical reason to override the students’ opinion.</p>
+<p>Like many faculty I think end-of-semester evaluations are not very
+informative. Students know that what they say will not affect their own
+experience. For many it is their opportunity to vent frustrations,
+nothing more. To get better data, we should ask questions while the
+course is in progress.</p>
+<p>I do rely on end-of-semester evaluations to get feedback on ideas for
+changes to specific cases or the course overall in the future. Their
+pre-implementation feedback has kept me from spending many hours on
+unneeded revisions. With the concluding course as their baseline, I ask
+current students to rate (using a Likert scale of Strongly disagree to
+Strongly agree) changes I am considering. I usually get strong support
+for just 1 in every 4-5 changes I propose. Often they strongly disagree
+with some of my suggestion; those ideas get dropped unless there is a
+strong pedagogical reason to override the students’ opinion.</p>
 <div id="section-11" class="section level4">
 <h4> </h4>
 <hr>

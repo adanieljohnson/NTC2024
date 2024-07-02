@@ -13,8 +13,8 @@
 
 <title>Overview of ADDIE</title>
 
-<script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.23/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/spacelab.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -29,7 +29,7 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
@@ -37,8 +37,8 @@
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
 <script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.0/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.0/css/v4-shims.min.css" rel="stylesheet" />
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -59,6 +59,7 @@ if (window.hljs) {
   }
 }
 </script>
+
 
 
 
@@ -88,6 +89,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -145,11 +149,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -178,8 +186,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -187,16 +195,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -313,7 +314,7 @@ div.tocify {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -333,7 +334,7 @@ div.tocify {
   </a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     <span class="fa fa-folder-open"></span>
      
     Case Writing
@@ -421,7 +422,7 @@ div.tocify {
   </ul>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     <span class="fa fa-share-alt"></span>
      
     Cases Collection
@@ -453,7 +454,7 @@ div.tocify {
   </ul>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     <span class="fa fa-wrench"></span>
      
     Toolbox
@@ -493,7 +494,10 @@ div.tocify {
 
 <div id="section" class="section level4">
 <h4> </h4>
-<p>The case teaching resources on this site are organized around a modified ADDIE model of curriculum design (U. Florida, 1975), with elements of backwards design (Wiggins &amp; McTighe, 1999). The two are very similar, but more faculty are familiar with backwards design.</p>
+<p>The case teaching resources on this site are organized around a
+modified ADDIE model of curriculum design (U. Florida, 1975), with
+elements of backwards design (Wiggins &amp; McTighe, 1999). The two are
+very similar, but more faculty are familiar with backwards design.</p>
 <p>The five steps of the ADDIE Model are:</p>
 <ol style="list-style-type: decimal">
 <li><strong>A</strong> nalyze</li>
@@ -502,24 +506,37 @@ div.tocify {
 <li><strong>I</strong> mplement</li>
 <li><strong>E</strong> valuate</li>
 </ol>
-<p>The first step in ADDIE (and backwards design) is to analyze the learning situation, and establish general learning outcomes and performance benchmarks. Analysis corresponds to the initial linear phase of backwards design.</p>
+<p>The first step in ADDIE (and backwards design) is to analyze the
+learning situation, and establish general learning outcomes and
+performance benchmarks. Analysis corresponds to the initial linear phase
+of backwards design.</p>
 <p><img src="images/ADDIE_backwards_design.png" /></p>
 <center>
-<em>ADDIE model of instructional design, mapped onto backwards design workflow.</em>
+<em>ADDIE model of instructional design, mapped onto backwards design
+workflow.</em>
 </center>
 <p><br></p>
-<p>Next comes the design and development phase. Typically we cycle back and forther between the two many times prior to implementation, so for simplicity I combined them into one step. This better fits the backwards design model as well, where design is part of the cyclic phase.</p>
+<p>Next comes the design and development phase. Typically we cycle back
+and forther between the two many times prior to implementation, so for
+simplicity I combined them into one step. This better fits the backwards
+design model as well, where design is part of the cyclic phase.</p>
 </div>
 <div id="section-1" class="section level4">
 <h4> </h4>
 </div>
 <div id="goals-of-analysis" class="section level1">
 <h1>Goals of Analysis</h1>
-<p>The first step in the ADDIE process is to determine what specific goals you hope to accomplish in a course. More specifically:</p>
+<p>The first step in the ADDIE process is to determine what specific
+goals you hope to accomplish in a course. More specifically:</p>
 <ol style="list-style-type: decimal">
-<li><strong>What are the general learning outcomes?</strong> What principles, theories, concepts, skills, or content knowledge should students achieve as a result of learning activities?</li>
-<li><strong>What are appropriate specific benchmarks or performance goals?</strong> What will students be able to do to indicate they have accomplished these endpoints?</li>
-<li><strong>How should the goals be sequenced?</strong> Which benchmarks do students need to reach first, before they can achieve others?</li>
+<li><strong>What are the general learning outcomes?</strong> What
+principles, theories, concepts, skills, or content knowledge should
+students achieve as a result of learning activities?</li>
+<li><strong>What are appropriate specific benchmarks or performance
+goals?</strong> What will students be able to do to indicate they have
+accomplished these endpoints?</li>
+<li><strong>How should the goals be sequenced?</strong> Which benchmarks
+do students need to reach first, before they can achieve others?</li>
 </ol>
 <div id="section-2" class="section level4">
 <h4> </h4>
@@ -527,13 +544,20 @@ div.tocify {
 </div>
 <div id="goals-for-design-and-development" class="section level1">
 <h1>Goals for Design and Development</h1>
-<p>The second step in the ADDIE process is to determine how best to help students achieve the specific goals established in the <strong>Analysis</strong> stage. In practice, design and development transitions to revision and refinement as a case or course matures.</p>
-<p>Specific questions to ask in the Design and Development phase are:</p>
+<p>The second step in the ADDIE process is to determine how best to help
+students achieve the specific goals established in the
+<strong>Analysis</strong> stage. In practice, design and development
+transitions to revision and refinement as a case or course matures.</p>
+<p>Specific questions to ask in the Design and Development phase
+are:</p>
 <ol style="list-style-type: decimal">
-<li>What activities, scenarios, or problems will allow or best help students reach the benchmarks?<br />
+<li>What activities, scenarios, or problems will allow or best help
+students reach the benchmarks?<br />
 </li>
-<li>How will the learning activities from #1 be incorporated into a general case format?</li>
-<li>What additional information or resources will students or the instructor need for the case?</li>
+<li>How will the learning activities from #1 be incorporated into a
+general case format?</li>
+<li>What additional information or resources will students or the
+instructor need for the case?</li>
 </ol>
 <div id="section-3" class="section level4">
 <h4> </h4>
@@ -541,12 +565,17 @@ div.tocify {
 </div>
 <div id="goals-for-implementation" class="section level1">
 <h1>Goals for Implementation</h1>
-<p>This stage of the ADDIE process is similar to Design and Development in that there will always be some ongoing redesign as the studen population changes, course goals change, or other course elements become more or less important.</p>
+<p>This stage of the ADDIE process is similar to Design and Development
+in that there will always be some ongoing redesign as the studen
+population changes, course goals change, or other course elements become
+more or less important.</p>
 <p>Specific questions to ask related to implementation include:</p>
 <ol style="list-style-type: decimal">
 <li>How will the case and related materials be delivered?</li>
-<li>How will students complete and submit case work and assessments?</li>
-<li>How will the instructor provide support for the case in progress? Adjust or modify the case? Guide students through the process?</li>
+<li>How will students complete and submit case work and
+assessments?</li>
+<li>How will the instructor provide support for the case in progress?
+Adjust or modify the case? Guide students through the process?</li>
 </ol>
 <div id="section-4" class="section level4">
 <h4> </h4>
@@ -554,12 +583,24 @@ div.tocify {
 </div>
 <div id="goals-for-evaluation" class="section level1">
 <h1>Goals for Evaluation</h1>
-<p>The final step in the ADDIE process is to determine whether your students have achieved the specific goals established in the <strong>Analysis</strong> stage. In practice, evaluation is an ongoing process. At some point though, you as the instructor need to compile the data collected and decide which learning outcomes students are meeting adequately vs. which outcomes they are not meeting. The answer to the latter question will inform the process of revision, which goes back to the design and develop phase of the process.</p>
+<p>The final step in the ADDIE process is to determine whether your
+students have achieved the specific goals established in the
+<strong>Analysis</strong> stage. In practice, evaluation is an ongoing
+process. At some point though, you as the instructor need to compile the
+data collected and decide which learning outcomes students are meeting
+adequately vs. which outcomes they are not meeting. The answer to the
+latter question will inform the process of revision, which goes back to
+the design and develop phase of the process.</p>
 <p>Specific questions to ask include:</p>
 <ol style="list-style-type: decimal">
-<li>What questions did I come up with based on the analysis stage? Does the evaluation process provide sufficient data to answer those questions with confidence?</li>
-<li>Are students reaching the end goals of the course overall? That were set in the design and development phase?</li>
-<li>Is the implementation process working as expected? Where are students getting confused or off track? Are they able to self-correct?</li>
+<li>What questions did I come up with based on the analysis stage? Does
+the evaluation process provide sufficient data to answer those questions
+with confidence?</li>
+<li>Are students reaching the end goals of the course overall? That were
+set in the design and development phase?</li>
+<li>Is the implementation process working as expected? Where are
+students getting confused or off track? Are they able to
+self-correct?</li>
 </ol>
 <div id="section-5" class="section level4">
 <h4> </h4>

@@ -13,8 +13,8 @@
 
 <title>Design and Development Resources</title>
 
-<script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.23/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/spacelab.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -29,7 +29,7 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
@@ -37,8 +37,8 @@
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
 <script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.0/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.0/css/v4-shims.min.css" rel="stylesheet" />
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -59,6 +59,7 @@ if (window.hljs) {
   }
 }
 </script>
+
 
 
 
@@ -88,6 +89,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -145,11 +149,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -178,8 +186,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -187,16 +195,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -313,7 +314,7 @@ div.tocify {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -333,7 +334,7 @@ div.tocify {
   </a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     <span class="fa fa-folder-open"></span>
      
     Case Writing
@@ -421,7 +422,7 @@ div.tocify {
   </ul>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     <span class="fa fa-share-alt"></span>
      
     Cases Collection
@@ -453,7 +454,7 @@ div.tocify {
   </ul>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     <span class="fa fa-wrench"></span>
      
     Toolbox
@@ -496,30 +497,47 @@ div.tocify {
 </div>
 <div id="sources-for-case-scenarios" class="section level1">
 <h1>Sources for Case Scenarios</h1>
-<p>Science press newsletters can provide many ideas. These three offer free access.</p>
+<p>Science press newsletters can provide many ideas. These three offer
+free access.</p>
 <ul>
 <li><a href="https://www.science.org/news">AAAS Science News</a></li>
 <li><a href="https://www.nature.com/news">Nature News</a></li>
 <li><a href="https://www.sciencedaily.com/">Science Daily</a></li>
 </ul>
-<p>Local and national news stories, and local political debates focusing on biological and health issues, make good scenarios. Often news stories can be turned into cases just by adding guide questions and assignments.</p>
+<p>Local and national news stories, and local political debates focusing
+on biological and health issues, make good scenarios. Often news stories
+can be turned into cases just by adding guide questions and
+assignments.</p>
 <div id="section-1" class="section level4">
 <h4> </h4>
 </div>
 </div>
 <div id="sources-for-full-cases" class="section level1">
 <h1>Sources for Full Cases</h1>
-<p>Even if you want to use only cases you wrote, reading others’ case workflows will show you different ways to reach your end learning goals.</p>
+<p>Even if you want to use only cases you wrote, reading others’ case
+workflows will show you different ways to reach your end learning
+goals.</p>
 <div id="section-2" class="section level4">
 <h4> </h4>
 </div>
 <div id="nccsts" class="section level2">
 <h2>NCCSTS</h2>
-<p>The <strong>National Center for Case Study Teaching in Science (NCCSTS)</strong> was created and managed by Kip Herreid at the University of Buffalo, and now is hosted by the National Science Teachers Association. Dr. Herreid was a prolific author on the subject of case teaching, and a tireless advocate.</p>
+<p>The <strong>National Center for Case Study Teaching in Science
+(NCCSTS)</strong> was created and managed by Kip Herreid at the
+University of Buffalo, and now is hosted by the National Science
+Teachers Association. Dr. Herreid was a prolific author on the subject
+of case teaching, and a tireless advocate.</p>
 <ul>
-<li><a href="https://www.nsta.org/case-studies">Link to the NSTA/NCCSTS case library</a></li>
-<li><a href="https://www.nsta.org/case-studies/resources/publications">Books &amp; articles published by Dr. Herreid and his collaborators</a></li>
-<li>Schiller NA, Herreid CF. 2021. <em>Bibliography on Case Study Teaching in Science.</em> An extensive list of articles covering all aspects of case teaching from design to evaluation. <a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwixz5DfmJH_AhXwlWoFHeJvAMA4ChAWegQIFhAB&amp;url=https%3A%2F%2Fpalm.ascb.org%2Fwp-content%2Fuploads%2Fsites%2F13%2F2021%2F04%2FBibliography_Case_Study_Teaching_Science.pdf&amp;usg=AOvVaw0U0dd0shbdt_q-KfPzwhbD">Download article.</a></li>
+<li><a href="https://www.nsta.org/case-studies">Link to the NSTA/NCCSTS
+case library</a></li>
+<li><a
+href="https://www.nsta.org/case-studies/resources/publications">Books
+&amp; articles published by Dr. Herreid and his collaborators</a></li>
+<li>Schiller NA, Herreid CF. 2021. <em>Bibliography on Case Study
+Teaching in Science.</em> An extensive list of articles covering all
+aspects of case teaching from design to evaluation. <a
+href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwixz5DfmJH_AhXwlWoFHeJvAMA4ChAWegQIFhAB&amp;url=https%3A%2F%2Fpalm.ascb.org%2Fwp-content%2Fuploads%2Fsites%2F13%2F2021%2F04%2FBibliography_Case_Study_Teaching_Science.pdf&amp;usg=AOvVaw0U0dd0shbdt_q-KfPzwhbD">Download
+article.</a></li>
 </ul>
 <div id="section-3" class="section level4">
 <h4> </h4>
@@ -527,33 +545,53 @@ div.tocify {
 </div>
 <div id="university-of-delaware-newark" class="section level2">
 <h2>University of Delaware, Newark</h2>
-<p>UDel uses PBL-style cases for most of its STEM teaching. <a href="https://itue.udel.edu/resources-2/">University of Delaware Institute for Transforming University Education</a> is a great resource if you are thinking about implementing cases as one of your primary course activities.</p>
+<p>UDel uses PBL-style cases for most of its STEM teaching. <a
+href="https://itue.udel.edu/resources-2/">University of Delaware
+Institute for Transforming University Education</a> is a great resource
+if you are thinking about implementing cases as one of your primary
+course activities.</p>
 <div id="section-4" class="section level4">
 <h4> </h4>
 </div>
 </div>
 <div id="hhmi" class="section level2">
 <h2>HHMI</h2>
-<p><a href="https://www.biointeractive.org/">HHMI Biointeractive</a> has many cases in its archive of instructional resources. Many of the cases are based on research that HHMI has funded. Most emphasize primary data analysis and interpretation. Biointeractive’s cases can be supplemented with videos from the HHMI lecture library. ####  </p>
+<p><a href="https://www.biointeractive.org/">HHMI Biointeractive</a> has
+many cases in its archive of instructional resources. Many of the cases
+are based on research that HHMI has funded. Most emphasize primary data
+analysis and interpretation. Biointeractive’s cases can be supplemented
+with videos from the HHMI lecture library. ####  </p>
 </div>
 <div id="caseit-simulations" class="section level2">
 <h2>CaseIt Simulations</h2>
-<p>The <a href="https://www.caseitproject.org/">CaseIt Project</a> combines case scenarios with online data simulations. The current archive has &gt;50 complete cases. Simulations can be used to build new cases as well.</p>
+<p>The <a href="https://www.caseitproject.org/">CaseIt Project</a>
+combines case scenarios with online data simulations. The current
+archive has &gt;50 complete cases. Simulations can be used to build new
+cases as well.</p>
 <div id="section-5" class="section level4">
 <h4> </h4>
 </div>
 </div>
 <div id="public-broadcasting-system" class="section level2">
 <h2>Public Broadcasting System</h2>
-<p><a href="https://pbsnc.pbslearningmedia.org/subjects/science/life-science/">PBS</a> has numerous teaching resources linked to their video archives. There are not many full cases, but plenty of links to videos to generate ideas for cases.</p>
+<p><a
+href="https://pbsnc.pbslearningmedia.org/subjects/science/life-science/">PBS</a>
+has numerous teaching resources linked to their video archives. There
+are not many full cases, but plenty of links to videos to generate ideas
+for cases.</p>
 <div id="section-6" class="section level4">
 <h4> </h4>
 </div>
 </div>
 <div id="publications-that-include-cases" class="section level2">
 <h2>Publications That Include Cases</h2>
-<p>Lunderberg, MA. 2008. Case Pedagogy in Undergraduate STEM: Research We Have; Research We Need. National Academies Press. <a href="http://sites.nationalacademies.org/cs/groups/dbassesite/documents/webpage/dbasse_072622.pdf">Download article.</a></p>
-<p>This white paper from an National Academies workshop provides a high-level overview of the origin of cases for STEM teaching. It is somewhat dated, but provides examples of different case strategies.</p>
+<p>Lunderberg, MA. 2008. Case Pedagogy in Undergraduate STEM: Research
+We Have; Research We Need. National Academies Press. <a
+href="http://sites.nationalacademies.org/cs/groups/dbassesite/documents/webpage/dbasse_072622.pdf">Download
+article.</a></p>
+<p>This white paper from an National Academies workshop provides a
+high-level overview of the origin of cases for STEM teaching. It is
+somewhat dated, but provides examples of different case strategies.</p>
 <div id="section-7" class="section level4">
 <h4> </h4>
 <hr>

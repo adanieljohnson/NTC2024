@@ -13,8 +13,8 @@
 
 <title>Analysis Resources</title>
 
-<script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.23/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/spacelab.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -29,7 +29,7 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
@@ -37,8 +37,8 @@
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
 <script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.0/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.0/css/v4-shims.min.css" rel="stylesheet" />
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -59,6 +59,7 @@ if (window.hljs) {
   }
 }
 </script>
+
 
 
 
@@ -88,6 +89,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -145,11 +149,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -178,8 +186,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -187,16 +195,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -313,7 +314,7 @@ div.tocify {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -333,7 +334,7 @@ div.tocify {
   </a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     <span class="fa fa-folder-open"></span>
      
     Case Writing
@@ -421,7 +422,7 @@ div.tocify {
   </ul>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     <span class="fa fa-share-alt"></span>
      
     Cases Collection
@@ -453,7 +454,7 @@ div.tocify {
   </ul>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     <span class="fa fa-wrench"></span>
      
     Toolbox
@@ -496,57 +497,131 @@ div.tocify {
 </div>
 <div id="setting-neuroscience-learning-outcomes" class="section level1">
 <h1>Setting Neuroscience Learning Outcomes</h1>
-<p>If your local program does not have learning outcome goals developed already, <a href="https://www.lifescied.org/doi/full/10.1187/cbe.22-02-0018">Chen and Phillips (2023)</a> published community-driven standards for neuroscience topics based on a nationwide survey of neuroscience educators.</p>
-<p>Briefly, they define neuroscience’s core concepts as the overarching principles that organize knowledge and can be applied to all subdisciplines in neuroscience. Those core concepts are:</p>
+<p>If your local program does not have learning outcome goals developed
+already, <a
+href="https://www.lifescied.org/doi/full/10.1187/cbe.22-02-0018">Chen
+and Phillips (2023)</a> published community-driven standards for
+neuroscience topics based on a nationwide survey of neuroscience
+educators.</p>
+<p>Briefly, they define neuroscience’s core concepts as the overarching
+principles that organize knowledge and can be applied to all
+subdisciplines in neuroscience. Those core concepts are:</p>
 <ol style="list-style-type: decimal">
-<li><p><strong>Communication modalities:</strong> Nervous systems encode and transmit information in various modalities that include activity patterns, electrical signaling, and chemical signaling. Information is transmitted and encoded in timing, frequency and patterns of activity.</p></li>
-<li><p><strong>Emergence:</strong> Nervous system functions are constructed from the combined interactions of smaller constituent components. Complex functions such as cognition, behavior, perception, and emotion are the outcome of interactions between many smaller units at the tissue, cell, and sub-cellular levels.</p></li>
-<li><p><strong>Evolution:</strong> Similarities and differences in nervous systems between organisms are constrained and defined by their evolutionary backgrounds. Evolutionary processes produce shared functions and homologous nervous system structures, as well as adaptations that generate differences between organisms. Nervous systems are subject to evolutionary forces and therefore must be understood within the phylogenetic history and ecological context of an organism.</p></li>
-<li><p><strong>Gene–environment interactions:</strong> Unique patterns of gene expression underlie the organization and function of a nervous system and are altered by environmental factors.</p></li>
-<li><p><strong>Information processing:</strong> Outputs from a unit in the nervous system depend on the inputs it receives as well as information filtering and modulation performed by the unit. Information processing can be studied at multiple levels of granularity, including synapses, subcellular arbors, circuits, and systems. At each level, the output of a unit in the nervous system is dependent upon the inputs it receives and processes.</p></li>
-<li><p><strong>Nervous system functions:</strong> Nervous systems function to coordinate survival responses to the environment, permit behavior in a timely manner, and maintain homeostatic regulation. Nervous systems detect and monitor external and internal environmental conditions, in conjunction with using stored information, to direct an appropriate response.</p></li>
-<li><p><strong>Plasticity:</strong> Nervous systems reorganize their structure, function, and connections in response to experience. The nervous system is malleable. From early developmental stages and throughout life, the nervous system strengthens and weakens components and connections in response to experience. This modulation, or plasticity, occurs in response to intrinsic and extrinsic experiences, such as sensory input, behavior, and pathological processes.</p></li>
-<li><p><strong>Structure–function relationship:</strong> Structure permits and constrains nervous system function, and function shapes structure. Nervous system structures and functions bidirectionally inform each other at all levels of organization.</p></li>
+<li><p><strong>Communication modalities:</strong> Nervous systems encode
+and transmit information in various modalities that include activity
+patterns, electrical signaling, and chemical signaling. Information is
+transmitted and encoded in timing, frequency and patterns of
+activity.</p></li>
+<li><p><strong>Emergence:</strong> Nervous system functions are
+constructed from the combined interactions of smaller constituent
+components. Complex functions such as cognition, behavior, perception,
+and emotion are the outcome of interactions between many smaller units
+at the tissue, cell, and sub-cellular levels.</p></li>
+<li><p><strong>Evolution:</strong> Similarities and differences in
+nervous systems between organisms are constrained and defined by their
+evolutionary backgrounds. Evolutionary processes produce shared
+functions and homologous nervous system structures, as well as
+adaptations that generate differences between organisms. Nervous systems
+are subject to evolutionary forces and therefore must be understood
+within the phylogenetic history and ecological context of an
+organism.</p></li>
+<li><p><strong>Gene–environment interactions:</strong> Unique patterns
+of gene expression underlie the organization and function of a nervous
+system and are altered by environmental factors.</p></li>
+<li><p><strong>Information processing:</strong> Outputs from a unit in
+the nervous system depend on the inputs it receives as well as
+information filtering and modulation performed by the unit. Information
+processing can be studied at multiple levels of granularity, including
+synapses, subcellular arbors, circuits, and systems. At each level, the
+output of a unit in the nervous system is dependent upon the inputs it
+receives and processes.</p></li>
+<li><p><strong>Nervous system functions:</strong> Nervous systems
+function to coordinate survival responses to the environment, permit
+behavior in a timely manner, and maintain homeostatic regulation.
+Nervous systems detect and monitor external and internal environmental
+conditions, in conjunction with using stored information, to direct an
+appropriate response.</p></li>
+<li><p><strong>Plasticity:</strong> Nervous systems reorganize their
+structure, function, and connections in response to experience. The
+nervous system is malleable. From early developmental stages and
+throughout life, the nervous system strengthens and weakens components
+and connections in response to experience. This modulation, or
+plasticity, occurs in response to intrinsic and extrinsic experiences,
+such as sensory input, behavior, and pathological processes.</p></li>
+<li><p><strong>Structure–function relationship:</strong> Structure
+permits and constrains nervous system function, and function shapes
+structure. Nervous system structures and functions bidirectionally
+inform each other at all levels of organization.</p></li>
 </ol>
 <div id="section-1" class="section level4">
 <h4> </h4>
 </div>
 </div>
-<div id="setting-topic-independent-learning-outcomes" class="section level1">
+<div id="setting-topic-independent-learning-outcomes"
+class="section level1">
 <h1>Setting Topic-Independent Learning Outcomes</h1>
-<p>The <strong>Teaching Goals Inventory</strong>, developed by Angelo and Cross (1993) is a good tool for identifying learning outcomes that are independent of course content and concepts knowledge goals. TGI was designed to:</p>
+<p>The <strong>Teaching Goals Inventory</strong>, developed by Angelo
+and Cross (1993) is a good tool for identifying learning outcomes that
+are independent of course content and concepts knowledge goals. TGI was
+designed to:</p>
 <ul>
 <li>help faculty choose informal classroom assessment methods;</li>
-<li>help individual faculty members become aware of course goals; and</li>
+<li>help individual faculty members become aware of course goals;
+and</li>
 <li>provide a starting point for discussion between colleagues.</li>
 </ul>
-<p>TGI also has proven extremely useful as a catalyst for new course development, and for analyzing connections between courses in a curricular sequence. The developers have given permission for the Inventory to be used freely, and it is <a href="https://tgi.its.uiowa.edu/">available online.</a></p>
+<p>TGI also has proven extremely useful as a catalyst for new course
+development, and for analyzing connections between courses in a
+curricular sequence. The developers have given permission for the
+Inventory to be used freely, and it is <a
+href="https://tgi.its.uiowa.edu/">available online.</a></p>
 <div id="section-2" class="section level4">
 <h4> </h4>
 </div>
 </div>
-<div id="other-resources-for-supporting-analysis" class="section level1">
+<div id="other-resources-for-supporting-analysis"
+class="section level1">
 <h1>Other Resources for Supporting Analysis</h1>
 <div id="examples-of-learning-outcomes" class="section level2">
 <h2>Examples of Learning Outcomes</h2>
-<p><a href="https://www.lifescied.org/doi/10.1187/cbe.13-12-0233">This article by Brownell, et al.</a> and this 2023 article by <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10074271/">Clark and Hsu</a> are good overviews of the process.</p>
-<p>These are two examples of program-level general learning outcomes. Individual courses within the programs would be designed to meet a subset of these outcomes.</p>
+<p><a href="https://www.lifescied.org/doi/10.1187/cbe.13-12-0233">This
+article by Brownell, et al.</a> and this 2023 article by <a
+href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10074271/">Clark and
+Hsu</a> are good overviews of the process.</p>
+<p>These are two examples of program-level general learning outcomes.
+Individual courses within the programs would be designed to meet a
+subset of these outcomes.</p>
 <ul>
-<li><a href="https://biology.indiana.edu/undergraduate/biology/learning-goals.html">Indiana University</a></li>
-<li><a href="https://www.bates.edu/biology/biology-at-bates/learning-goals/">Bates College</a></li>
+<li><a
+href="https://biology.indiana.edu/undergraduate/biology/learning-goals.html">Indiana
+University</a></li>
+<li><a
+href="https://www.bates.edu/biology/biology-at-bates/learning-goals/">Bates
+College</a></li>
 </ul>
 <div id="section-3" class="section level4">
 <h4> </h4>
 </div>
 </div>
-<div id="sources-of-questions-about-motivation-and-interest" class="section level2">
+<div id="sources-of-questions-about-motivation-and-interest"
+class="section level2">
 <h2>Sources of Questions About Motivation and Interest</h2>
 <ul>
-<li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6755315/">Rowland et al.’s 2019 literature review</a> of methods for defining and measuring student interest in biology.</li>
-<li><a href="https://doi.org/10.1002/(SICI)1098-237X(199907)83:4%3C397::AID-SCE1%3E3.0.CO;2-%23">Biology Self-Efficacy Scale</a></li>
-<li><a href="https://selfdeterminationtheory.org/intrinsic-motivation-inventory/">Intrinsic Motivation Inventory, or IMI</a></li>
-<li><a href="https://psycnet.apa.org/doi/10.1037/0022-0663.82.1.33">Motivated Strategies for Learning Questionnaire, or MSLQ</a></li>
-<li><a href="downloads/Semester_startup_survey.md">The standard survey I use to gather data on student motivation and goals</a>.</li>
+<li><a
+href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6755315/">Rowland et
+al.’s 2019 literature review</a> of methods for defining and measuring
+student interest in biology.</li>
+<li><a
+href="https://doi.org/10.1002/(SICI)1098-237X(199907)83:4%3C397::AID-SCE1%3E3.0.CO;2-%23">Biology
+Self-Efficacy Scale</a></li>
+<li><a
+href="https://selfdeterminationtheory.org/intrinsic-motivation-inventory/">Intrinsic
+Motivation Inventory, or IMI</a></li>
+<li><a
+href="https://psycnet.apa.org/doi/10.1037/0022-0663.82.1.33">Motivated
+Strategies for Learning Questionnaire, or MSLQ</a></li>
+<li><a href="downloads/Semester_startup_survey.md">The standard survey I
+use to gather data on student motivation and goals</a>.</li>
 </ul>
 <div id="section-4" class="section level4">
 <h4> </h4>

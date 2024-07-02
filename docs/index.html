@@ -13,8 +13,8 @@
 
 <title>Case Writing For STEM Teachers</title>
 
-<script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.23/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/spacelab.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -29,7 +29,7 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
@@ -37,8 +37,8 @@
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
 <script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.0/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.0/css/v4-shims.min.css" rel="stylesheet" />
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -59,6 +59,7 @@ if (window.hljs) {
   }
 }
 </script>
+
 
 
 
@@ -88,6 +89,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -145,11 +149,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -178,8 +186,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -187,16 +195,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -313,7 +314,7 @@ div.tocify {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -333,7 +334,7 @@ div.tocify {
   </a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     <span class="fa fa-folder-open"></span>
      
     Case Writing
@@ -421,7 +422,7 @@ div.tocify {
   </ul>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     <span class="fa fa-share-alt"></span>
      
     Cases Collection
@@ -453,7 +454,7 @@ div.tocify {
   </ul>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     <span class="fa fa-wrench"></span>
      
     Toolbox
@@ -499,11 +500,29 @@ div.tocify {
 <div id="section-1" class="section level4">
 <h4> </h4>
 </div>
-<div id="why-add-cases-to-your-teaching-practice" class="section level2">
+<div id="why-add-cases-to-your-teaching-practice"
+class="section level2">
 <h2>Why Add Cases to Your Teaching Practice?</h2>
-<p>STEM courses serve increasing numbers of students who lack prior experiences with self-regulated learning, who need additional time to process information, or are neurodiverse in other ways. Instructors must keep high-performing students engaged while also giving developing learners appropriate challenges that allow and encourage them to take charge of their own learning.</p>
-<p>Discussion cases are a reliable way of engaging and training students who have a wide range of skills in a single course. Cases help students engage with topics more deeply and develop richer insights. They provide opportunities for students to practice both problem-solving and self-regulated learning. They are not just for developing higher order thinking though; they can be used in content-dense courses to strengthen students’ basic content knowledge, introduce new concepts, and reinforce prior concepts through application.</p>
-<p>Cases are not a panacea though; they have benefits and drawbacks. A well-designed case can be repurposed to meet differing student needs and course formats, but require considerable development work behind the scenes. In case-oriented courses the instructor gives up their role as expert source and becomes a thinking coach instead. They must think quickly and be ready to adapt new cases in real time.</p>
+<p>STEM courses serve increasing numbers of students who lack prior
+experiences with self-regulated learning, who need additional time to
+process information, or are neurodiverse in other ways. Instructors must
+keep high-performing students engaged while also giving developing
+learners appropriate challenges that allow and encourage them to take
+charge of their own learning.</p>
+<p>Discussion cases are a reliable way of engaging and training students
+who have a wide range of skills in a single course. Cases help students
+engage with topics more deeply and develop richer insights. They provide
+opportunities for students to practice both problem-solving and
+self-regulated learning. They are not just for developing higher order
+thinking though; they can be used in content-dense courses to strengthen
+students’ basic content knowledge, introduce new concepts, and reinforce
+prior concepts through application.</p>
+<p>Cases are not a panacea though; they have benefits and drawbacks. A
+well-designed case can be repurposed to meet differing student needs and
+course formats, but require considerable development work behind the
+scenes. In case-oriented courses the instructor gives up their role as
+expert source and becomes a thinking coach instead. They must think
+quickly and be ready to adapt new cases in real time.</p>
 <div id="section-2" class="section level4">
 <h4> </h4>
 </div>
@@ -512,32 +531,58 @@ div.tocify {
 <h2>What You Will Find Here</h2>
 <p>The menu at the top connects you to:</p>
 <ul>
-<li>a model for identifying case goals, designing cases, then evaluating them;</li>
-<li>guidelines and supporting resources for writing your own cases; and</li>
-<li>a collection of sample cases showing how different types are structured.</li>
+<li>a model for identifying case goals, designing cases, then evaluating
+them;</li>
+<li>guidelines and supporting resources for writing your own cases;
+and</li>
+<li>a collection of sample cases showing how different types are
+structured.</li>
 </ul>
-<p>Several shared documents are in the reusable Markdown format; <a href="markdown_conversion">directions for converting Markdown to other formats are available here.</a> Most resources can be downloaded.</p>
+<p>Several shared documents are in the reusable Markdown format; <a
+href="markdown_conversion">directions for converting Markdown to other
+formats are available here.</a> Most resources can be downloaded.</p>
 <div id="section-3" class="section level4">
 <h4> </h4>
 </div>
 </div>
 <div id="who-am-i" class="section level2">
 <h2>Who Am I?</h2>
-<p>I am a Teaching Professor of Biology at Wake Forest University. I wrote and published my first formal teaching case in 2005, and since written or co-written &gt;35 cases for: non-majors general biology; majors lecture and lab courses (first years to seniors); federally mandated research ethics courses; and our graduate TA training program. I’ve published and reviewed cases for the National Clearinghouse for Case Studies Teaching in Science (NCCSTS).</p>
-<p>I want to share my case experiences with others who want to start using cases, or use them more. Come back often, as I will be adding more resources.</p>
+<p>I am a Teaching Professor of Biology at Wake Forest University. I
+wrote and published my first formal teaching case in 2005, and since
+written or co-written &gt;35 cases for: non-majors general biology;
+majors lecture and lab courses (first years to seniors); federally
+mandated research ethics courses; and our graduate TA training program.
+I’ve published and reviewed cases for the National Clearinghouse for
+Case Studies Teaching in Science (NCCSTS).</p>
+<p>I want to share my case experiences with others who want to start
+using cases, or use them more. Come back often, as I will be adding more
+resources.</p>
 <div id="section-4" class="section level4">
 <h4> </h4>
 </div>
 </div>
 <div id="using-site-resources" class="section level2">
 <h2>Using Site Resources</h2>
-<p>Except where noted otherwise, all materials may be reused and adapted under terms of a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
-<p>You are free to share and adapt any of these materials under the following conditions:</p>
+<p>Except where noted otherwise, all materials may be reused and adapted
+under terms of a
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
+Commons Attribution-NonCommercial-ShareAlike 4.0 International
+License</a>.</p>
+<p>You are free to share and adapt any of these materials under the
+following conditions:</p>
 <ul>
-<li><strong>Attribution (BY)</strong> — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.z</li>
-<li><strong>NonCommercial (NC)</strong> — You may not use the material for commercial purposes.</li>
-<li><strong>ShareAlike (SA)</strong> — If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.</li>
-<li>No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.</li>
+<li><strong>Attribution (BY)</strong> — You must give appropriate
+credit, provide a link to the license, and indicate if changes were
+made. You may do so in any reasonable manner, but not in any way that
+suggests the licensor endorses you or your use.z</li>
+<li><strong>NonCommercial (NC)</strong> — You may not use the material
+for commercial purposes.</li>
+<li><strong>ShareAlike (SA)</strong> — If you remix, transform, or build
+upon the material, you must distribute your contributions under the same
+license as the original.</li>
+<li>No additional restrictions — You may not apply legal terms or
+technological measures that legally restrict others from doing anything
+the license permits.</li>
 </ul>
 <div id="section-5" class="section level4">
 <h4> </h4>

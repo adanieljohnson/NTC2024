@@ -13,8 +13,8 @@
 
 <title>Goals of Analysis</title>
 
-<script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.23/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/spacelab.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -29,7 +29,7 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
@@ -37,8 +37,8 @@
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
 <script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.0/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.0/css/v4-shims.min.css" rel="stylesheet" />
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -59,6 +59,7 @@ if (window.hljs) {
   }
 }
 </script>
+
 
 
 
@@ -88,6 +89,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -145,11 +149,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -178,8 +186,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -187,16 +195,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -313,7 +314,7 @@ div.tocify {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -333,7 +334,7 @@ div.tocify {
   </a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     <span class="fa fa-folder-open"></span>
      
     Case Writing
@@ -421,7 +422,7 @@ div.tocify {
   </ul>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     <span class="fa fa-share-alt"></span>
      
     Cases Collection
@@ -453,7 +454,7 @@ div.tocify {
   </ul>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     <span class="fa fa-wrench"></span>
      
     Toolbox
@@ -493,11 +494,17 @@ div.tocify {
 
 <div id="section" class="section level4">
 <h4> </h4>
-<p>The first step in the ADDIE process is to determine what specific goals you hope to accomplish in a course. More specifically:</p>
+<p>The first step in the ADDIE process is to determine what specific
+goals you hope to accomplish in a course. More specifically:</p>
 <ol style="list-style-type: decimal">
-<li><strong>What are the general learning outcomes?</strong> What principles, theories, concepts, skills, or content knowledge should students achieve as a result of learning activities?</li>
-<li><strong>What are appropriate specific benchmarks or performance goals?</strong> What will students be able to do to indicate they have accomplished these endpoints?</li>
-<li><strong>How should the goals be sequenced?</strong> Which benchmarks do students need to reach first, before they can achieve others?</li>
+<li><strong>What are the general learning outcomes?</strong> What
+principles, theories, concepts, skills, or content knowledge should
+students achieve as a result of learning activities?</li>
+<li><strong>What are appropriate specific benchmarks or performance
+goals?</strong> What will students be able to do to indicate they have
+accomplished these endpoints?</li>
+<li><strong>How should the goals be sequenced?</strong> Which benchmarks
+do students need to reach first, before they can achieve others?</li>
 </ol>
 </div>
 <div id="section-1" class="section level4">
@@ -505,22 +512,33 @@ div.tocify {
 </div>
 <div id="consider-affect-and-motivation" class="section level2">
 <h2>Consider Affect and Motivation</h2>
-<p>Personally I think the ADDIE model does not consider how much student affect and motivation influence learning. To compensate I use John Keller’s <strong>ARCS Model of Motivation</strong> as part of analysis. (Elements that cases are particularly good for are marked with <sup>C</sup>.)</p>
+<p>Personally I think the ADDIE model does not consider how much student
+affect and motivation influence learning. To compensate I use John
+Keller’s <strong>ARCS Model of Motivation</strong> as part of analysis.
+(Elements that cases are particularly good for are marked with
+<sup>C</sup>.)</p>
 <ul>
-<li><strong>Attention.</strong> Are learners interested in taking in concepts/ideas being taught? Courses increase attention by including:
+<li><strong>Attention.</strong> Are learners interested in taking in
+concepts/ideas being taught? Courses increase attention by including:
 <ul>
 <li>Perceptual arousal: using surprise or uncertainty<sup>C</sup></li>
-<li>Inquiry arousal: offering challenging questions, problems to answer/solve</li>
+<li>Inquiry arousal: offering challenging questions, problems to
+answer/solve</li>
 <li>Variability: using varied resources, teaching methods</li>
 </ul></li>
-<li><strong>Relevance.</strong> Do course activities use language, examples learners are familiar with? Relevance can come from:
+<li><strong>Relevance.</strong> Do course activities use language,
+examples learners are familiar with? Relevance can come from:
 <ul>
-<li>Matching goal-orientation and motives of learners and the course</li>
-<li>Providing examples and raising questions that are familiar to the learners.<sup>C</sup></li>
+<li>Matching goal-orientation and motives of learners and the
+course</li>
+<li>Providing examples and raising questions that are familiar to the
+learners.<sup>C</sup></li>
 </ul></li>
-<li><strong>Confidence.</strong> Do students have a reasonable expectation of predicting and achieving success? This comes from:
+<li><strong>Confidence.</strong> Do students have a reasonable
+expectation of predicting and achieving success? This comes from:
 <ul>
-<li>Giving them tools to monitor progress towards course goals. These can be:
+<li>Giving them tools to monitor progress towards course goals. These
+can be:
 <ul>
 <li>Static tools like the syllabus, grading policy, rubrics or</li>
 <li>Situational tools like an estimated time to complete tasks.</li>
@@ -528,10 +546,13 @@ div.tocify {
 <li>Positive reinforcement for personal achievements.</li>
 <li>Timely, relevant feedback.<sup>C</sup></li>
 </ul></li>
-<li><strong>Satisfaction.</strong> Do students get a sense of achievement, or gain praise from peers or a higher-up when they complete course activities?
+<li><strong>Satisfaction.</strong> Do students get a sense of
+achievement, or gain praise from peers or a higher-up when they complete
+course activities?
 <ul>
 <li>Feedback and reinforcement are important elements.<sup>C</sup></li>
-<li>Learners who are positively reinforced are more motivated to continue learning.</li>
+<li>Learners who are positively reinforced are more motivated to
+continue learning.</li>
 </ul></li>
 </ul>
 <div id="section-2" class="section level4">
