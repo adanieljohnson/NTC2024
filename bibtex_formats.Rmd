@@ -47,7 +47,7 @@ For example, to cite the Tunaz, 2004 article shown above, put in the command:
 
 #### \   
 
-# Standard Formats for BibTex References
+# Standard Citation Formats
 
 ## Article Types
 
