@@ -8,7 +8,7 @@ biblio-style: apalike
 ```
 #### \   
 
-The case teaching resources on this site are organized around a modified ADDIE model of curriculum design (U. Florida, 1975), with elements of backwards design (Wiggins & McTighe, 1999). The two are very similar, but more faculty are familiar with backwards design. 
+The case design and teaching resources on this site are organized around a modified ADDIE model of curriculum design (U. Florida, 1975), with elements of backwards design (Wiggins & McTighe, 1999). The two instructional design models share many features. More faculty are familiar with backwards design, while instructional designers tend to favor ADDIE. 
 
 The five steps of the ADDIE Model are:
 
@@ -26,7 +26,11 @@ The first step in ADDIE (and backwards design) is to analyze the learning situat
 _ADDIE model of instructional design, mapped onto backwards design workflow._
 </center><br>
 
-Next comes the design and development phase. Typically we cycle back and forther between the two many times prior to implementation, so for simplicity I combined them into one step. This better fits the backwards design model as well, where design is part of the cyclic phase.
+Next comes the design and development phase. Typically we move back and forth between these two steps many times prior to implementation, so for simplicity I combined them into one step. This better fits the backwards design model as well, where design is part of the cyclic phase.
+
+The next steps in ADDIE are implementation (corresponding to backwards design's learning plan) and evaluation (corresponding to evidence and assessment).
+
+The above figure shows a one-way iteration cycle moving from design to implementation to evaluation. In practice we often move back and forth between these three elements in both directions. For example, we might use results of an evaluation to adjust how we implement an instructional technique without going back and reconsidering the design of the course as a whole.
 
 #### \   
 
@@ -42,7 +46,7 @@ The first step in the ADDIE process is to determine what specific goals you hope
 
 # Goals for Design and Development
 
-The second step in the ADDIE process is to determine how best to help students achieve the specific goals established in the __Analysis__ stage. In practice, design and development transitions to revision and refinement as a case or course matures. 
+The second step in the ADDIE process is to determine how best to help students achieve the specific goals established in the __Analysis__ stage. In practice, design and development shifts to revision and refinement as a case or course matures. 
 
 Specific questions to ask in the Design and Development phase are:
 

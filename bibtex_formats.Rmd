@@ -1,5 +1,5 @@
 ---
-title: "BibTex Formats"
+title: "Using BibTex"
 output: html_document
 ---
 
@@ -11,16 +11,18 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Using BibTex for Citations
 
-Cited references for this web site are managed using BibTex. Sources are added to the __library.bib__ file in the formats shown below. To learn more about using BibTex go to either:
+Citations on this web site are managed using __BibTex__, a citation framework that moves easily between PC, Mac, and Linux systems. This one framework can be used in both print documents and on web sites, making managing citations easier. BibTex is widely supported, with many free tools available. 
+
+To learn more about using BibTex go to either:
 
 * [https://www.bibtex.com/](https://www.bibtex.com/)
 * [http://www.bibtex.org/Format/](http://www.bibtex.org/Format/)
 
 #### \   
 
-## Embedding References
+## Embedding In-Text Citations
 
-Each entry in the __library.bib__ file follows a specific format. Each entry also has a unique name that usually is on the first line (which begins with the \@ symbol), immediately after the opening curly brace.
+Sources are added to a __library.bib__ plain text file using the formats shown below. Each entry in the __library.bib__ file follows a specific format. Each entry also has a unique name that is on the first line (which begins with the \@ symbol), immediately after the opening curly brace.
 
 The example below is the entry for an article referenced by one of the example cases.
 
@@ -37,7 +39,7 @@ The example below is the entry for an article referenced by one of the example c
 
 The unique name for this source is ```Tunaz2004InsectGR```. It can be called to any page in the web site by embedding the name in correct format.
 
-The in-text command used to cite references stored in .bib file is ```\cite{citation_key}```. Replace “citation_key” with the unique identifier associated with the entry in the .bib file. Put the command where the in-text citation should appear. This one command adds the in-text citation, AND appends the reference list to the bottom of the web page.
+The in-text command used to cite references stored in the library.bib file is ```\cite{citation_key}```. Replace “citation_key” with the unique name associated with the entry in the .bib file. Put the command where the in-text citation should appear. This one command adds the in-text citation, AND appends the reference to a list at the bottom of the web page.
 
 For example, to cite the Tunaz, 2004 article shown above, put in the command:
 

@@ -11,7 +11,7 @@
 
 
 
-<title>BibTex Formats</title>
+<title>Using BibTex</title>
 
 <script src="site_libs/header-attrs-2.23/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -464,7 +464,7 @@ div.tocify {
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     <span class="fa fa-wrench"></span>
      
-    Toolbox
+    Other Tools
      
     <span class="caret"></span>
   </a>
@@ -473,14 +473,28 @@ div.tocify {
       <a href="toolbox.html">
         <span class="fa fa-wrench"></span>
          
-        Toolbox
+        Overview
+      </a>
+    </li>
+    <li>
+      <a href="templates.html">
+        <span class="fa fa-wrench"></span>
+         
+        Templates
+      </a>
+    </li>
+    <li>
+      <a href="markdown.html">
+        <span class="fa fa-wrench"></span>
+         
+        Markdown
       </a>
     </li>
     <li>
       <a href="bibtex_formats.html">
         <span class="fa fa-wrench"></span>
          
-        BibTex Reference Formats
+        Using BibTex
       </a>
     </li>
   </ul>
@@ -494,7 +508,7 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">BibTex Formats</h1>
+<h1 class="title toc-ignore">Using BibTex</h1>
 
 </div>
 
@@ -504,9 +518,12 @@ div.tocify {
 </div>
 <div id="using-bibtex-for-citations" class="section level1">
 <h1>Using BibTex for Citations</h1>
-<p>Cited references for this web site are managed using BibTex. Sources
-are added to the <strong>library.bib</strong> file in the formats shown
-below. To learn more about using BibTex go to either:</p>
+<p>Citations on this web site are managed using <strong>BibTex</strong>,
+a citation framework that moves easily between PC, Mac, and Linux
+systems. This one framework can be used in both print documents and on
+web sites, making managing citations easier. BibTex is widely supported,
+with many free tools available.</p>
+<p>To learn more about using BibTex go to either:</p>
 <ul>
 <li><a href="https://www.bibtex.com/">https://www.bibtex.com/</a></li>
 <li><a
@@ -515,12 +532,13 @@ href="http://www.bibtex.org/Format/">http://www.bibtex.org/Format/</a></li>
 <div id="section-1" class="section level4">
 <h4> </h4>
 </div>
-<div id="embedding-references" class="section level2">
-<h2>Embedding References</h2>
-<p>Each entry in the <strong>library.bib</strong> file follows a
-specific format. Each entry also has a unique name that usually is on
-the first line (which begins with the @ symbol), immediately after the
-opening curly brace.</p>
+<div id="embedding-in-text-citations" class="section level2">
+<h2>Embedding In-Text Citations</h2>
+<p>Sources are added to a <strong>library.bib</strong> plain text file
+using the formats shown below. Each entry in the
+<strong>library.bib</strong> file follows a specific format. Each entry
+also has a unique name that is on the first line (which begins with the
+@ symbol), immediately after the opening curly brace.</p>
 <p>The example below is the entry for an article referenced by one of
 the example cases.</p>
 <pre><code>@article{Tunaz2004InsectGR,
@@ -534,12 +552,12 @@ the example cases.</p>
 <p>The unique name for this source is <code>Tunaz2004InsectGR</code>. It
 can be called to any page in the web site by embedding the name in
 correct format.</p>
-<p>The in-text command used to cite references stored in .bib file is
-<code>\cite{citation_key}</code>. Replace “citation_key” with the unique
-identifier associated with the entry in the .bib file. Put the command
-where the in-text citation should appear. This one command adds the
-in-text citation, AND appends the reference list to the bottom of the
-web page.</p>
+<p>The in-text command used to cite references stored in the library.bib
+file is <code>\cite{citation_key}</code>. Replace “citation_key” with
+the unique name associated with the entry in the .bib file. Put the
+command where the in-text citation should appear. This one command adds
+the in-text citation, AND appends the reference to a list at the bottom
+of the web page.</p>
 <p>For example, to cite the Tunaz, 2004 article shown above, put in the
 command:</p>
 <pre><code>\cite{Tunaz2004InsectGR}</code></pre>

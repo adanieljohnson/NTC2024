@@ -59,14 +59,20 @@ navbar:
     - text: "Full Collection"
       icon: fa-share-alt
       href: collection_overview.html
-  - text: "Toolbox"
+  - text: "Other Tools"
     icon: fa-wrench
     href: toolbox.html
     menu: 
-    - text: "Toolbox"
+    - text: "Overview"
       icon: fa-wrench
       href: toolbox.html
-    - text: "BibTex Reference Formats"
+    - text: "Templates"
+      icon: fa-wrench
+      href: templates.html
+    - text: "Markdown"
+      icon: fa-wrench
+      href: markdown.html
+    - text: "Using BibTex"
       icon: fa-wrench
       href: bibtex_formats.html
 output:

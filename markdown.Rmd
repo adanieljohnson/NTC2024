@@ -1,0 +1,22 @@
+---
+title: "Using Markdown"
+bibliography: library.bib
+biblio-style: apalike
+---
+
+```{r, child="_setup.Rmd"}
+```
+#### \   
+
+Case documents often require multiple outputs: .docx files for printed handouts, .pdf for download-ready files, or .html for the campus LMS or the web generally. Managing documents can be difficult if you do not have a systematic strategy; mine is to draft most materials in **Markdown** then convert files. 
+
+Markdown is a simple-to-use formatting language for authoring small, reusable plain text documents. The philosophy behind Markdown is "write text once, then output it in many formats." With Markdown authors can quickly convert one text file into more than 30 different formats for web pages, printed handouts, and slide presentations. Groups of Markdown files can be combined to create interactive online books. 
+
+This entire web site was written in R Studio's variant, R Markdown. Several downloadable documents are written in plain Markdown (.md extension) or R Markdown (.Rmd extension). 
+
+* The [page on Markdown conversion](markdown_conversion.html) describes how to convert files to other formats.
+* To learn more about using Markdown and the R Markdown variant see [http://rmarkdown.rstudio.com](http://rmarkdown.rstudio.com).
+
+#### \   
+
+<hr>
