@@ -3,12 +3,12 @@ output_dir: "docs"
 navbar:
   title: "STEM Case Writing Resources"
   right:
-  - text: "Brainstorming"
-    icon: fa-comments
-    href: brainstorming.html
   - text: "FAQ"
     icon: fa-comments
     href: FAQ.html
+  - text: "Brainstorming"
+    icon: fa-comments
+    href: brainstorming.html
   - text: "Writing Guide"
     icon: fa-folder-open
     href: curated_overview.html

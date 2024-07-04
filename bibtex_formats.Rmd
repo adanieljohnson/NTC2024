@@ -49,7 +49,7 @@ For example, to cite the Tunaz, 2004 article shown above, put in the command:
 
 # Standard Formats for BibTex References
 
-## Articles
+## Article Types
 
 ### Article
 
@@ -83,7 +83,7 @@ A conference proceeding.
 }
 ```
 
-### Inproceedings
+### Inproceedings (Paper in Proceedings)
 
 A paper that has been published in conference proceedings. The usage of conference and inproceedings is the same. The conference entry was included for Scribe compatibility.
 
@@ -116,7 +116,9 @@ An institutionally published report such as a report from a school, a government
 }
 ```
 
-## Books
+#### \   
+
+## Book Types
 
 ### Book
 
@@ -132,7 +134,7 @@ A full book where the publisher is clearly identifiable.
 }
 ```
 
-### Inbook (Book chapter)
+### Inbook (Book Chapter)
 
 A section, such as a chapter, or a page range within a book.
 
@@ -162,7 +164,7 @@ A printed work that is bound, but does not have a clearly identifiable publisher
 }
 ```
 
-### Incollection
+### Incollection (Book Section)
 
 A titled section of a book. Such as a short story within the larger collection of short stories that make up the book.
 
@@ -179,7 +181,7 @@ A titled section of a book. Such as a short story within the larger collection o
 }
 ```
 
-## Manual
+### Manual
 
 A technical manual for a machine software such as would come with a purchase to explain operation to the new owner.
 
@@ -192,6 +194,8 @@ A technical manual for a machine software such as would come with a purchase to 
   year         = 2018
 }
 ```
+
+#### \   
 
 ## Scholarly Works
 
@@ -225,9 +229,11 @@ A thesis written for the PhD level degree.
 }
 ```
 
+#### \   
+
 ## Miscellaneous
 
-Used if none of the other entry types quite match the source. Frequently used to cite web pages, but can be anything from lecture slides to personal notes.
+Used when none of the other entry types quite match the source. Often used to cite web pages, but can be anything from lecture slides to personal notes.
 
 ```
 @misc{CitekeyMisc,
